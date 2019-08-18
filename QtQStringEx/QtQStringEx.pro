@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-08-16T20:47:42
+# Project created by QtCreator 2019-08-18T12:06:43
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = QtMeatObjectEx
+TARGET = QtQStringEx
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -26,20 +26,19 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        ExWidget.cpp \
-    ExPerson.cpp
+        ExQString.cpp
 
 HEADERS += \
-        ExWidget.h \
-    ExPerson.h
+        ExQString.h
 
 FORMS += \
-        ExWidget.ui
-		
-RC_ICONS += QT_win_32x32.ico
+        ExQString.ui
 
+RC_ICONS += QT_win_32x32.ico
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES +=
