@@ -1,23 +1,23 @@
 # QtExamples
 
 <img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/img/20190818185031.png"/>
-
-                                                             　　　　　　　我也不知道为什么，就是想放这么一张图在这里。
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　我也不知道为什么，就是想放这么一张图在这里。
 
 
 
 ## 项目介绍：
 
-Qt5 各个控件使用的一个例子、以及一些底层原理或者技巧性的理解，即是自己所学记录，亦可以互相交流共享学习，**有朋自远方互联网而来，不亦说乎？** 
+　Qt5 各个控件使用的一个例子、以及一些底层原理或者技巧性的理解，即是自己所学记录，亦可以互相交流共享学习，**有朋自远方互联网而来，不亦说乎？** 
 
 
-　　刚大学毕业，大二开始正式(日以继夜的敲)学习c/c++路线知识，但今年已经的毕业，虽然学习过程中，距今学习qt知识，也有一年多了，中间有写一些比如[**中国象棋**](https://blog.csdn.net/qq_33154343/article/details/89284983)，**QQ**（的 [登录](https://blog.csdn.net/qq_33154343/article/details/80448144)/ [私聊](https://blog.csdn.net/qq_33154343/article/details/79341062)、[群聊](https://blog.csdn.net/qq_33154343/article/details/96437681)等功能），**但是却总是感觉有一种半路出家的学习qt的柑橘**，想着`c++`的知识还算学习的比较系统且完备(个人感觉)。一直在想要不要过的轻松点，把qt给**推到重来**，期间犹豫不定，工作的话，用到相关知识，再去百度谷歌一下，够用即可，后面或许会去学习其他部分的知识，qt也许只是一个过渡呢？但是写着写着，发现这个跨平台是真的好用，越发发现其设计的简洁、方便还带一种设计的美感，让我逐渐沉迷其中，近日想清楚了，**下定决心，还是推倒重来**，全过程的熟悉和了解的qt的所有相关，或许期间会比较辛苦(毕竟还附带同时维护两个blog和一个github)，但是我想着，以qt为媒介，学会使用、思想、架构设计、经验，或许会耗时一两年吧，倘若那个时候，这个系列也已经写完了的话，应该对这个也有一定的认知，到时候，再去接触，学习更高的平台和架构思想，应该会有较大的帮助。算是一个人生今后的一个短暂规划，学习不用急于求成而焦虑，自然水到渠成。
+
+　刚大学毕业，大二开始正式(日以继夜的敲)学习c/c++路线知识，但今年已经的毕业，虽然学习过程中，距今学习qt知识，也有一年多了，中间有写一些比如[**中国象棋**](https://blog.csdn.net/qq_33154343/article/details/89284983)，**QQ**（的 [登录](https://blog.csdn.net/qq_33154343/article/details/80448144)/ [私聊](https://blog.csdn.net/qq_33154343/article/details/79341062)、[群聊](https://blog.csdn.net/qq_33154343/article/details/96437681)等功能），**但是却总是感觉有一种半路出家的学习qt的柑橘**，想着`c++`的知识还算学习的比较系统且完备(个人感觉)。一直在想要不要过的轻松点，把qt给**推到重来**，期间犹豫不定，工作的话，用到相关知识，再去百度谷歌一下，够用即可，后面或许会去学习其他部分的知识，qt也许只是一个过渡呢？但是写着写着，发现这个跨平台是真的好用，越发发现其设计的简洁、方便还带一种设计的美感，让我逐渐沉迷其中，近日想清楚了，**下定决心，还是推倒重来**，全过程的熟悉和了解的qt的所有相关，或许期间会比较辛苦(毕竟还附带同时维护两个blog和一个github)，但是我想着，以qt为媒介，学会使用、思想、架构设计、经验，或许会耗时一两年吧，倘若那个时候，这个系列也已经写完了的话，应该对这个也有一定的认知，到时候，再去接触，学习更高的平台和架构思想，应该会有较大的帮助。算是一个人生今后的一个短暂规划，学习不用急于求成而焦虑，自然水到渠成。
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　2019-08-18
 
 ## 说明：
 
-　　会将该系列的源码，文章等系列，全部托管于这个仓库，该系列的主线任务只是讲解qt的相关文章，超出或者其他部分。
-
+　会将该系列的源码，文章等系列，全部托管于这个仓库，该系列的主线任务只是讲解qt的相关文章。
+ 
 <font color=#70AD47 size=4 face="幼圆">**开发环境：**</font>    `win10 x64 专业版 1803`   <font color=#70AD47 size=4 face="幼圆">**操作系统版本**</font>：`17134.829` 
 
 <font color=#70AD47 size=4 face="幼圆">**开发软件：** </font>  `Qt Creator 4.8.2 (Enterprise)` 、 `Qt 5.9.8`
@@ -91,10 +91,10 @@ Qt5 各个控件使用的一个例子、以及一些底层原理或者技巧性�
 
 ## 协议：
 
-<img src='https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709052645.png' width='127' height='51'/>
+<img src='https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709052148.jpg' width='240' height='https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709052153.jpg'/>
 
-<font color=#70AD47 size=4 face="幼圆">**touwoyimuli**</font> 博客代码基于GNU General Public License v3.0 协议进行分发和使用，更多信息参见[协议文件](/LICENSE)。
+<font color=#70AD47 size=4 face="幼圆">**touwoyimuli：** </font> 博客代码基于Apache License 2.0 协议进行分发和使用，更多信息参见[协议文件](/LICENSE)。
 
-<img src='https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709052632.png' width='145.77' height='51'/>
+<img src='https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709052153.jpg' width='127' height='127'/>
 
-<font color=#70AD47 size=4 face="幼圆">**touwoyimuli**</font> 所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
+<font color=#70AD47  size=4 face="幼圆">**touwoyimuli：** </font> 所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
