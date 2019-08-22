@@ -7,6 +7,7 @@ ExQSlider::ExQSlider(QWidget *parent) :
     ui(new Ui::ExQSlider)
 {
     ui->setupUi(this);
+	setWindowTitle(QObject::tr("QSlider的用法"));
 
     //设置QSlider的最大值为255  (默认范围为0~100)
     ui->sliderRed->setMaximum(255);

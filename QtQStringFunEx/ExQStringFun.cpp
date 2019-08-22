@@ -6,6 +6,8 @@ ExQStringFun::ExQStringFun(QWidget* parent) :
     ui(new Ui::ExQStringFun)
 {
     ui->setupUi(this);
+
+    setWindowTitle(QObject::tr("QString类的一些常用函数"));
 }
 
 ExQStringFun::~ExQStringFun()
