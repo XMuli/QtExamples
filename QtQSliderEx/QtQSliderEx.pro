@@ -33,6 +33,8 @@ HEADERS += \
 
 FORMS += \
         ExQSlider.ui
+		
+RC_ICONS += QT_win_32x32.ico
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
