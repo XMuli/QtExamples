@@ -26,10 +26,12 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        Examples.cpp
+        Examples.cpp \
+    ExCustomStyle.cpp
 
 HEADERS += \
-        Examples.h
+        Examples.h \
+    ExCustomStyle.h
 
 FORMS += \
         Examples.ui

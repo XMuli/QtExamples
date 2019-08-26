@@ -1,20 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Examples</class>
- <widget class="QWidget" name="Examples" >
-  <property name="geometry" >
+ <widget class="QWidget" name="Examples">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>1235</width>
+    <height>695</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>Examples</string>
   </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="tabPosition">
+      <enum>QTabWidget::South</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>滚动条</string>
+      </attribute>
+      <widget class="QScrollBar" name="scrollBarHor">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>280</y>
+         <width>531</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QScrollBar" name="scrollBarVer">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>40</y>
+         <width>31</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>60</y>
+         <width>431</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <row>
+        <property name="text">
+         <string>a</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>b</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>c</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>d</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>e</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>f</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>40</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Windows</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>New Item</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>WindowsXP</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>WindowsVista</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fusion</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ExCustomStyle</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Tab 2</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
