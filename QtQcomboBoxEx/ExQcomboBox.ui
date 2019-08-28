@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExQcomboBox</class>
+ <widget class="QWidget" name="ExQcomboBox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ExQcomboBox</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>简单地ComboBox（下拉列表框）：</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="btnLeftInit">
+          <property name="text">
+           <string>初始化列表</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="btnLeftClear">
+          <property name="text">
+           <string>清除列表</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QCheckBox" name="checkBoxOnlyWrite">
+          <property name="text">
+           <string>下拉框为可编辑</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="QComboBox" name="comBoxLeft">
+          <item>
+           <property name="text">
+            <string>默认的第一个item：投我以木李</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/images/github.ico</normaloff>:/images/github.ico</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>默认的第二个item：报之以琼玖</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/images/gril.ico</normaloff>:/images/gril.ico</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>github.io：https://touwoyimuli.github.io/</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string>复杂地ComboBox（项可存储自定义的数据内容）：</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="btnRightInit">
+          <property name="text">
+           <string>初始化姓名+年龄</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QComboBox" name="comBoxRight">
+          <item>
+           <property name="text">
+            <string>因为有Map，所以QComboBox显示会按照key排序，而非程序代码的定义顺序</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/images/gril.ico</normaloff>:/images/gril.ico</iconset>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>QPlainTextEdit（多行可编辑的富文本的编辑器）：</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="btnBottomAdd">
+          <property name="text">
+           <string>文本框内容添加到ComboBox</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnBottomClear">
+          <property name="text">
+           <string>清除文本内容</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBoxOnlyRead">
+          <property name="text">
+           <string>富文本的编辑器只可读</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEdit"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="labDisplay">
+        <property name="text">
+         <string>显示当前的Item项：</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
