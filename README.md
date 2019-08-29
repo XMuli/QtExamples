@@ -3,16 +3,18 @@
 <img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/img/20190818185031.png"/>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　我也不知道为什么，就是想放这么一张图在这里。
 
-
+<br>
 
 ## 项目介绍：
 
-　Qt5 各个控件使用的一个例子、以及一些底层原理或者技巧性的理解，即是自己所学记录，亦可以互相交流共享学习，**有朋自远方互联网而来，不亦说乎？** 
+　Qt5 各个控件使用的一个例子、以及一些底层原理或者技巧性的理解，即是自己所学记录，亦可以互相交流共享学习，**有朋自远方互联网而来，不亦说乎？**
 
 
 
 　刚大学毕业，大二开始正式(日以继夜的敲)学习c/c++路线知识，但今年已经的毕业，虽然学习过程中，距今学习qt知识，也有一年多了，中间有写一些比如[**中国象棋**](https://blog.csdn.net/qq_33154343/article/details/89284983)，**QQ**（的 [登录](https://blog.csdn.net/qq_33154343/article/details/80448144)/ [私聊](https://blog.csdn.net/qq_33154343/article/details/79341062)、[群聊](https://blog.csdn.net/qq_33154343/article/details/96437681)等功能），**但是却总是感觉有一种半路出家的学习qt的柑橘**，想着`c++`的知识还算学习的比较系统且完备(个人感觉)。一直在想要不要过的轻松点，把qt给**推到重来**，期间犹豫不定，工作的话，用到相关知识，再去百度谷歌一下，够用即可，后面或许会去学习其他部分的知识，qt也许只是一个过渡呢？但是写着写着，发现这个跨平台是真的好用，越发发现其设计的简洁、方便还带一种设计的美感，让我逐渐沉迷其中，近日想清楚了，**下定决心，还是推倒重来**，全过程的熟悉和了解的qt的所有相关，或许期间会比较辛苦(毕竟还附带同时维护两个blog和一个github)，但是我想着，以qt为媒介，学会使用、思想、架构设计、经验，或许会耗时一两年吧，倘若那个时候，这个系列也已经写完了的话，应该对这个也有一定的认知，到时候，再去接触，学习更高的平台和架构思想，应该会有较大的帮助。算是一个人生今后的一个短暂规划，学习不用急于求成而焦虑，自然水到渠成。
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　2019-08-18
+
+<br>
 
 ## 说明：
 
@@ -39,9 +41,13 @@
 - `Qt Creator` **IDE**的界面组成和使用讲解
 - 编写一个**qt**的第一个项目： `Hello World`的项目
 
+<br>
+
 ## 第二部分：qt生成原理/运行机制
 
 - [`make` `makefile` `cmake` `qmake`都是什么，有什么区别？](https://blog.csdn.net/qq_33154343/article/details/98170236) 
+
+<br>
 
 ## 第三部分：常用控件
 
@@ -60,7 +66,7 @@
 ## 第四部分：自定义风格样式QStyle
 
 - 自定义`QStyle`界面所有控件的风格，换肤效果的教程，自定义继承`QCommonStyle`的风格类【QtCustomStyleEx】
-- 预备知识：`QStyle`、`QCommonStyle`d等讲解
+- 预备知识：`QStyle`、`QCommonStyle`d等讲解  
 - [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://mp.csdn.net/mdeditor/100148539#) 
 
 <br>
@@ -84,17 +90,15 @@
 
 <br>
 
+## Qt推倒重学系列--总目录[【github.io】](https://touwoyimuli.github.io/):
 
+**github.io的同步总目录**：[WiKi](https://github.com/touwoyimuli/QtExamples/wiki/Qt%E6%8E%A8%E5%80%92%E9%87%8D%E5%AD%A6%E7%B3%BB%E5%88%97--%E6%80%BB%E7%9B%AE%E5%BD%95%E3%80%90github.io%E3%80%91) 
 
-## Qt推倒重学系列--总目录:
+<br>
 
-[github.io](https://touwoyimuli.github.io/)版本的**总目录**：
+## 如何编译：
 
-
-
-## 编译
-
-倘若自己的个人版本，不同于作者，且又编译运行屡次失败，**靠谱方法**：请重装系统之后，安装与我的同一版本，发开编程环境[qt-opensource-windows-x86-5.9.8.exe](http://download.qt.io/archive/qt/5.9/5.9.8/qt-opensource-windows-x86-5.9.8.exe)。 请使用下载**这一版本**5.9.8的`QtCreator`编译运行项目，可以保证运行成功  （使用Desktop Qt 5.9.8 MinGW 32 bit 直接编译运行）
+**编译方式:** [WiKi](https://github.com/touwoyimuli/QtExamples/wiki/%E5%A6%82%E4%BD%95%E7%BC%96%E8%AF%91)
 
 <br>
 
