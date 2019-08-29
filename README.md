@@ -17,7 +17,7 @@
 ## 说明：
 
 　会将该系列的源码，文章等系列，全部托管于这个仓库，该系列的主线任务只是讲解qt的相关文章。
- 
+
 <font color=#70AD47 size=4 face="幼圆">**开发环境：**</font>    `win10 x64 专业版 1803`   <font color=#70AD47 size=4 face="幼圆">**操作系统版本**</font>：`17134.829` 
 
 <font color=#70AD47 size=4 face="幼圆">**开发软件：** </font>  `Qt Creator 4.8.2 (Enterprise)` 、 `Qt 5.9.8`
@@ -39,15 +39,31 @@
 - `Qt Creator` **IDE**的界面组成和使用讲解
 - 编写一个**qt**的第一个项目： `Hello World`的项目
 
-
 ## 第二部分：qt生成原理/运行机制
 
 - [`make` `makefile` `cmake` `qmake`都是什么，有什么区别？](https://blog.csdn.net/qq_33154343/article/details/98170236) 
 
-
 ## 第三部分：常用控件
 
+- 一个默认的`Qt Widget`项目 【空】
+- 元对象系统`moc`(**Meat-Object System**)的对象`MetaObject`和(含动态)属性`Propert`的用法【QtMeatObjectEx】
+- 初识`QString`函数，用`QString`显示2/8/10/16进制互相转化 【QtQStringEx】
+- `QString`常用的功能函数的介绍和用法 【QtQStringFunEx】
+- `QSlider`的介绍和用法【QtQSliderEx】
+- `QSlider`移动条、`QScrollBar`滚动条、`QProgressBar`进度条控件的联动【QtQProgressBarEx】
+- `QSlider`仪表盘的用法【QtQdialQLCDEx】
+- 时间日期(`QTime`/`QDate`/`QDateTime`)和定时器(`QTimer`)的介绍和使用 【QtDateTimeEx】
+- `QComboBox`(下拉列表框)和`QPlainTextEdit`(多行富文本编辑器)的用法 【QtQcomboBoxEx】
 
+<br>
+
+## 第四部分：自定义风格样式QStyle
+
+- 自定义`QStyle`界面所有控件的风格，换肤效果的教程，自定义继承`QCommonStyle`的风格类【QtCustomStyleEx】
+- 预备知识：`QStyle`、`QCommonStyle`d等讲解
+- [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://mp.csdn.net/mdeditor/100148539#) 
+
+<br>
 
 ## 补充部分：补充较杂的知识点
 
@@ -60,16 +76,21 @@
 - [qt中文乱码问题](https://blog.csdn.net/qq_33154343/article/details/78686103)  
 - [借Qt中文乱码谈谈Coding中的编码问题](https://blog.csdn.net/qq_33154343/article/details/78686075) 
 
-
+<br>
 
 - [Qt5与Qt4的信号接收差异](https://blog.csdn.net/qq_33154343/article/details/79130732) 
-
 - `qt`的信号和槽关系
 - `qt`中Lam表达式
 
-### 
-
 <br>
+
+
+
+## Qt推倒重学系列--总目录:
+
+[github.io](https://touwoyimuli.github.io/)版本的**总目录**：
+
+
 
 ## 编译
 
@@ -78,8 +99,8 @@
 <br>
 
 ## 互助
-若是帮助到了你，可以点击该项目的的<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709023321.png" height="18" width="18"/>   **Star** 和<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709023317.png" height="18" width="18"/>  **Fork** 的两个图标，方便抬手之间，表示点个赞，手有余香
 
+若是帮助到了你，可以点击该项目的的<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709023321.png" height="18" width="18"/>   **Star** 和<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709023317.png" height="18" width="18"/>  **Fork** 的两个图标，方便抬手之间，表示点个赞，手有余香
 
 <br>
 

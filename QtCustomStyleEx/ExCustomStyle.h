@@ -3,6 +3,10 @@
 
 #include <QCommonStyle>
 
+#include "ExDefineGlobal.h"
+
+CUSTOMSTYLE_BEDGIN_NAMESPACE
+
 class ExCustomStyle : public QCommonStyle
 {
     Q_OBJECT
@@ -10,5 +14,7 @@ class ExCustomStyle : public QCommonStyle
 public:
     ExCustomStyle();
 };
+
+CUSTOMSTYLE_END_NAMESPACE
 
 #endif // EXCUSTOMSTYLE_H

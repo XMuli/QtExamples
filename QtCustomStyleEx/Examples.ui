@@ -26,141 +26,149 @@
       <attribute name="title">
        <string>滚动条</string>
       </attribute>
-      <widget class="QScrollBar" name="scrollBarHor">
+      <widget class="QWidget" name="gridLayoutWidget">
        <property name="geometry">
         <rect>
-         <x>30</x>
-         <y>280</y>
-         <width>531</width>
-         <height>31</height>
+         <x>10</x>
+         <y>10</y>
+         <width>441</width>
+         <height>251</height>
         </rect>
        </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-      <widget class="QScrollBar" name="scrollBarVer">
-       <property name="geometry">
-        <rect>
-         <x>540</x>
-         <y>40</y>
-         <width>31</width>
-         <height>191</height>
-        </rect>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-      </widget>
-      <widget class="QTableWidget" name="tableWidget">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>60</y>
-         <width>431</width>
-         <height>161</height>
-        </rect>
-       </property>
-       <row>
-        <property name="text">
-         <string>a</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>b</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>c</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>d</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>e</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>f</string>
-        </property>
-       </row>
-       <column>
-        <property name="text">
-         <string>1</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>2</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>3</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>4</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>5</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>6</string>
-        </property>
-       </column>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>200</height>
+           </size>
+          </property>
+          <row>
+           <property name="text">
+            <string>a</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>b</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>c</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>d</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>e</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>f</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>6</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QScrollBar" name="scrollBarHor">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2" rowspan="2">
+         <widget class="QScrollBar" name="scrollBarVer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QComboBox" name="comboBox">
        <property name="geometry">
         <rect>
-         <x>650</x>
-         <y>40</y>
-         <width>131</width>
-         <height>22</height>
+         <x>470</x>
+         <y>10</y>
+         <width>135</width>
+         <height>31</height>
         </rect>
        </property>
-       <item>
-        <property name="text">
-         <string>Windows</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>New Item</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>WindowsXP</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>WindowsVista</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Fusion</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>ExCustomStyle</string>
-        </property>
-       </item>
       </widget>
      </widget>
      <widget class="QWidget" name="tab_2">

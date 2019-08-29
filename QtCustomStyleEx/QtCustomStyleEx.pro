@@ -31,12 +31,13 @@ SOURCES += \
 
 HEADERS += \
         Examples.h \
-    ExCustomStyle.h
+    ExCustomStyle.h \
+    ExDefineGlobal.h
 
 FORMS += \
         Examples.ui
 
-RC_ICONS += QT_win_32x32.ico
+RC_ICONS += qt.ico
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

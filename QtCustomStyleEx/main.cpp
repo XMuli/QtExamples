@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    //使用系统或者自定义的风格
+//    //使用系统或者自定义的风格
 //    QStringList listStyle = QStyleFactory::keys();
 //    foreach(QString val, listStyle)
 //        qDebug()<<val<<"  ";
