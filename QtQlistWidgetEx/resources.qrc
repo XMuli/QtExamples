@@ -1,2 +1,16 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/">
+        <file>images/add.png</file>
+        <file>images/clear.png</file>
+        <file>images/delete.png</file>
+        <file>images/init.png</file>
+        <file>images/insert.png</file>
+        <file>images/List.png</file>
+        <file>images/Table.png</file>
+        <file>images/TREE.png</file>
+        <file>images/github.png</file>
+        <file>images/gril.png</file>
+        <file>images/exit.png</file>
+        <file>images/menu.png</file>
+    </qresource>
+</RCC>
