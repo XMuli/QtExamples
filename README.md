@@ -73,7 +73,15 @@
 
 ## 补充部分：补充较杂的知识点
 
-#### 乱码相关：
+### 使用Qt Creator的小技巧：
+
+- [小技巧：Design设计师里，无法拖拽action到toolbar里](https://blog.csdn.net/qq_33154343/article/details/100168170) 
+
+- [小技巧：设置`QToolBox`的每一页page的使用单独的布局（`QTabWidget`同理）](https://mp.csdn.net/mdeditor/100185025#) 
+
+<br>
+
+### 乱码相关：
 
 - [ 输出乱码原因：古文码、口字码、符号码、问号码、棍拷码](https://blog.csdn.net/qq_33154343/article/details/99617767) 
 - [qt5 中文乱码解决](https://blog.csdn.net/qq_33154343/article/details/95344312) 
@@ -90,9 +98,12 @@
 
 <br>
 
-## Qt推倒重学系列--总目录[【github.io】](https://touwoyimuli.github.io/):
+## 同步github.io博客：
 
-**github.io的同步总目录**：[WiKi](https://github.com/touwoyimuli/QtExamples/wiki/Qt%E6%8E%A8%E5%80%92%E9%87%8D%E5%AD%A6%E7%B3%BB%E5%88%97--%E6%80%BB%E7%9B%AE%E5%BD%95%E3%80%90github.io%E3%80%91) 
+- github.io的同步总目录：[WiKi](https://github.com/touwoyimuli/QtExamples/wiki/Qt%E6%8E%A8%E5%80%92%E9%87%8D%E5%AD%A6%E7%B3%BB%E5%88%97--%E6%80%BB%E7%9B%AE%E5%BD%95%E3%80%90github.io%E3%80%91) 
+
+
+- Qt Creator使用小技巧：[WiKi](https://github.com/touwoyimuli/QtExamples/wiki/Qt%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%B8%8B%E5%B0%8F%E6%8A%80%E5%B7%A7) 
 
 <br>
 
@@ -104,7 +115,7 @@
 
 ## 互助
 
-若是帮助到了你，可以点击该项目的的<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709023321.png" height="18" width="18"/>   **Star** 和<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709023317.png" height="18" width="18"/>  **Fork** 的两个图标，方便抬手之间，表示点个赞，手有余香
+若是帮助到了你，或者觉得有用，可以点击该项目的的<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709023321.png" height="18" width="18"/>   **Star** 和<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709023317.png" height="18" width="18"/>  **Fork** 的两个图标，方便抬手之间，表示点个赞，手有余香
 
 <br>
 
