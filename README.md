@@ -68,6 +68,8 @@
 - 自定义`QStyle`界面所有控件的风格，换肤效果的教程，自定义继承`QCommonStyle`的风格类【QtCustomStyleEx】
 - 预备知识：`QStyle`、`QCommonStyle`d等讲解  
 - [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://mp.csdn.net/mdeditor/100148539#) 
+- [`QStyle`自定义重绘`QSlider`控件](https://blog.csdn.net/qq_33154343/article/details/100545769) 
+- [QStyle自定义重绘QRubberBand控件](https://blog.csdn.net/qq_33154343/article/details/100588428) 
 
 <br>
 

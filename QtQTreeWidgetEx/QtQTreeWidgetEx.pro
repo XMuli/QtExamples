@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-08-30T19:39:47
+# Project created by QtCreator 2019-09-04T00:32:28
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = QtQListWidgetEx
+TARGET = QtQTreeWidgetEx
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -26,15 +26,15 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        ExQListWidget.cpp
+        ExQTreeWidget.cpp
 
 HEADERS += \
-        ExQListWidget.h
+        ExQTreeWidget.h
 
 FORMS += \
-        ExQListWidget.ui
+        ExQTreeWidget.ui
 
-#RC_ICONS += qt.ico
+RC_ICONS += qt.ico
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -43,4 +43,3 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     resources.qrc
-
