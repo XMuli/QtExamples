@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExQTableWidget</class>
+ <widget class="QMainWindow" name="ExQTableWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>911</width>
+    <height>478</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ExQTableWidget</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QSplitter" name="splitter_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>911</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>270</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QGroupBox" name="gridGroupBox">
+     <property name="minimumSize">
+      <size>
+       <width>270</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>320</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="spinBoxRow">
+        <property name="value">
+         <number>20</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="btnSetHeader">
+        <property name="text">
+         <string>设置表头</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="btnSetRow">
+        <property name="text">
+         <string>设置行数</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="btnAutoHeight">
+        <property name="text">
+         <string>自动调节表格的行高</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="btnAddRow">
+        <property name="text">
+         <string>添加行</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="btnInsertRow">
+        <property name="text">
+         <string>插入行</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="btnInitTable">
+        <property name="text">
+         <string>初始化表格</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="btnReadToEdit">
+        <property name="text">
+         <string>读取表格内容到文本</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="btnDelRow">
+        <property name="text">
+         <string>删除当前行</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QPushButton" name="btnAutoWidth">
+        <property name="text">
+         <string>自动调节表格的列高</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QGroupBox" name="groupBoxSelect">
+        <property name="title">
+         <string>选择：</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QRadioButton" name="radioBtnSelectItem">
+           <property name="text">
+            <string>单元格选择</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioBtnSelectRow">
+           <property name="text">
+            <string>行选择</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QGroupBox" name="groupBoxShow">
+        <property name="title">
+         <string>显示：</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QCheckBox" name="chkBoxHeadEdit">
+           <property name="text">
+            <string>表格可编辑模式</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="tristate">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkBoxRowColor">
+           <property name="text">
+            <string>间隔行底色</string>
+           </property>
+           <property name="tristate">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkBoxHeadRow">
+           <property name="text">
+            <string>显示行表头</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkBoxHeadCol">
+           <property name="text">
+            <string>显示列表头</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QSplitter" name="splitter">
+     <property name="minimumSize">
+      <size>
+       <width>600</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QTableWidget" name="tableWidget">
+      <row>
+       <property name="text">
+        <string>行0</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>行1</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>行2</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>行3</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>列0</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>列1</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>列2</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>列3</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>列4</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>（0, 0）</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>（0, 1）</string>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string>（0, 2）</string>
+       </property>
+      </item>
+      <item row="0" column="3">
+       <property name="text">
+        <string>（0, 3）</string>
+       </property>
+      </item>
+      <item row="0" column="4">
+       <property name="text">
+        <string>（0, 4）</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>（1, 0）</string>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>（1, 1）</string>
+       </property>
+      </item>
+      <item row="1" column="2">
+       <property name="text">
+        <string>（1, 2）</string>
+       </property>
+      </item>
+      <item row="1" column="3">
+       <property name="text">
+        <string>（1, 3）</string>
+       </property>
+      </item>
+      <item row="1" column="4">
+       <property name="text">
+        <string>（1, 4）</string>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>（2, 0）</string>
+       </property>
+      </item>
+      <item row="2" column="1">
+       <property name="text">
+        <string>（2, 1）</string>
+       </property>
+      </item>
+      <item row="2" column="2">
+       <property name="text">
+        <string>（2, 2）</string>
+       </property>
+      </item>
+      <item row="2" column="3">
+       <property name="text">
+        <string>（2, 3）</string>
+       </property>
+      </item>
+      <item row="2" column="4">
+       <property name="text">
+        <string>（2, 4）</string>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string>（3, 0）</string>
+       </property>
+      </item>
+      <item row="3" column="1">
+       <property name="text">
+        <string>（3, 1）</string>
+       </property>
+      </item>
+      <item row="3" column="2">
+       <property name="text">
+        <string>（3, 2）</string>
+       </property>
+      </item>
+      <item row="3" column="3">
+       <property name="text">
+        <string>（3, 3）</string>
+       </property>
+      </item>
+      <item row="3" column="4">
+       <property name="text">
+        <string>（3, 4）</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPlainTextEdit" name="plainTextEdit"/>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>911</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
