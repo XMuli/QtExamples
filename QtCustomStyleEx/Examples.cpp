@@ -30,7 +30,8 @@ void Examples::init()
 
     //设置一个默认的风格
     ui->comboBox->addItem("ExCustomStyle");
-    qApp->setStyle(QStyleFactory::create("Fusion"));
+//    qApp->setStyle(QStyleFactory::create("Fusion"));
+    qApp->setStyle(new ExCustomStyle());
 }
 
 
