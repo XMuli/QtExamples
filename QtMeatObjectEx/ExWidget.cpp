@@ -45,8 +45,8 @@ void ExWidget::onAgeChange(int val)
     ExPerson* person = qobject_cast<ExPerson *>(sender());    //类型投射
     QString name = person->property("name").toString();
     QString sex = person->property("sex").toString();
-    int age  = person->getAge();                              //通过接口函数，获得年龄
-                                                              //或使用 int age  = person->property("age").toInt();
+    int age  = person->getAge();                             //通过接口函数，获得年龄
+                                                             //或使用 int age  = person->property("age").toInt();
     ui->textEdit->appendPlainText(name+","+sex + QString::asprintf(",年龄=%d",age));
 }
 
@@ -54,7 +54,7 @@ void ExWidget::onSpinValChange(int val)
 {
     Q_UNUSED(val)
 
-    QSpinBox* spin = qobject_cast<QSpinBox *>(sender());    //类型投射
+    QSpinBox* spin = qobject_cast<QSpinBox *>(sender());     //类型投射
     if (spin->property("isBoy").toBool())
         m_boy->setAge(ui->spinBoy->value());
     else
