@@ -36,7 +36,7 @@ HEADERS += \
 FORMS += \
         ExWidget.ui
 		
-RC_ICONS += QT_win_32x32.ico
+RC_ICONS += qt.ico
 
 
 # Default rules for deployment.
