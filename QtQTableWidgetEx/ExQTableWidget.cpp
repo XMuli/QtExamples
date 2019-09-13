@@ -28,6 +28,7 @@ ExQTableWidget::~ExQTableWidget()
     delete ui;
 }
 
+//为某一行创建items
 void ExQTableWidget::createItemsARow(int row, QString name, QString sex, QDate birth, QString nation, int score, bool isAnime)
 {
     QTableWidgetItem* item = nullptr;
