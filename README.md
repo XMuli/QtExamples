@@ -55,7 +55,7 @@
 - 元对象系统`moc`(**Meat-Object System**)的对象`MetaObject`和(含动态)属性`Propert`的用法【QtMeatObjectEx】
 - [`QString`在2 ／8／10／16进制之间转换](https://blog.csdn.net/qq_33154343/article/details/100860030) 【QtQStringEx】
 - [`QString`常用的功能函数的介绍和用法](https://blog.csdn.net/qq_33154343/article/details/100860270) 【QtQStringFunEx】
-- `QSlider`和`QAbstractSlider`的介绍和用法【QtQSliderEx】
+- [`QSlider`和`QAbstractSlider`的介绍和用法](https://blog.csdn.net/qq_33154343/article/details/100944831)【QtQSliderEx】
 - `QSlider`移动条、`QScrollBar`滚动条、`QProgressBar`进度条控件的联动【QtQProgressBarEx】
 - `QSlider`仪表盘的用法【QtQdialQLCDEx】
 - 时间日期(`QTime`/`QDate`/`QDateTime`)和定时器(`QTimer`)的介绍和使用 【QtDateTimeEx】
