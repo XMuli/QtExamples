@@ -58,7 +58,7 @@
 - [`QSlider`和`QAbstractSlider`的介绍和用法](https://blog.csdn.net/qq_33154343/article/details/100944831)【QtQSliderEx】
 - [`QSlider`移动条、`QScrollBar`滚动条、`QProgressBar`进度条控件的联动](https://blog.csdn.net/qq_33154343/article/details/101003081)【QtQProgressBarEx】
 - [仪表盘`QSlider`和数值显示`QLCD_NUmber`的讲解和使用](https://blog.csdn.net/qq_33154343/article/details/101003115)【QtQdialQLCDEx】
-- 时间日期(`QTime`/`QDate`/`QDateTime`)和定时器(`QTimer`)的介绍和使用 【QtDateTimeEx】
+-  [时间日期(`QTime`/`QDate`/`QDateTime`)和定时器(`QTimer`)的介绍和使用](https://blog.csdn.net/qq_33154343/article/details/101040841)【QtDateTimeEx】
 - `QComboBox`(下拉列表框)和`QPlainTextEdit`(多行富文本编辑器)的用法 【QtQcomboBoxEx】
 - 列表控件QListWidget和工具按钮QToolButton的和用法【QtQListWidgetEx】
 - 【QtQTreeWidgetEx】
