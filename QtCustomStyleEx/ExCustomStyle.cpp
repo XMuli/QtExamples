@@ -16,7 +16,7 @@ void ExCustomStyle::drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOptio
 void ExCustomStyle::drawControl(QStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const
 {
         switch (element) {
-        //滚动条+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //滚动条-------------------------------------
         case CE_ScrollBarAddPage: {  //增加页(在滑槽)
             p->fillRect(opt->rect, Qt::green);
             break;
@@ -27,6 +27,7 @@ void ExCustomStyle::drawControl(QStyle::ControlElement element, const QStyleOpti
         }
         case CE_ScrollBarSlider: {  //滑块
             p->fillRect(opt->rect, Qt::red);
+//            p->setBrush();
             break;
         }
         case CE_ScrollBarAddLine: {  //增加按钮
