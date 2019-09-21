@@ -214,3 +214,9 @@ void ExQListWidget::on_listWidget_customContextMenuRequested(const QPoint &pos)
     menu->exec(QCursor::pos());                                            //在鼠标光标位置显示右键快捷菜单
     delete menu;                                                           //手工创建的指针必须手工删除
 }
+
+//退出
+void ExQListWidget::on_actExit_triggered()
+{
+    this->close();
+}

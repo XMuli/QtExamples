@@ -34,7 +34,7 @@ HEADERS += \
 FORMS += \
         ExQListWidget.ui
 
-#RC_ICONS += qt.ico
+RC_ICONS += qt.ico
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

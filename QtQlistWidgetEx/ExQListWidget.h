@@ -28,6 +28,7 @@ private slots:
     void on_actSelInvs_triggered();    //反选已筛选的item
     void on_listWidget_currentItemChanged(QListWidgetItem *current, QListWidgetItem *previous);   //显示当前item的变动
     void on_listWidget_customContextMenuRequested(const QPoint &pos);                             //ListWidget弹出鼠标右键菜单
+    void on_actExit_triggered();       //退出软件
 
 private:
     void setActionForToolBtn();        //创建cation和toolButton的关联
