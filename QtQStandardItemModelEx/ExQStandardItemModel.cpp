@@ -61,9 +61,17 @@ void ExQStandardItemModel::init(QStringList &list)
         tempList = aLineText.split(QRegExp("\\s+"), QString::SkipEmptyParts);//正则表达式中\s匹配任何空白字符，包括空格、制表符、换页符等等, 等价于[ \f\n\r\t\v]
 
         for ( j = 0; j < COLUMN - 1; j++) {                                     //设置前5列的item
+
+            if (j == 3) {
+                ExDelegate *itemDelegate = new ExDelegate();
+                ui->tableView->setItemDelegateForColumn(3, itemDelegate);
+            }
+
             item = new QStandardItem(tempList.at(j));
             m_model->setItem(i - 1, j, item);
         }
+
+
 
         item = new QStandardItem(tempList.at(j));                          //最后一列的item
         item->setCheckable(true);                                          //设置有检查框

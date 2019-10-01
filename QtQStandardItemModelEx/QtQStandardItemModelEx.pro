@@ -26,10 +26,12 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        ExQStandardItemModel.cpp
+        ExQStandardItemModel.cpp \
+    ExDelegate.cpp
 
 HEADERS += \
-        ExQStandardItemModel.h
+        ExQStandardItemModel.h \
+    ExDelegate.h
 
 FORMS += \
         ExQStandardItemModel.ui

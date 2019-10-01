@@ -6,6 +6,8 @@
 #include <QStandardItemModel>
 #include <QItemSelectionModel>
 
+#include "ExDelegate.h"
+
 namespace Ui {
 class ExQStandardItemModel;
 }
