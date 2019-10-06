@@ -10,7 +10,6 @@ ExCustomStyle::ExCustomStyle()
 void ExCustomStyle::drawPrimitive(const QStyle *style, ExCustomStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w)
 {
 //    DStyleHelper dstyle(style);
-
     switch (pe) {
 //    case value:
 //        break;
