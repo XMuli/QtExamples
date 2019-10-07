@@ -8,6 +8,7 @@ ExDlgSetHeaders::ExDlgSetHeaders(QWidget *parent) :
 {
     ui->setupUi(this);
     m_model = new QStringListModel(this);
+    ui->listView->setModel(m_model);
 }
 
 ExDlgSetHeaders::~ExDlgSetHeaders()

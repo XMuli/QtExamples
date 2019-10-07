@@ -8,13 +8,30 @@ ExCustomMainWin::ExCustomMainWin(QWidget *parent) :
     ui(new Ui::ExCustomMainWin)
 {
     ui->setupUi(this);
-    setWindowTitle(QObject::tr("自定义对话框的用法"));
+    setWindowTitle(QObject::tr("自定义和标准对话框的用法"));
 
     m_model = nullptr;
     m_dlglocate = nullptr;
     m_dlgSetHeaders = nullptr;
 
-    m_model = new QStandardItemModel(this);
+    m_model = new QStandardItemModel(10, 5, this);                       //创建数据模型
+    m_seleModel = new QItemSelectionModel(m_model);                      //Item选择模型
+    connect(m_seleModel, SIGNAL(currentChanged(QModelIndex,QModelIndex)), this,SLOT(on_currentChanged(QModelIndex,QModelIndex)));
+
+    ui->tableView->setModel(m_model);
+    ui->tableView->setSelectionModel(m_seleModel);
+
+    //创建状态栏组件
+    m_labCellPos = new QLabel("当前单元格：",this);
+    m_labCellPos->setMinimumWidth(180);
+    m_labCellPos->setAlignment(Qt::AlignHCenter);
+
+    m_labCellText = new QLabel("单元格内容：",this);
+    m_labCellText->setMinimumWidth(200);
+
+
+    ui->statusBar->addWidget(m_labCellPos);
+    ui->statusBar->addWidget(m_labCellText);
 }
 
 ExCustomMainWin::~ExCustomMainWin()
@@ -22,12 +39,25 @@ ExCustomMainWin::~ExCustomMainWin()
     delete ui;
 }
 
+//定位到单元格，并设置字符串
 void ExCustomMainWin::setACellText(int row, int col, QString text)
 {
     QModelIndex index = m_model->index(row, col);
     m_seleModel->clearSelection();
     m_seleModel->setCurrentIndex(index, QItemSelectionModel::Select);
-    m_model->setData(index, text, Qt::DisplayRole);
+    m_model->setData(index, text, Qt::DisplayRole);                    //设置单元格字符串
+}
+
+//设置actLocatee的enabled属性
+void ExCustomMainWin::setActLocateEnable(bool enable)
+{
+    ui->actLocate->setEnabled(enable);
+}
+
+//将ExDlgLocate指针设置为NULL
+void ExCustomMainWin::setDlgLocateNull()
+{
+    m_dlglocate = nullptr;
 }
 
 void ExCustomMainWin::on_actSetHeader_triggered()
@@ -88,4 +118,16 @@ void ExCustomMainWin::on_actLocate_triggered()
          m_dlglocate->setSpinValue(curIndex.row(), curIndex.column());
 
      m_dlglocate->show();
+}
+
+void ExCustomMainWin::on_currentChanged(const QModelIndex &current, const QModelIndex &previous)
+{
+    if (current.isValid()) {
+        //状态栏的显示
+        QStandardItem* item;
+        item = m_model->itemFromIndex(current);
+
+        m_labCellPos->setText(QString::asprintf("当前单元格：%d行，%d列", current.row(),current.column())); //显示模型索引的行和列号
+        m_labCellText->setText("单元格内容："+ item->text());              //显示item的文字内容
+    }
 }
