@@ -82,12 +82,13 @@ public:
     //静态static函数
     static void drawPrimitive(const QStyle *style, ExCustomStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w);
     static void drawControl(const QStyle *style, ExCustomStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w);
+    static int pixelMetric(const QStyle *style, QStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget);
     static QRect subElementRect(const QStyle *style, ExCustomStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget);
     static QSize sizeFromContents(const QStyle *style, ExCustomStyle::ContentsType ct, const QStyleOption *opt, const QSize &contentsSize, const QWidget *w);
     static QIcon standardIcon(const QStyle *style, ExCustomStyle::StandardPixmap standardIcon, const QStyleOption *option, const QWidget *widget);
 
 
-    //内联inline函数,然后自己选择是调用静态函数,还是重写的基类的函数
+    //内联inline函数,然后[自动选择]是调用静态函数,还是重写的基类的函数
     inline void drawPrimitive(ExCustomStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w) const;
     inline void drawControl(ExCustomStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const;
     inline QRect subElementRect(ExCustomStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget) const;

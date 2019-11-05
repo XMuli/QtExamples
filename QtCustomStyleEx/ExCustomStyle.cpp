@@ -20,71 +20,70 @@ void ExCustomStyle::drawPrimitive(const QStyle *style, ExCustomStyle::PrimitiveE
 
 void ExCustomStyle::drawControl(const QStyle *style, ExCustomStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w)
 {
-}
-
-QRect ExCustomStyle::subElementRect(const QStyle *style, ExCustomStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget)
-{
-    return QRect();
-}
-
-QSize ExCustomStyle::sizeFromContents(const QStyle *style, ExCustomStyle::ContentsType ct, const QStyleOption *opt, const QSize &contentsSize, const QWidget *w)
-{
-    return QSize();
-}
-
-QIcon ExCustomStyle::standardIcon(const QStyle *style, ExCustomStyle::StandardPixmap standardIcon, const QStyleOption *option, const QWidget *widget)
-{
-    return QIcon();
-}
-
-//内联inline的函数+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//实际上,只需要在实现处添加inline,声明出不需要写inline
-inline void ExCustomStyle::drawPrimitive(ExCustomStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w) const
-{
-    proxy()->drawPrimitive(static_cast<QStyle::PrimitiveElement>(pe), opt, p, w);
-}
-
-inline void ExCustomStyle::drawControl(ExCustomStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const
-{
-  proxy()->drawControl(static_cast<QStyle::ControlElement>(element), opt, p, w);
-}
-
-inline QRect ExCustomStyle::subElementRect(ExCustomStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget) const
-{
-    proxy()->subElementRect(static_cast<QStyle::SubElement>(subElement), option, widget);
-}
-
-<<<<<<< Updated upstream
-//静态static的函数+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-void ExCustomStyle::drawPrimitive(const QStyle *style, ExCustomStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w)
-{
-//    DStyleHelper dstyle(style);
-
-    switch (pe) {
-//    case value:
+    switch (element) {
+//    case CE_IconButton:
 //        break;
     default:
         break;
     }
 }
 
-void ExCustomStyle::drawControl(const QStyle *style, ExCustomStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w)
+int ExCustomStyle::pixelMetric(const QStyle *style, QStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget)
 {
+    //全部都是return 一个数值
+    //    DStyleHelper dstyle(style);
+    switch (metric) {
+    case PM_FrameRadius:
+
+        return 8;
+    default:
+        return -1;
+    }
 }
 
 QRect ExCustomStyle::subElementRect(const QStyle *style, ExCustomStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget)
 {
-    return QRect();
+    switch (subElement) {
+//    case SE_SwitchButtonGroove: {
+//        return option->rect;
+//    }
+    default:
+        return QRect(-1, -1, -1, -1);
+    }
 }
 
 QSize ExCustomStyle::sizeFromContents(const QStyle *style, ExCustomStyle::ContentsType ct, const QStyleOption *opt, const QSize &contentsSize, const QWidget *w)
 {
-    return QSize();
+    switch (ct) {
+//    case CT_ButtonBoxButton: {
+//        QSize size(100, 100);
+//        return size;
+//    }
+    default:
+        return contentsSize;
+    }
 }
 
 QIcon ExCustomStyle::standardIcon(const QStyle *style, ExCustomStyle::StandardPixmap standardIcon, const QStyleOption *option, const QWidget *widget)
 {
-    return QIcon();
+    //使用宏, 来表示方便和快捷
+    #define CASE_ICON(Value) \
+        case SP_##Value: { \
+            DStyledIconEngine *icon_engine = new DStyledIconEngine(DDrawUtils::draw##Value, QStringLiteral(#Value)); \
+            return QIcon(icon_engine); }
+
+    switch (standardIcon) {
+//    CASE_ICON(ForkElement)
+//    CASE_ICON(DecreaseElement)
+//    CASE_ICON(IncreaseElement)
+//    CASE_ICON(MarkElement)
+//    case SP_EditElement:
+//        return QIcon::fromTheme("edit");
+//    case SP_MediaVolumeLowElement:
+//        return QIcon::fromTheme("volume_low");
+    default:
+        return QIcon();
+    }
 }
 
 //内联inline的函数+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -104,8 +103,6 @@ inline QRect ExCustomStyle::subElementRect(ExCustomStyle::SubElement subElement,
     proxy()->subElementRect(static_cast<QStyle::SubElement>(subElement), option, widget);
 }
 
-=======
->>>>>>> Stashed changes
 inline int ExCustomStyle::pixelMetric(ExCustomStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget) const
 {
     proxy()->pixelMetric(static_cast<QStyle::PixelMetric>(metric), option, widget);
