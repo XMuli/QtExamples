@@ -1,6 +1,6 @@
-# QtExamples
+# QtExamples:
 
-<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/img/20190818185031.png"/>
+<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/blog-imange/img/20190818185031.png"/>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　我也不知道为什么，就是想放这么一张图在这里。
 
 <br>
@@ -141,10 +141,10 @@
 
 ## 协议：
 
-<img src='https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709052148.jpg' width='240' height='https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709052153.jpg'/>
+<img src='https://raw.githubusercontent.com/touwoyimuli/FigureBed/blog-imange/img/20190709052148.jpg' width='240' height='127'/>
 
 <font color=#70AD47 size=4 face="幼圆">**touwoyimuli：** </font> 博客代码基于Apache License 2.0 协议进行分发和使用，更多信息参见[协议文件](/LICENSE)。
 
-<img src='https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709052153.jpg' width='127' height='127'/>
+<img src='https://raw.githubusercontent.com/touwoyimuli/FigureBed/blog-imange/img/20190709052153.jpg' width='127' height='127'/>
 
 <font color=#70AD47  size=4 face="幼圆">**touwoyimuli：** </font> 所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
