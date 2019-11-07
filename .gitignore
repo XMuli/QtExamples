@@ -33,3 +33,6 @@
 
 /noUpdate/
 *.pro.user
+./.DS_Store
+*/.DS_Store
+build-*/
