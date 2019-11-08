@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExMainWindow</class>
+ <widget class="QMainWindow" name="ExMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QMdiArea" name="mdiArea">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>70</y>
+      <width>561</width>
+      <height>321</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actNew"/>
+   <addaction name="actOpen"/>
+   <addaction name="separator"/>
+   <addaction name="actFont"/>
+   <addaction name="actCopy"/>
+   <addaction name="actCut"/>
+   <addaction name="actPaste"/>
+   <addaction name="separator"/>
+   <addaction name="actView"/>
+   <addaction name="actCascade"/>
+   <addaction name="actTile"/>
+   <addaction name="actClose"/>
+   <addaction name="separator"/>
+   <addaction name="actQuit"/>
+  </widget>
+  <action name="actOpen">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/6.jpg</normaloff>:/images/6.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actQuit">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/7.png</normaloff>:/images/7.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出程序</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actNew">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/8.png</normaloff>:/images/8.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建</string>
+   </property>
+   <property name="toolTip">
+    <string>新建文档</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actFont">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/10.png</normaloff>:/images/10.png</iconset>
+   </property>
+   <property name="text">
+    <string>字体</string>
+   </property>
+   <property name="toolTip">
+    <string>设置字体</string>
+   </property>
+  </action>
+  <action name="actCut">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/11.png</normaloff>:/images/11.png</iconset>
+   </property>
+   <property name="text">
+    <string>剪切</string>
+   </property>
+   <property name="toolTip">
+    <string>剪切文本</string>
+   </property>
+  </action>
+  <action name="actCopy">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/12.png</normaloff>:/images/12.png</iconset>
+   </property>
+   <property name="text">
+    <string>拷贝</string>
+   </property>
+   <property name="toolTip">
+    <string>拷贝文本</string>
+   </property>
+  </action>
+  <action name="actPaste">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/5.png</normaloff>:/images/5.png</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+   <property name="toolTip">
+    <string>粘贴文本</string>
+   </property>
+  </action>
+  <action name="actView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/4.png</normaloff>:/images/4.png</iconset>
+   </property>
+   <property name="text">
+    <string>MDI模式</string>
+   </property>
+   <property name="toolTip">
+    <string>页面模式</string>
+   </property>
+  </action>
+  <action name="actCascade">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/2.png</normaloff>:/images/2.png</iconset>
+   </property>
+   <property name="text">
+    <string>级联展开</string>
+   </property>
+   <property name="toolTip">
+    <string>窗口级联展开</string>
+   </property>
+  </action>
+  <action name="actTile">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/1.png</normaloff>:/images/1.png</iconset>
+   </property>
+   <property name="text">
+    <string>平铺展开</string>
+   </property>
+   <property name="toolTip">
+    <string>窗口平铺展开</string>
+   </property>
+  </action>
+  <action name="actClose">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/13.jpg</normaloff>:/images/13.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>关闭全部</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭全部窗口</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

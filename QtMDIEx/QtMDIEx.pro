@@ -26,15 +26,21 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        ExMDI.cpp
+        ExMDI.cpp \
+    ExMainWindow.cpp
 
 HEADERS += \
-        ExMDI.h
+        ExMDI.h \
+    ExMainWindow.h
 
 FORMS += \
-        ExMDI.ui
+        ExMDI.ui \
+    ExMainWindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resources.qrc

@@ -19,45 +19,37 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://touwoyimuli.github.io/>.
  */
-#ifndef EXMDI_H
-#define EXMDI_H
+#ifndef EXMAINWINDOW_H
+#define EXMAINWINDOW_H
 
-#include <QWidget>
-#include <QTextStream>
-#include <QFileInfo>
-#include <QFontDialog>
-#include <QFile>
-#include <QIODevice>
-#include <QIcon>
+#include <QMainWindow>
+#include <QCloseEvent>
+#include <QDir>
+#include <QFileDialog>
+#include <QMdiSubWindow>
+
+#include "ExMDI.h"
 
 namespace Ui {
-class ExMDI;
+class ExMainWindow;
 }
 
-class ExMDI : public QWidget
+class ExMainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit ExMDI(QWidget *parent = nullptr);
-    ~ExMDI();
+    explicit ExMainWindow(QWidget *parent = nullptr);
+    ~ExMainWindow();
 
-    void loadFromFile(QString& fileName);  //打开文件
-    QString currentFileName();             //返回当前文件名
-    bool isFileOpended();                  //文件已经打开
-
-    void setEditFont();
-    void textCut();
-    void textCopy();
-    void textPaste();
-
+private slots:
+    void on_actOpen_triggered();
 
 private:
-    Ui::ExMDI *ui;
+    void closeEvent(QCloseEvent *e);   //主窗口关闭时关闭所有子窗口
 
-    QString m_currentFile;  //当前文件
-    bool    m_fileOpened;   //true 打开；false 未打开
+private:
+    Ui::ExMainWindow *ui;
 };
 
-#endif // EXMDI_H
-;
+#endif // EXMAINWINDOW_H
