@@ -75,3 +75,74 @@ void ExMainWindow::on_actOpen_triggered()
     ui->actPaste->setEnabled(true);
     ui->actFont->setEnabled(true);
 }
+
+void ExMainWindow::on_actQuit_triggered()
+{
+    close();
+}
+
+void ExMainWindow::on_actNew_triggered()
+{
+    ExMDI *mdi = new ExMDI(this);
+    ui->mdiArea->addSubWindow(mdi);   //添加一个子窗口MDI
+    mdi->show();
+
+    ui->actCopy->setEnabled(true);
+    ui->actCut->setEnabled(true);
+    ui->actPaste->setEnabled(true);
+    ui->actFont->setEnabled(true);
+}
+
+void ExMainWindow::on_actFont_triggered()
+{
+     ExMDI* mdi = (ExMDI *)ui->mdiArea->activeSubWindow()->widget();
+     mdi->setEditFont();  //设置编写的字体文档
+}
+
+void ExMainWindow::on_actCut_triggered()
+{
+    ExMDI* mdi = (ExMDI *)ui->mdiArea->activeSubWindow()->widget();
+    mdi->textCut();
+}
+
+void ExMainWindow::on_actCopy_triggered()
+{
+    ExMDI* mdi = (ExMDI *)ui->mdiArea->activeSubWindow()->widget();
+    mdi->textCopy();
+}
+
+void ExMainWindow::on_actPaste_triggered()
+{
+    ExMDI* mdi = (ExMDI *)ui->mdiArea->activeSubWindow()->widget();
+    mdi->textPaste();
+}
+
+void ExMainWindow::on_actView_triggered(bool checked)   //MDI 模式设置
+{
+    if (checked) {  //Tab多页显示模式
+        ui->mdiArea->setViewMode(QMdiArea::TabbedView);
+        ui->mdiArea->setTabsClosable(true);  //页面可以关闭
+        ui->actCascade->setEnabled(false);
+        ui->actTile->setEnabled(false);
+    } else {
+        ui->mdiArea->setViewMode(QMdiArea::SubWindowView);  //子窗口模式
+        ui->actCascade->setEnabled(true);
+        ui->actTile->setEnabled(true);
+    }
+
+}
+
+void ExMainWindow::on_actCascade_triggered()
+{
+    ui->mdiArea->cascadeSubWindows();   //窗口级联展开
+}
+
+void ExMainWindow::on_actTile_triggered()
+{
+    ui->mdiArea->tileSubWindows();  //平铺展开
+}
+
+void ExMainWindow::on_actClose_triggered()
+{
+    ui->mdiArea->closeAllSubWindows();  //关闭全部子窗口
+}
