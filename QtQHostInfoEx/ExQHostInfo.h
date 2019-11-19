@@ -22,16 +22,13 @@ private:
     QString protocolName(QAbstractSocket::NetworkLayerProtocol protocol);  //通过协议类型返回协议名称
 
 private slots:
-    void on_btnGetHostInfo_clicked();
-    void on_btnAllAddresses_clicked();
-    void on_btnAllInterfaces_clicked();
-    void on_btnFindIP_clicked();
-    void on_btnClean_clicked();
+    void on_btnGetHostInfo_clicked();    //QHostInfo查询主机名和IP
+    void on_btnAllAddresses_clicked();   //QNetworkInterface::allAddresses()
+    void on_btnAllInterfaces_clicked();  //QNetworkInterface::allInterfaces()
+    void on_btnFindIP_clicked();         //QHostInfo查询左侧域名IP地址
+    void on_btnClean_clicked();          //清空文本框信息
 
-    void onLookedUpHostInfo(const QHostInfo& host);
-
-
-
+    void onLookedUpHostInfo(const QHostInfo& host);  //查询主机信息的槽函数
 
 private:
     Ui::ExQHostInfo *ui;

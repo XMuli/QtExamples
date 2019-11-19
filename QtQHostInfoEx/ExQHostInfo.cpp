@@ -33,20 +33,78 @@ QString ExQHostInfo::protocolName(QAbstractSocket::NetworkLayerProtocol protocol
     }
 }
 
-
+//QHostInfo 获取主机信息
 void ExQHostInfo::on_btnGetHostInfo_clicked()
 {
+    QString hostName = QHostInfo::localHostName();
+    ui->plainTextEdit->appendPlainText("本地主机名称:" + hostName + "\n");
 
+    QHostInfo hostInfo = QHostInfo::fromName(hostName);
+    QList<QHostAddress> list = hostInfo.addresses();
+
+    if (list.isEmpty())
+        return;
+
+    foreach (QHostAddress var, list) {
+        bool bIPv4 = ui->checkBox->isChecked();
+
+        if (bIPv4) {   //只显示 IPv4
+            bIPv4 = QAbstractSocket::IPv4Protocol == var.protocol();
+        } else {
+            bIPv4 = true;   //显示 IPv4 和 IPv6
+        }
+
+        if (bIPv4) {
+            ui->plainTextEdit->appendPlainText("协议：" + protocolName(var.protocol()));
+            ui->plainTextEdit->appendPlainText("本机IP地址" + var.toString() + "\n");
+        }
+    }
 }
 
 void ExQHostInfo::on_btnAllAddresses_clicked()
 {
+    QList<QHostAddress> list = QNetworkInterface::allAddresses();
 
+    if (list.isEmpty())
+        return;
+
+    foreach (QHostAddress var, list) {
+        bool bIPv4 = ui->checkBox->isChecked();
+
+        if (bIPv4) {   //只显示 IPv4
+            bIPv4 = QAbstractSocket::IPv4Protocol == var.protocol();
+        } else {
+            bIPv4 = true;   //显示 IPv4 和 IPv6
+        }
+
+        if (bIPv4) {
+            ui->plainTextEdit->appendPlainText("协议：" + protocolName(var.protocol()));
+            ui->plainTextEdit->appendPlainText("本机IP地址" + var.toString() + "\n");
+        }
+    }
 }
 
 void ExQHostInfo::on_btnAllInterfaces_clicked()
 {
+    QList<QNetworkInterface> list = QNetworkInterface::allInterfaces();
 
+    if (list.isEmpty())
+        return;
+
+    foreach (QNetworkInterface var, list) {
+        if (!var.isValid())
+            continue;
+
+        ui->plainTextEdit->appendPlainText("设备名称：" + var.humanReadableName());
+        ui->plainTextEdit->appendPlainText("硬件地址：" + var.hardwareAddress());
+
+        QList<QNetworkAddressEntry> entry = var.addressEntries();
+        foreach (QNetworkAddressEntry ent, entry) {
+            ui->plainTextEdit->appendPlainText("  IP 地址：" + ent.ip().toString());
+            ui->plainTextEdit->appendPlainText("  子网掩码：" + ent.netmask().toString());
+            ui->plainTextEdit->appendPlainText("  子网广播：" + ent.broadcast().toString() + "\n");
+        }
+    }
 }
 
 void ExQHostInfo::on_btnFindIP_clicked()
@@ -73,17 +131,16 @@ void ExQHostInfo::onLookedUpHostInfo(const QHostInfo &host)
         QHostAddress host = list.at(i);
         bool bIpv4 = ui->checkBox->isChecked();  //只显示IPv4
 
-        if (bIpv4) {
+        if (bIpv4) {   //只显示 IPv4
             bIpv4 = QAbstractSocket::IPv4Protocol == host.protocol();
         } else {
-            bIpv4 = false;
+            bIpv4 = true;   //显示 IPv4 和 IPv6
         }
 
         if (bIpv4) {
             ui->plainTextEdit->appendPlainText("协议：" + protocolName(host.protocol()));
             ui->plainTextEdit->appendPlainText(host.toString());
         }
-
     }
 }
 
