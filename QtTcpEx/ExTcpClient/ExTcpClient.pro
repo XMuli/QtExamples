@@ -34,7 +34,25 @@ HEADERS += \
 FORMS += \
         ExTcpClient.ui
 
+macx {
+ICON = images/icon.icns
+}
+
+unix:!macx{
+# linux only
+}
+
+win32 {
+RC_ICONS = images/icon.ico
+}
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    images/Image2.jpg \
+    images/Image1.png \
+    images/Image4.png \
+    images/Image5.png
