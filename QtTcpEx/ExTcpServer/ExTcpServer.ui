@@ -102,15 +102,81 @@
    </property>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonFollowStyle</enum>
+   </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actStart"/>
+   <addaction name="actStop"/>
+   <addaction name="actClear"/>
+   <addaction name="actQuit"/>
   </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actStart">
+   <property name="icon">
+    <iconset resource="images/resources.qrc">
+     <normaloff>:/Image6.png</normaloff>:/Image6.png</iconset>
+   </property>
+   <property name="text">
+    <string>开始监听</string>
+   </property>
+   <property name="toolTip">
+    <string>开始监听</string>
+   </property>
+  </action>
+  <action name="actStop">
+   <property name="icon">
+    <iconset resource="images/resources.qrc">
+     <normaloff>:/Image3.png</normaloff>:/Image3.png</iconset>
+   </property>
+   <property name="text">
+    <string>停止监听</string>
+   </property>
+   <property name="toolTip">
+    <string>停止监听</string>
+   </property>
+  </action>
+  <action name="actClear">
+   <property name="icon">
+    <iconset resource="images/resources.qrc">
+     <normaloff>:/Image1.png</normaloff>:/Image1.png</iconset>
+   </property>
+   <property name="text">
+    <string>清除</string>
+   </property>
+   <property name="toolTip">
+    <string>清除文本</string>
+   </property>
+  </action>
+  <action name="actQuit">
+   <property name="icon">
+    <iconset resource="images/resources.qrc">
+     <normaloff>:/Image2.jpg</normaloff>:/Image2.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出程序</string>
+   </property>
+  </action>
+  <action name="actHostInfo">
+   <property name="text">
+    <string>本机地址</string>
+   </property>
+   <property name="toolTip">
+    <string>获取本机地址</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="images/resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
