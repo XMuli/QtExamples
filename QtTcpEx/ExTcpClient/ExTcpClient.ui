@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>561</width>
+    <height>353</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -81,7 +81,7 @@
        <widget class="QLineEdit" name="lineEdit"/>
       </item>
       <item>
-       <widget class="QPushButton" name="btnSenf">
+       <widget class="QPushButton" name="btnSend">
         <property name="text">
          <string>发送</string>
         </property>
@@ -96,7 +96,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>561</width>
      <height>25</height>
     </rect>
    </property>
@@ -108,9 +108,63 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actConnect"/>
+   <addaction name="actDisconnect"/>
+   <addaction name="actClear"/>
+   <addaction name="actQuit"/>
   </widget>
+  <action name="actConnect">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/Image4.png</normaloff>:/images/Image4.png</iconset>
+   </property>
+   <property name="text">
+    <string>请求连接</string>
+   </property>
+   <property name="toolTip">
+    <string>请求连接到服务器</string>
+   </property>
+  </action>
+  <action name="actDisconnect">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/Image5.png</normaloff>:/images/Image5.png</iconset>
+   </property>
+   <property name="text">
+    <string>断开连接</string>
+   </property>
+   <property name="toolTip">
+    <string>断开与服务器的连接</string>
+   </property>
+  </action>
+  <action name="actClear">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/Image1.png</normaloff>:/images/Image1.png</iconset>
+   </property>
+   <property name="text">
+    <string>清空</string>
+   </property>
+   <property name="toolTip">
+    <string>清空编辑框文本</string>
+   </property>
+  </action>
+  <action name="actQuit">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/Image2.jpg</normaloff>:/images/Image2.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出程序</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
