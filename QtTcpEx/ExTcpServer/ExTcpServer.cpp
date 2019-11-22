@@ -6,11 +6,46 @@ ExTcpServer::ExTcpServer(QWidget *parent) :
     ui(new Ui::ExTcpServer)
 {
     ui->setupUi(this);
+
+    m_labListen = new QLabel("监听状态：");
+    m_labSocket = new QLabel("socket状态：");
+    m_labListen->setMidLineWidth(200);
+    m_labSocket->setMinimumWidth(200);
+    ui->statusBar->addWidget(m_labListen);
+    ui->statusBar->addWidget(m_labSocket);
+
+    QString localeIp = getLocalIp();
+    setWindowTitle(windowTitle() + "---IP地址：" + localeIp);
+    ui->comboBox->addItem(localeIp);
+
+    m_tcpServer = new QTcpServer(this);
+    connect(m_tcpServer, SIGNAL(newConnection()), this, SLOT(onNewConnection()));
 }
 
 ExTcpServer::~ExTcpServer()
 {
     delete ui;
+}
+
+QString ExTcpServer::getLocalIp()
+{
+    QString hostName = QHostInfo::localHostName();
+    QHostInfo hostInfo = QHostInfo::fromName(hostName);
+    QString locaIp;
+
+    QList<QHostAddress> list = hostInfo.addresses();
+
+    if (list.empty())
+        return "null QString";
+
+    foreach (QHostAddress addr, list) {
+        if (addr.protocol() == QAbstractSocket::IPv4Protocol) {
+            locaIp = addr.toString();
+            break;
+        }
+    }
+
+    return locaIp;
 }
 
 void ExTcpServer::closeEvent(QCloseEvent *event)   //关闭窗口时候停止监听
@@ -60,35 +95,21 @@ void ExTcpServer::on_actQuit_triggered()
 
 void ExTcpServer::on_btnSend_clicked()
 {
+    QString msg = ui->lineEdit->text();
+    ui->plainTextEdit->appendPlainText("[out]" + msg);
+    ui->lineEdit->clear();
+    ui->plainTextEdit->hasFocus();
 
+    QByteArray str = msg.toUtf8();
+    str.append('\n');
+    m_tcpSocket->write(str);
 }
 
-
-
-void ExTcpServer::on_actHostInfo_triggered()
+void ExTcpServer::onSocketReadyRead()     //读取缓冲区行文本
 {
-    QString hostName = QHostInfo::localHostName();
-    QHostInfo hostInfo = QHostInfo::fromName(hostName);
-    ui->plainTextEdit->appendPlainText("本机主机名：" + hostName);
-
-    QList<QHostAddress> list = hostInfo.addresses();
-
-    if (list.empty())
-        return;
-
-    foreach (QHostAddress addr, list) {
-        if (addr.protocol() == QAbstractSocket::IPv4Protocol) {
-            ui->plainTextEdit->appendPlainText("本机 IP 地址：" + addr.toString());
-
-            if (ui->comboBox->findText(addr.toString()) < 0)  //下拉列表没有的就添加进去
-                ui->comboBox->addItem(addr.toString());
-        }
+    while (m_tcpSocket->canReadLine()) {
+        ui->plainTextEdit->appendPlainText("[in]" + m_tcpSocket->readLine());
     }
-}
-
-void ExTcpServer::onSocketReadyRead()
-{
-
 }
 
 void ExTcpServer::onClientConnected()    //客户端连接时
@@ -103,3 +124,46 @@ void ExTcpServer::onClientDisonnected()  //客户端断开连接时
     ui->plainTextEdit->appendPlainText("客户端套接字断开");
     m_tcpSocket->deleteLater();
 }
+
+void ExTcpServer::onNewConnection()
+{
+    m_tcpSocket = m_tcpServer->nextPendingConnection();   //创建 socket
+
+    connect(m_tcpSocket, SIGNAL(connected()), this, SLOT(onClientConnected()));
+    onClientConnected();   //本函数有写
+    connect(m_tcpSocket, SIGNAL(disconnected()), this, SLOT(onClientDisonnected()));
+    connect(m_tcpSocket, SIGNAL(stateChanged(QAbstractSocket::SocketState)), this, SLOT(onSocketStateChange(QAbstractSocket::SocketState)));
+    onSocketStateChange(m_tcpSocket->state());  //本函数也有写  后面尝试删除此两行， 看看或不会有异常
+    connect(m_tcpSocket, SIGNAL(readyRead()), this, SLOT(onSocketReadyRead()));
+}
+
+void ExTcpServer::onSocketStateChange(QAbstractSocket::SocketState socketState)
+{
+    switch (socketState) {
+    case QAbstractSocket::UnconnectedState:
+        m_labSocket->setText("socket状态：UnconnectedState");
+        break;
+    case QAbstractSocket::HostLookupState:
+        m_labSocket->setText("socket状态：HostLookupState");
+        break;
+    case QAbstractSocket::ConnectingState:
+        m_labSocket->setText("socket状态：ConnectingState");
+        break;
+    case QAbstractSocket::ConnectedState:
+        m_labSocket->setText("socket状态：ConnectedState");
+        break;
+    case QAbstractSocket::BoundState:
+        m_labSocket->setText("socket状态：BoundState");
+        break;
+    case QAbstractSocket::ClosingState:
+        m_labSocket->setText("socket状态：ClosingState");
+        break;
+    case QAbstractSocket::ListeningState:
+        m_labSocket->setText("socket状态：ListeningState");
+        break;
+    default:
+        m_labSocket->setText("socket状态：其他未知状态...");
+        break;
+    }
+}
+

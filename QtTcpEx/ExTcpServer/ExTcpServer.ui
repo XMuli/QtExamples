@@ -81,7 +81,7 @@
        <widget class="QLineEdit" name="lineEdit"/>
       </item>
       <item>
-       <widget class="QPushButton" name="btnSenf">
+       <widget class="QPushButton" name="btnSend">
         <property name="text">
          <string>发送</string>
         </property>
@@ -163,14 +163,6 @@
    </property>
    <property name="toolTip">
     <string>退出程序</string>
-   </property>
-  </action>
-  <action name="actHostInfo">
-   <property name="text">
-    <string>本机地址</string>
-   </property>
-   <property name="toolTip">
-    <string>获取本机地址</string>
    </property>
   </action>
  </widget>
