@@ -21,6 +21,8 @@ public:
 private:
     QString getLocalIp();                  //获取本本机 IP
 
+protected:
+    void closeEvent(QCloseEvent *event);
 
 private slots:
     //UI 定义的槽函数
@@ -28,6 +30,13 @@ private slots:
     void on_actDisconnect_triggered();  //断开与服务器的连接
     void on_actClear_triggered();       //清除内容
     void on_actQuit_triggered();        //退出程序
+    void on_btnSend_clicked();          //发送文本消息
+
+    //自定义的槽函数
+    void onConnected();
+    void onDisconnected();
+    void onSocketReadyRead();           //从socket读取传入的数据
+    void onSocketStateChange(QAbstractSocket::SocketState socketState);
 
 private:
     Ui::ExTcpClient *ui;

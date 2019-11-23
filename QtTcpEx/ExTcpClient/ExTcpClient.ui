@@ -113,6 +113,7 @@
    <addaction name="actClear"/>
    <addaction name="actQuit"/>
   </widget>
+  <widget class="QStatusBar" name="statusBar"/>
   <action name="actConnect">
    <property name="icon">
     <iconset resource="resource.qrc">

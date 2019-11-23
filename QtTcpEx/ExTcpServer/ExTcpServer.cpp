@@ -31,6 +31,7 @@ QString ExTcpServer::getLocalIp()
 {
     QString hostName = QHostInfo::localHostName();
     QHostInfo hostInfo = QHostInfo::fromName(hostName);
+    ui->plainTextEdit->appendPlainText("本机名称：" + hostName);
     QString locaIp;
 
     QList<QHostAddress> list = hostInfo.addresses();
@@ -96,7 +97,7 @@ void ExTcpServer::on_actQuit_triggered()
 void ExTcpServer::on_btnSend_clicked()
 {
     QString msg = ui->lineEdit->text();
-    ui->plainTextEdit->appendPlainText("[out]" + msg);
+    ui->plainTextEdit->appendPlainText("[服务器:]" + msg);
     ui->lineEdit->clear();
     ui->plainTextEdit->hasFocus();
 
@@ -108,7 +109,7 @@ void ExTcpServer::on_btnSend_clicked()
 void ExTcpServer::onSocketReadyRead()     //读取缓冲区行文本
 {
     while (m_tcpSocket->canReadLine()) {
-        ui->plainTextEdit->appendPlainText("[in]" + m_tcpSocket->readLine());
+        ui->plainTextEdit->appendPlainText("[客户端:]" + m_tcpSocket->readLine());
     }
 }
 
