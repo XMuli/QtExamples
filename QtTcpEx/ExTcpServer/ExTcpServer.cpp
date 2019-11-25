@@ -1,3 +1,24 @@
+/*
+ * Copyright (C)  2019 ~ 2019 touwoyimuli.  All rights reserved.
+ *
+ * Author:  touwoyimuli <touwoyimuli@gmai.com>
+ *
+ * github:  https://github.com/touwoyimuli
+ * blogs:   https://touwoyimuli.github.io/
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://touwoyimuli.github.io/>.
+ */
 #include "ExTcpServer.h"
 #include "ui_ExTcpServer.h"
 
@@ -131,10 +152,9 @@ void ExTcpServer::onNewConnection()
     m_tcpSocket = m_tcpServer->nextPendingConnection();   //创建 socket
 
     connect(m_tcpSocket, SIGNAL(connected()), this, SLOT(onClientConnected()));
-    onClientConnected();   //本函数有写
     connect(m_tcpSocket, SIGNAL(disconnected()), this, SLOT(onClientDisonnected()));
     connect(m_tcpSocket, SIGNAL(stateChanged(QAbstractSocket::SocketState)), this, SLOT(onSocketStateChange(QAbstractSocket::SocketState)));
-    onSocketStateChange(m_tcpSocket->state());  //本函数也有写  后面尝试删除此两行， 看看或不会有异常
+    onSocketStateChange(m_tcpSocket->state());
     connect(m_tcpSocket, SIGNAL(readyRead()), this, SLOT(onSocketReadyRead()));
 }
 
