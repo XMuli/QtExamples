@@ -34,11 +34,12 @@
 
 ## 第一部分：预备知识
 
-- `windows`环境下安装`Qt Creator`作为`c++`的**IDE**开发工具，学习和使用**qt**  (推荐)
+- `windows10`环境下安装`Qt Creator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**  (最佳推荐)
+- `MacOS10.14.6`环境下安装`QtCreator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**(推荐)
 - [Qt Creator 安装SDK，在MSVC编译模式下使用CDB调试器](https://blog.csdn.net/qq_33154343/article/details/98779698) 
 - `windows`环境下安装`Qt Creator` + `Visual Studio 2015`作为`c++`的`IDE`开发工具，学习和使用**qt**  (备选)
 - [`windows`环境下安装`Qt Creator 5.9` + `Visual Studio 2017专业版`](https://blog.csdn.net/qq_33154343/article/details/78587699)  参考此文 （备选）
-- `Qt Creator` **IDE**的界面组成和使用讲解
+- `Qt Creator` 此**IDE**的界面基本组成和入门使用讲解
 - 编写一个**qt**的第一个项目： `Hello World`的项目
 
 <br>
@@ -64,13 +65,25 @@
 - 目录树组件`QTreeWidget`和停靠区域组件`QDockWidget`的用法【QtQTreeWidgetEx】
 - 【QtQTableWidgetEx】
 - 【QtQFileSystemModelEx】 
+- 【QtQDialogEx】
+- 【QtQStandardItemModelEx】
+- 【QtQStringListModelEx】
+- 自定义风格控件样式【QtCustomDialogEx】
+- 多文档界面MDI(Multi-document Interface)的实现，QMdiArea使用【QtMDIEx】
+
+
+
+## 第四部分：网络编程
+
+- 主机信息查询QHostInfo和QNetworkInterface查询IP等【QtQHostInfoEx】
+- TCP通信之QTcpServer和QTcpSocket，服务器和客户端通讯【QtTcpEx】
 
 <br>
 
-## 第四部分：自定义风格样式QStyle
+## 扩展部分：自定义风格样式QStyle
 
 - 自定义`QStyle`界面所有控件的风格，换肤效果的教程，自定义继承`QCommonStyle`的风格类【QtCustomStyleEx】
-- 预备知识：`QStyle`、`QCommonStyle`d等讲解  
+- 预备知识：`QStyle`、`QCommonStyle`等讲解  
 - [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://mp.csdn.net/mdeditor/100148539#) 
 - [`QStyle`自定义重绘滑动条`QSlider`控件](https://blog.csdn.net/qq_33154343/article/details/100545769) 
 - [`QStyle`自定义重绘`QRubberBand`控件](https://blog.csdn.net/qq_33154343/article/details/100588428) 
@@ -109,9 +122,9 @@
 
 ## 同步github.io博客：
 
-- github.io的同步总目录：[WiKi](https://github.com/touwoyimuli/QtExamples/wiki/Qt%E6%8E%A8%E5%80%92%E9%87%8D%E5%AD%A6%E7%B3%BB%E5%88%97--%E6%80%BB%E7%9B%AE%E5%BD%95%E3%80%90github.io%E3%80%91) 
+- `github.io`的同步总目录：[WiKi](https://github.com/touwoyimuli/QtExamples/wiki/Qt%E6%8E%A8%E5%80%92%E9%87%8D%E5%AD%A6%E7%B3%BB%E5%88%97--%E6%80%BB%E7%9B%AE%E5%BD%95%E3%80%90github.io%E3%80%91) 
 
-- Qt Creator使用小技巧：[WiKi](https://github.com/touwoyimuli/QtExamples/wiki/Qt%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%B8%8B%E5%B0%8F%E6%8A%80%E5%B7%A7) 
+- `Qt Creator`使用小技巧：[WiKi](https://github.com/touwoyimuli/QtExamples/wiki/Qt%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%B8%8B%E5%B0%8F%E6%8A%80%E5%B7%A7) 
 
 <br>
 
