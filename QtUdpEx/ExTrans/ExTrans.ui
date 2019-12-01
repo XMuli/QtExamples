@@ -27,7 +27,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="spinBox">
+         <widget class="QSpinBox" name="spinBoxBind">
           <property name="maximum">
            <number>65000</number>
           </property>
@@ -48,7 +48,14 @@
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox"/>
+         <widget class="QComboBox" name="comboBoxIp">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <property name="currentText">
+           <string>129.0.0.1</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -62,7 +69,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="spinBox_2">
+         <widget class="QSpinBox" name="spinBoxPort">
           <property name="maximum">
            <number>65000</number>
           </property>
@@ -81,14 +88,14 @@
        <widget class="QLineEdit" name="lineEdit"/>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="btnUnicast">
         <property name="text">
          <string>单播发送</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="btnBroadcast">
         <property name="text">
          <string>广播发送</string>
         </property>
