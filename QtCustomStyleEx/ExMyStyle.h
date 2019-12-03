@@ -19,28 +19,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://touwoyimuli.github.io/>.
  */
-#ifndef EXAMPLE_H
-#define EXAMPLE_H
+#ifndef EXMYSTYLE_H
+#define EXMYSTYLE_H
 
-#include <QStyleFactory>
-#include <QDebug>
-#include <QWidget>
-#include <QTableWidget>
-#include <QProgressBar>
-#include <QPushButton>
-#include <QApplication>
+#include <QCommonStyle>
 
-#include "ExMyStyle.h"
 
-class Example : public QWidget
+class ExMyStyle : public QCommonStyle
 {
-    Q_OBJECT
-
 public:
-    Example(QWidget *parent = 0);
-    ~Example();
-
-    void init();
+    ExMyStyle();
 };
 
-#endif // EXAMPLE_H
+#endif // EXMYSTYLE_H

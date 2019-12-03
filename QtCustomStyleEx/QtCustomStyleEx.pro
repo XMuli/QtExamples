@@ -26,10 +26,13 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        Example.cpp
+        Example.cpp \
+    ExMyStyle.cpp
 
 HEADERS += \
-        Example.h
+        Example.h \
+    ExMyStyle.h
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

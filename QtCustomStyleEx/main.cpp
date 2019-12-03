@@ -21,12 +21,24 @@
  */
 #include "Example.h"
 #include <QApplication>
+#include <QStyleFactory>
+#include <QDebug>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Example w;
-    w.show();
+
+    //若为系统自带的QStyle，则qApp->setStyle("系统自带风格");
+    //若为自定义新的QStyle，则qApp->setStyle(QStyleFactory::create("自定义风格"）)
+    QStringList listStyle = QStyleFactory::keys();
+    foreach(QString val, listStyle)     //打印当前系统支持的系统风格
+        qDebug()<<val<<"  ";
+
+    qApp->setStyle("chameleon");  //Windows/Fusion/...
+    Example *w = new Example();
+    w->resize(1000, 700);
+    w->init();
+    w->show();
 
     return a.exec();
 }
