@@ -22,13 +22,34 @@
 #ifndef EXMYSTYLE_H
 #define EXMYSTYLE_H
 
+#include "ExMyGlobal.h"
+
+#include "qglobal.h"
 #include <QCommonStyle>
 
+QT_BEGIN_NAMESPACE
+//class QCommonStyle;
+QT_END_NAMESPACE
 
+EXWIDGET_BEGIN_NAMESPACE
 class ExMyStyle : public QCommonStyle
 {
 public:
     ExMyStyle();
+
+    // QStyle interface
+public:
+    virtual void polish(QWidget *widget) override;
+    virtual void unpolish(QWidget *widget) override;
+    virtual void drawControl(ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const override;
+    virtual void drawComplexControl(ComplexControl cc, const QStyleOptionComplex *opt, QPainter *p, const QWidget *widget) const override;
+    virtual QSize sizeFromContents(ContentsType ct, const QStyleOption *opt, const QSize &contentsSize, const QWidget *w) const override;
+    virtual QRect subElementRect(SubElement subElement, const QStyleOption *option, const QWidget *widget) const override;
+    virtual int pixelMetric(PixelMetric metric, const QStyleOption *option, const QWidget *widget) const override;
+    virtual int styleHint(StyleHint stylehint, const QStyleOption *opt, const QWidget *widget, QStyleHintReturn *returnData) const override;
+
+public:
 };
+EXWIDGET_END_NAMESPACE
 
 #endif // EXMYSTYLE_H

@@ -19,22 +19,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://touwoyimuli.github.io/>.
  */
-#ifndef EXAMPLE_H
-#define EXAMPLE_H
+#ifndef EXMYGLOBAL_H
+#define EXMYGLOBAL_H
 
-#include <QWidget>   //Qt的库
+//定义命名空间宏
+#define EXWIDGET_BEGIN_NAMESPACE namespace ExPlumStyle {
+#define EXWIDGET_END_NAMESPACE }
 
-#include "ExMyStyle.h"  //自己的库
+#define EXWIDGET_USE_NAMESPACE using namespace ExPlumStyle;
 
-class Example : public QWidget
-{
-    Q_OBJECT
+//ExPlumStyle命名空间里面嵌套的的子命名空间
+#define EXDRAWUTILS_BEGIN_NAMESPACE namespace ExDrawUtils {
+#define EXDRAWUTILS_END_NAMESPACE }
 
-public:
-    Example(QWidget *parent = 0);
-    ~Example();
-
-    void init();
-};
-
-#endif // EXAMPLE_H
+#endif // EXMYGLOBAL_H

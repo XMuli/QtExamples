@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = QtCustomStyleEx
+TARGET = custom-style
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -31,7 +31,8 @@ SOURCES += \
 
 HEADERS += \
         Example.h \
-    ExMyStyle.h
+    ExMyStyle.h \
+    ExMyGlobal.h
 
 
 # Default rules for deployment.
