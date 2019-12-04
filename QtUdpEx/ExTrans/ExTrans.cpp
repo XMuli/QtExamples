@@ -29,7 +29,7 @@ ExTrans::ExTrans(QWidget *parent) :
     ui(new Ui::ExTrans)
 {
     ui->setupUi(this);
-    setWindowTitle("Tcp通信：unicast(单播) + broadcast(广播)的使用");
+    setWindowTitle("Udp通信：unicast(单播) + broadcast(广播)的使用");
 
     QString hostName = QHostInfo::localHostName();
     QString ip = getLocalIp();
