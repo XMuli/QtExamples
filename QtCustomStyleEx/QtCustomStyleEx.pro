@@ -27,12 +27,15 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         Example.cpp \
-    ExMyStyle.cpp
+    ExMyStyle.cpp \
+    MyWidget/ExSwitchButton.cpp
 
 HEADERS += \
         Example.h \
     ExMyStyle.h \
-    ExMyGlobal.h
+    ExMyGlobal.h \
+    MyWidget/ExSwitchButton.h \
+    MyWidget/ExSwitchButton_p.h
 
 
 # Default rules for deployment.
