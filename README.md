@@ -75,8 +75,9 @@
 
 ## 第四部分：网络编程
 
-- 主机信息查询QHostInfo和QNetworkInterface查询IP等【QtQHostInfoEx】
-- TCP通信之QTcpServer和QTcpSocket，服务器和客户端通讯【QtTcpEx】
+- 主机信息查询`QHostInfo`和`QNetworkInterface`查询IP等【QtQHostInfoEx】
+- `TCP`通信之`QTcpServer`和`QTcpSocket`，服务器和客户端通讯【QtTcpEx】
+- `QNetworkAccessManager`/`QNetworkReply`/`QNetworkRequest`实现高层网络的操作
 
 <br>
 
