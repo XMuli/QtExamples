@@ -12,6 +12,8 @@ ExHttp::ExHttp(QWidget *parent) :
     setWindowTitle("QNetworkAccessManager 网络管理使用 Http 协议下载");
 
     m_networkManager = new QNetworkAccessManager(this);
+    m_reply = nullptr;
+    m_file = nullptr;
 }
 
 ExHttp::~ExHttp()
@@ -64,7 +66,6 @@ void ExHttp::on_btnFile_clicked()
     QString currPath = QDir::currentPath();
     QDir dir(currPath);
     dir.mkdir("temp");
-
 
     ui->lineEditFile->setText(currPath + "/temp/");
 }
