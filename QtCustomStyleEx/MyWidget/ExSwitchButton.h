@@ -31,6 +31,7 @@ EXWIDGET_BEGIN_NAMESPACE
 
 class ExSwitchButton : public QAbstractButton
 {
+    Q_OBJECT
 public:
     explicit ExSwitchButton();
     ~ExSwitchButton();

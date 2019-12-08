@@ -22,6 +22,7 @@
 #include "ExSwitchButton.h"
 //#include "qglobal.h"
 
+
 EXWIDGET_BEGIN_NAMESPACE
 
 //xxxPrivate class 会在 xxx.cpp 里面来实现

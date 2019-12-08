@@ -24,18 +24,20 @@
 
 #include "ExMyGlobal.h"
 #include <QWidget>
+#include <QtGlobal>
+#include <private/qobject_p.h>
 
 EXWIDGET_BEGIN_NAMESPACE
 
 /*!
  * \~chinese \class ExSwitchButtonPrivate
  * \~chinese \brief ExSwitchButton 类的数据类， 便于实现源码/二进制兼容, 通常继承于 “自定义_Private” 的类
+ *                  若是自定义控件,没有继承于 QObjectPrivate 之类的, 使用 Q_Q Q_D 时候，会报错，需要自己定义 q_fun() 函数
  * \~chinese \sa Qt 自带的 QPushButtonPrivate， QPushButton 实现
  */
 
 class ExSwitchButton;
-class ExSwitchButtonPrivate      //自定义控件通常继承于 QObjectPrivate 之类的
-{
+class ExSwitchButtonPrivate : public QObjectPrivate {
 public:
     ExSwitchButtonPrivate(ExSwitchButton *qq);
     ~ExSwitchButtonPrivate();

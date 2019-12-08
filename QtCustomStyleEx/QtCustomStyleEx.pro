@@ -4,9 +4,10 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+#xxxPrivate 继承 Q-xxxx-Private的话，是需要的添加 core-private（有一些核心方法? 类 可能不开放）
+QT       += core gui core-private
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets widgets-private   # 若是需要继承 widgets相关，需要添加 widgets-private
 
 TARGET = custom-style
 TEMPLATE = app
