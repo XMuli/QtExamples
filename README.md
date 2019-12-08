@@ -18,11 +18,11 @@
 
 ## 说明：
 
-　会将该系列的源码，文章等系列，全部托管于这个仓库，该系列的主线任务只是讲解qt的相关文章。
+　会将该系列的源码，文章等系列，全部托管于这个仓库，该系列的主线任务只是讲解**qt**的相关文章。
 
-<font color=#70AD47 size=4 face="幼圆">**开发环境：**</font>    `win10 x64 专业版 1803`   <font color=#70AD47 size=4 face="幼圆">**操作系统版本**</font>：`17134.829` 
+<font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14.6 (18G103)`  |  `win10 x64 专业版 1809`  |  `deepin 20 x64 专业版 `
 
-<font color=#70AD47 size=4 face="幼圆">**开发软件：** </font>  `Qt Creator 4.8.2 (Enterprise)` 、 `Qt 5.9.8`
+<font color=#70AD47 size=4 face="幼圆">**编码软件：** </font> `Qt 5.9.8`  | `Qt Creator 4.8.2 (Enterprise)` 
 
 <font color=#70AD47 size=4 face="幼圆">**编码语言：**</font>![](https://img.shields.io/badge/language-c++-orange.svg)
 
@@ -63,7 +63,7 @@
 - [`QComboBox`(下拉列表框)和`QPlainTextEdit`(多行富文本编辑器)的用法](https://blog.csdn.net/qq_33154343/article/details/101127870) 【QtQcomboBoxEx】
 - [列表控件`QListWidget`和工具按钮`QToolButton`的和用法](https://blog.csdn.net/qq_33154343/article/details/101314908)【QtQListWidgetEx】
 - 目录树组件`QTreeWidget`和停靠区域组件`QDockWidget`的用法【QtQTreeWidgetEx】
-- 【QtQTableWidgetEx】
+- `QTableWidget`表格组件的属性介绍和使用【QtQTableWidgetEx】
 - 【QtQFileSystemModelEx】 
 - 【QtQDialogEx】
 - 【QtQStandardItemModelEx】
@@ -77,7 +77,8 @@
 
 - 主机信息查询`QHostInfo`和`QNetworkInterface`查询IP等【QtQHostInfoEx】
 - `TCP`通信之`QTcpServer`和`QTcpSocket`，服务器和客户端通讯【QtTcpEx】
-- `QNetworkAccessManager`/`QNetworkReply`/`QNetworkRequest`实现高层网络的操作
+- `Upd`通信之`QUdpSocket`的`unicast`单播、`broadcast`广播、`multicast`组播【QtUdpEx】
+- `QNetworkAccessManager`/`QNetworkReply`/`QNetworkRequest`实现高层网络的操作`http` 【QtHttpEx】
 
 <br>
 
