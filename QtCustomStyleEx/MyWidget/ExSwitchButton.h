@@ -23,21 +23,24 @@
 #define EXSWITCHBUTTON_H
 
 #include "ExMyGlobal.h"
-#include "ExSwitchButton_p.h"
+#include <QtGlobal>
 
 #include <QAbstractButton>
 
 EXWIDGET_BEGIN_NAMESPACE
 
+class ExSwitchButtonPrivate;    //Q_DECLARE_PRIVATE() 宏展开使用的
 class ExSwitchButton : public QAbstractButton
 {
-    Q_OBJECT
 public:
     explicit ExSwitchButton();
     ~ExSwitchButton();
 
 private slots:
     void onChange(bool);
+
+private:
+    Q_DECLARE_PRIVATE(ExSwitchButton)
 };
 
 EXWIDGET_END_NAMESPACE

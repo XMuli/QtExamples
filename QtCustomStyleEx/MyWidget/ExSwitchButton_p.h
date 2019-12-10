@@ -36,16 +36,20 @@ EXWIDGET_BEGIN_NAMESPACE
  * \~chinese \sa Qt 自带的 QPushButtonPrivate， QPushButton 实现
  */
 
-class ExSwitchButton;
-class ExSwitchButtonPrivate : public QObjectPrivate {
+
+class ExSwitchButtonPrivate : public QObjectPrivate
+{
 public:
-    ExSwitchButtonPrivate(ExSwitchButton *qq);
+    explicit ExSwitchButtonPrivate();
     ~ExSwitchButtonPrivate();
 
     void init();
 
 public:
     bool m_checked;   //switch 是否处于开启状态
+
+public:
+    Q_DECLARE_PUBLIC(ExSwitchButton)  //要加上宏
 };
 
 EXWIDGET_END_NAMESPACE

@@ -20,8 +20,8 @@
  * along with this program.  If not, see <https://touwoyimuli.github.io/>.
  */
 #include "ExSwitchButton.h"
-//#include "qglobal.h"
-
+#include "ExSwitchButton_p.h"
+#include <QDebug>
 
 EXWIDGET_BEGIN_NAMESPACE
 
@@ -29,7 +29,7 @@ EXWIDGET_BEGIN_NAMESPACE
 /*!
  * \~chinese \brief ExSwitchButtonPrivate 的构造函数
  */
-ExSwitchButtonPrivate::ExSwitchButtonPrivate(ExSwitchButton *qq)
+ExSwitchButtonPrivate::ExSwitchButtonPrivate(/*ExSwitchButton *qq*/)
 {
 
 }
@@ -48,11 +48,7 @@ void ExSwitchButtonPrivate::init()
     q->setCheckable(true);
     q->connect(q, SIGNAL(toggled(bool)), q, SLOT(onChange(bool)));
 
-}
-
-ExSwitchButtonPrivate::ExSwitchButton()
-{
-
+    q->onChange(true);
 }
 
 void ExSwitchButton::onChange(bool)
@@ -63,9 +59,6 @@ void ExSwitchButton::onChange(bool)
 
    qDebug()<<"------01-----ExSwitchButton::onChange(bool):"<<d->m_checked;
 }
-
-
-
 
 
 EXWIDGET_END_NAMESPACE

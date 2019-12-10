@@ -30,6 +30,8 @@
 #include <QSlider>
 #include <QScrollBar>
 
+#include "MyWidget/ExSwitchButton.h"
+
 EXWIDGET_USE_NAMESPACE
 
 Example::Example(QWidget *parent)
