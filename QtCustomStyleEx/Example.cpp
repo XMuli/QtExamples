@@ -80,4 +80,13 @@ void Example::init()
     connect(btn, &QPushButton::clicked, this, [=](){
         qApp->setStyle(new ExMyStyle());
     });
+
+    ExSwitchButton* switchBtn = new ExSwitchButton();
+    switchBtn->move(300, 300);
+//    switchBtn->move(700, 500);
+    switchBtn->resize(200, 200);
+    switchBtn->setText("switchBtn");
+    switchBtn->setParent(this);
+    switchBtn->show();
+    qDebug()<<"----03-----------------"<<switchBtn->rect();
 }

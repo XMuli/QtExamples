@@ -43,6 +43,8 @@ public:
     explicit ExSwitchButtonPrivate();
     ~ExSwitchButtonPrivate();
 
+//    virtual ~QObjectData();
+
     void init();
 
 public:

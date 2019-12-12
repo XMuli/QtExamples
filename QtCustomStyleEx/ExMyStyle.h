@@ -37,6 +37,11 @@ class ExMyStyle : public QCommonStyle
 public:
     ExMyStyle();
 
+//    enum ControlElement {
+//        CE_SwitchButton = QStyle::CE_CustomBase + 1,
+//        CE_CustomBase = QStyle::CE_CustomBase + 0xf00000
+//    };
+
     // QStyle interface
 public:
     virtual void polish(QWidget *widget) override;

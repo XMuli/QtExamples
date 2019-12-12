@@ -22,6 +22,8 @@
 #include "ExSwitchButton.h"
 #include "ExSwitchButton_p.h"
 #include <QDebug>
+#include <QPainter>
+#include "ExMyStyle.h"
 
 EXWIDGET_BEGIN_NAMESPACE
 
@@ -31,7 +33,7 @@ EXWIDGET_BEGIN_NAMESPACE
  */
 ExSwitchButtonPrivate::ExSwitchButtonPrivate(/*ExSwitchButton *qq*/)
 {
-
+    init();
 }
 
 ExSwitchButtonPrivate::~ExSwitchButtonPrivate()
@@ -51,6 +53,16 @@ void ExSwitchButtonPrivate::init()
     q->onChange(true);
 }
 
+ExSwitchButton::ExSwitchButton()
+{
+    Q_D(ExSwitchButton);
+}
+
+ExSwitchButton::~ExSwitchButton()
+{
+
+}
+
 void ExSwitchButton::onChange(bool)
 {
     Q_D(ExSwitchButton);
@@ -58,6 +70,35 @@ void ExSwitchButton::onChange(bool)
    d->m_checked = (!d->m_checked);
 
    qDebug()<<"------01-----ExSwitchButton::onChange(bool):"<<d->m_checked;
+}
+
+void ExSwitchButton::paintEvent(QPaintEvent *event)
+{
+    Q_UNUSED(event);
+
+    QPainter painter(this);
+    QStyleOptionButton opt;
+    initStyleOption(&opt);
+
+    ExMyStyle MyStyle;
+//    MyStyle.drawControl(ExMyStyle::CE_Sw);
+
+
+}
+
+void ExSwitchButton::initStyleOption(QStyleOptionButton *option) const
+{
+    if (!option)
+        return;
+
+    option->init(this);      //QStyleOption 对象进行初始化(其中属性很多,整体初始化，然后局部进行参数修改)
+    option->initFrom(this);
+
+    if (isChecked()) {
+        option->state |= QStyle::State_On;
+    } else {
+        option->state |= QStyle::State_Off;
+    }
 }
 
 

@@ -26,6 +26,8 @@
 #include <QtGlobal>
 
 #include <QAbstractButton>
+#include <QStyleOption>
+//#include <QStyleOptionButton>
 
 EXWIDGET_BEGIN_NAMESPACE
 
@@ -41,6 +43,12 @@ private slots:
 
 private:
     Q_DECLARE_PRIVATE(ExSwitchButton)
+
+    // QWidget interface
+protected:
+    virtual void paintEvent(QPaintEvent *event) override;  //必须重载的纯虚函数
+    void initStyleOption(QStyleOptionButton* option) const;
+
 };
 
 EXWIDGET_END_NAMESPACE
