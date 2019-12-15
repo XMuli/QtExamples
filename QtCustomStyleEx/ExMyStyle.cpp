@@ -33,6 +33,13 @@ ExMyStyle::ExMyStyle()
 
 }
 
+void ExMyStyle::drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w) const
+{
+
+}
+
+
+
 void ExMyStyle::polish(QWidget *widget)
 {
     QCommonStyle::polish(widget);
