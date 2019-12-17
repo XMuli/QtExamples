@@ -67,7 +67,7 @@
 - [`QFileSystemModel`数据模型获取本机文件系统的使用](https://blog.csdn.net/qq_33154343/article/details/103544820)【QtQFileSystemModelEx】 
 - [`getOpenFileName`标准对话框和自定义对话框的使用](https://blog.csdn.net/qq_33154343/article/details/103545066)【QtQDialogEx】
 - `QTableView`和`QStandardItemModel`的用法【QtQStandardItemModelEx】
-- 【QtQStringListModelEx】
+- wu【QtQStringListModelEx】
 - 自定义风格控件样式【QtCustomDialogEx】
 - 多文档界面MDI(Multi-document Interface)的实现，QMdiArea使用【QtMDIEx】
 
