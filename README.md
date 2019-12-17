@@ -35,7 +35,7 @@
 ## 第一部分：预备知识
 
 - `windows10`环境下安装`Qt Creator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**  (最佳推荐)
-- `MacOS10.14.6`环境下安装`QtCreator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**(推荐)
+- [`MacOS10.14.6`环境下安装`QtCreator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**(推荐)](https://blog.csdn.net/qq_33154343/article/details/103231202)
 - [Qt Creator 安装SDK，在MSVC编译模式下使用CDB调试器](https://blog.csdn.net/qq_33154343/article/details/98779698) 
 - `windows`环境下安装`Qt Creator` + `Visual Studio 2015`作为`c++`的`IDE`开发工具，学习和使用**qt**  (备选)
 - [`windows`环境下安装`Qt Creator 5.9` + `Visual Studio 2017专业版`](https://blog.csdn.net/qq_33154343/article/details/78587699)  参考此文 （备选）
@@ -64,9 +64,9 @@
 - [列表控件`QListWidget`和工具按钮`QToolButton`的和用法](https://blog.csdn.net/qq_33154343/article/details/101314908)【QtQListWidgetEx】
 - [目录树组件`QTreeWidget`和停靠区域组件`QDockWidget`的用法](https://blog.csdn.net/qq_33154343/article/details/103467757)【QtQTreeWidgetEx】
 - [`QTableWidget`表格组件的属性介绍和使用](https://blog.csdn.net/qq_33154343/article/details/103485154)【QtQTableWidgetEx】
-- `QFileSystemModel`数据模型获取本机文件系统的使用【QtQFileSystemModelEx】 
-- 【QtQDialogEx】
-- 【QtQStandardItemModelEx】
+- [`QFileSystemModel`数据模型获取本机文件系统的使用](https://blog.csdn.net/qq_33154343/article/details/103544820)【QtQFileSystemModelEx】 
+- [`getOpenFileName`标准对话框和自定义对话框的使用](https://blog.csdn.net/qq_33154343/article/details/103545066)【QtQDialogEx】
+- `QTableView`和`QStandardItemModel`的用法【QtQStandardItemModelEx】
 - 【QtQStringListModelEx】
 - 自定义风格控件样式【QtCustomDialogEx】
 - 多文档界面MDI(Multi-document Interface)的实现，QMdiArea使用【QtMDIEx】
