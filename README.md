@@ -66,10 +66,10 @@
 - [`QTableWidget`表格组件的属性介绍和使用](https://blog.csdn.net/qq_33154343/article/details/103485154)【QtQTableWidgetEx】
 - [`QFileSystemModel`数据模型获取本机文件系统的使用](https://blog.csdn.net/qq_33154343/article/details/103544820)【QtQFileSystemModelEx】 
 - [`getOpenFileName`标准对话框和自定义对话框的使用](https://blog.csdn.net/qq_33154343/article/details/103545066)【QtQDialogEx】
-- `QTableView`和`QStandardItemModel`的用法【QtQStandardItemModelEx】
+- [`QTableView`和`QStandardItemModel`的用法](https://blog.csdn.net/qq_33154343/article/details/103572418)【QtQStandardItemModelEx】
 - wu【QtQStringListModelEx】
-- 自定义风格控件样式【QtCustomDialogEx】
-- 多文档界面MDI(Multi-document Interface)的实现，QMdiArea使用【QtMDIEx】
+- [自定义和标准对话框的用法](https://blog.csdn.net/qq_33154343/article/details/103606981)【QtCustomDialogEx】
+- [多文档界面`MDI`(`Multi-document Interface`)的实现，`QMdiArea`使用](https://blog.csdn.net/qq_33154343/article/details/103625380)【QtMDIEx】
 
 
 
