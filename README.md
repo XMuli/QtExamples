@@ -34,7 +34,7 @@
 
 ## 第一部分：预备知识
 
-- `windows10`环境下安装`Qt Creator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**  (最佳推荐)
+- [`windows10`环境下安装`Qt Creator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**  (最佳推荐)](https://blog.csdn.net/qq_33154343/article/details/103674579)
 - [`MacOS10.14.6`环境下安装`QtCreator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**(推荐)](https://blog.csdn.net/qq_33154343/article/details/103231202)
 - [Qt Creator 安装SDK，在MSVC编译模式下使用CDB调试器](https://blog.csdn.net/qq_33154343/article/details/98779698) 
 - `windows`环境下安装`Qt Creator` + `Visual Studio 2015`作为`c++`的`IDE`开发工具，学习和使用**qt**  (备选)
@@ -138,7 +138,9 @@
 
 ## 约定式提交（规范）：
 
-[github 约定式提交：](https://www.conventionalcommits.org/zh/v1.0.0-beta.3/) 一种规范，用以给提交信息增加人机可读的信息
+**github 约定式提交[官网]：**   [https://www.conventionalcommits.org](https://www.conventionalcommits.org)
+
+ [一种规范，用以给提交信息增加人机可读的信息-简体中文-beat4](https://www.conventionalcommits.org/zh-hans/v1.0.0-beta.4/)
 
 <br>
 
