@@ -20,7 +20,7 @@
 
 　会将该系列的源码，文章等系列，全部托管于这个仓库，该系列的主线任务只是讲解**qt**的相关文章。
 
-<font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14.6 (18G103)`  |  `win10 x64 专业版 1809`  |  `deepin 20 x64 专业版 `
+<font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14.6 (18G103)`  |  `win10 x64 专业版 1803`  |  `UOS 20 x64 专业版 `
 
 <font color=#70AD47 size=4 face="幼圆">**编码软件：** </font> `Qt 5.9.8`  | `Qt Creator 4.8.2 (Enterprise)` 
 
@@ -37,8 +37,8 @@
 - [`windows10`环境下安装`Qt Creator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**  (最佳推荐)](https://blog.csdn.net/qq_33154343/article/details/103674579)
 - [`MacOS10.14.6`环境下安装`QtCreator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**(推荐)](https://blog.csdn.net/qq_33154343/article/details/103231202)
 - [Qt Creator 安装SDK，在MSVC编译模式下使用CDB调试器](https://blog.csdn.net/qq_33154343/article/details/98779698) 
-- `windows`环境下安装`Qt Creator` + `Visual Studio 2015`作为`c++`的`IDE`开发工具，学习和使用**qt**  (备选)
-- [`windows`环境下安装`Qt Creator 5.9` + `Visual Studio 2017专业版`](https://blog.csdn.net/qq_33154343/article/details/78587699)  参考此文 （备选）
+- [`windows`环境下安装`Qt Creator` + `Visual Studio 2015`作为`c++`的`IDE`开发工具，学习和使用**qt**  (备选)](https://blog.csdn.net/qq_33154343/article/details/103755569)
+- [`windows`环境下安装`Qt Creator 5.9` + `Visual Studio 2017专业版  `  参考此文 （备选）](https://blog.csdn.net/qq_33154343/article/details/78587699)  
 - `Qt Creator` 此**IDE**的界面基本组成和入门使用讲解
 - 编写一个**qt**的第一个项目： `Hello World`的项目
 
@@ -75,7 +75,7 @@
 
 ## 第四部分：网络编程
 
-- 主机信息查询`QHostInfo`和`QNetworkInterface`查询IP等【QtQHostInfoEx】
+- [主机信息查询`QHostInfo`和`QNetworkInterface`查询IP等](https://blog.csdn.net/qq_33154343/article/details/103707035)【QtQHostInfoEx】
 - `TCP`通信之`QTcpServer`和`QTcpSocket`，服务器和客户端通讯【QtTcpEx】
 - `Upd`通信之`QUdpSocket`的`unicast`单播、`broadcast`广播、`multicast`组播【QtUdpEx】
 - `QNetworkAccessManager`/`QNetworkReply`/`QNetworkRequest`实现高层网络的操作`http` 【QtHttpEx】
