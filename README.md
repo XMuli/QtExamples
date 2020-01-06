@@ -80,7 +80,6 @@
 - [`QFileSystemModel`数据模型获取本机文件系统的使用](https://blog.csdn.net/qq_33154343/article/details/103544820)【QtQFileSystemModelEx】 
 - [`getOpenFileName`标准对话框和自定义对话框的使用](https://blog.csdn.net/qq_33154343/article/details/103545066)【QtQDialogEx】
 - [`QTableView`和`QStandardItemModel`的用法](https://blog.csdn.net/qq_33154343/article/details/103572418)【QtQStandardItemModelEx】
-- wu【QtQStringListModelEx】
 - [自定义和标准对话框的用法](https://blog.csdn.net/qq_33154343/article/details/103606981)【QtCustomDialogEx】
 - [多文档界面`MDI`(`Multi-document Interface`)的实现，`QMdiArea`使用](https://blog.csdn.net/qq_33154343/article/details/103625380)【QtMDIEx】
 
@@ -91,7 +90,7 @@
 - [主机信息查询`QHostInfo`和`QNetworkInterface`查询IP等](https://blog.csdn.net/qq_33154343/article/details/103707035)【QtQHostInfoEx】
 - [`TCP`通信之`QTcpServer`和`QTcpSocket`，服务器和客户端通讯](https://blog.csdn.net/qq_33154343/article/details/103759735)【QtTcpEx】
 - [`Upd`通信之`QUdpSocket`的`unicast`单播、`broadcast`广播、`multicast`组播](https://blog.csdn.net/qq_33154343/article/details/103789843)【QtUdpEx】
-- `QNetworkAccessManager`/`QNetworkReply`/`QNetworkRequest`实现高层网络的操作`http` 【QtHttpEx】
+- [`QNetworkAccessManager`/`QNetworkReply`/`QNetworkRequest`实现高层网络的操作`http`](https://blog.csdn.net/qq_33154343/article/details/103811638) 【QtHttpEx】
 
 
 
