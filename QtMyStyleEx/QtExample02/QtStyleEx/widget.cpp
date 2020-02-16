@@ -20,6 +20,7 @@
  */
 
 #include "widget.h"
+#include "mystyle.h"
 
 #include <QDebug>
 #include <QTableWidget>
@@ -74,7 +75,9 @@ void Widget::init()
 
     int i = 0;
     QStringList listStyle = QStyleFactory::keys();
-    foreach(QString val, listStyle) {   //打印当前系统支持的系统风格
+
+    //显示 and 使用当前系统支持的系统风格
+    foreach(QString val, listStyle) {
         qDebug()<<val<<"  ";
         QPushButton *btn = new QPushButton(val, this);
         btn->move(this->rect().right() - 100, this->rect().top() + i++ * 40);
@@ -82,5 +85,12 @@ void Widget::init()
             qApp->setStyle(val);
         });
     }
+
+    //若是自定义风格， new 为对象即可
+    QPushButton *btn = new QPushButton("My Style", this);
+    btn->move(this->rect().right() - 100, this->rect().top() + i++ * 40);
+    connect(btn, &QPushButton::clicked, this, [=](){
+        qApp->setStyle(new MyStyle());
+    });
 
 }
