@@ -31,17 +31,7 @@ public:
 
     // QStyle interface
 public:
-    virtual void polish(QWidget *widget) override;
-    virtual void unpolish(QWidget *widget) override;
-    virtual void drawPrimitive(PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w) const override;
     virtual void drawControl(ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const override;
-    virtual QRect subElementRect(SubElement subElement, const QStyleOption *option, const QWidget *widget) const override;
-    virtual void drawComplexControl(ComplexControl cc, const QStyleOptionComplex *opt, QPainter *p, const QWidget *widget) const override;
-    virtual QRect subControlRect(ComplexControl cc, const QStyleOptionComplex *opt, SubControl sc, const QWidget *widget) const override;
-    virtual int pixelMetric(PixelMetric metric, const QStyleOption *option, const QWidget *widget) const override;
-    virtual QSize sizeFromContents(ContentsType ct, const QStyleOption *opt, const QSize &contentsSize, const QWidget *w) const override;
-    virtual int styleHint(StyleHint stylehint, const QStyleOption *opt, const QWidget *widget, QStyleHintReturn *returnData) const override;
-
 };
 
 #endif // MYSTYLE_H

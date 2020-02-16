@@ -44,6 +44,8 @@ Widget::~Widget()
 
 void Widget::init()
 {
+    resize(1000, 600);
+
     QTableWidget *table = new QTableWidget(10, 10, this);
     table->move(10, 10);
 
