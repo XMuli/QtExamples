@@ -26,21 +26,73 @@
 
 class MyStyle : public QCommonStyle
 {
+//    Q_OBJECT
+
+public:
+    //这里新增加的枚举，是属于 MyStyle:: , 而非 QStyle:: 范围
+    enum ControlElement {
+        CE_SwitchButton = QStyle::CE_CustomBase + 1,                   //switchButton 控件
+        CE_CustomBase = QStyle::CE_CustomBase + 0xf00000
+    };
+
+    enum SubElement {
+        SE_SwitchButtonGroove = QStyle::SE_CustomBase + 1,             //滑槽矩形大小
+        SE_SwitchButtonHandle,                                         //滑块矩形大小
+        SE_CustomBase = QStyle::SE_CustomBase + 0xf00000
+    };
+
+    enum PixelMetric {
+        PM_SwitchButtonHandleWidth = QStyle::PM_CustomBase + 1,        //switch Handle width
+        PM_SwithcButtonHandleHeight,                                   //switch Handle height
+        PM_CustomBase = QStyle::PM_CustomBase + 0xf00000
+    };
+
+    enum PrimitiveElement {
+        PE_SwitchButtonGroove = QStyle::PE_CustomBase + 1,             //滑槽
+        PE_SwitchButtonHandle,                                         //滑块
+        PE_CustomBase = QStyle::PE_CustomBase + 0xf00000
+    };
+
 public:
     MyStyle();
 
     // QStyle interface
 public:
+
+    //新增加的枚举属 MyStyle:: , 之能够在此内敛函数里面调用
+    inline void drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w = nullptr) const;
+    inline void drawControl(MyStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const;
+    inline QRect subElementRect(MyStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget) const;
+//    inline void drawComplexControl(MyStyle::ComplexControl cc, const QStyleOptionComplex *opt, QPainter *p, const QWidget *widget) const;
+//    inline QRect subControlRect(MyStyle::ComplexControl cc, const QStyleOptionComplex *opt, SubControl sc, const QWidget *widget) const;
+    inline int pixelMetric(MyStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget) const;
+//    inline QSize sizeFromContents(MyStyle::ContentsType ct, const QStyleOption *opt, const QSize &contentsSize, const QWidget *w) const;
+//    inline int styleHint(MyStyle::StyleHint stylehint, const QStyleOption *opt, const QWidget *widget, QStyleHintReturn *returnData) const;
+
+    //这里的快捷方式创建的枚举,都是不带QStyle:: ; 但是快捷方式的定义是带是QStyle:: , 此处声明的地方必须加上 QStyle:: /*后面改写更复杂的得写上MyStyle:: 因添加自定义的枚举*/
+    //这里 override 的虚函数，只能够调用旧有的  QStyle:: 的函数
+    virtual void drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w) const override;
+    virtual void drawControl(QStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const override;
+    virtual QRect subElementRect(QStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget) const override;
+    virtual void drawComplexControl(QStyle::ComplexControl cc, const QStyleOptionComplex *opt, QPainter *p, const QWidget *widget) const override;
+    virtual QRect subControlRect(QStyle::ComplexControl cc, const QStyleOptionComplex *opt, SubControl sc, const QWidget *widget) const override;
+    virtual int pixelMetric(QStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget) const override;
+    virtual QSize sizeFromContents(QStyle::ContentsType ct, const QStyleOption *opt, const QSize &contentsSize, const QWidget *w) const override;
+    virtual int styleHint(QStyle::StyleHint stylehint, const QStyleOption *opt, const QWidget *widget, QStyleHintReturn *returnData) const override;
     virtual void polish(QWidget *widget) override;
     virtual void unpolish(QWidget *widget) override;
-    virtual void drawPrimitive(PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w) const override;
-    virtual void drawControl(ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const override;
-    virtual QRect subElementRect(SubElement subElement, const QStyleOption *option, const QWidget *widget) const override;
-    virtual void drawComplexControl(ComplexControl cc, const QStyleOptionComplex *opt, QPainter *p, const QWidget *widget) const override;
-    virtual QRect subControlRect(ComplexControl cc, const QStyleOptionComplex *opt, SubControl sc, const QWidget *widget) const override;
-    virtual int pixelMetric(PixelMetric metric, const QStyleOption *option, const QWidget *widget) const override;
-    virtual QSize sizeFromContents(ContentsType ct, const QStyleOption *opt, const QSize &contentsSize, const QWidget *w) const override;
-    virtual int styleHint(StyleHint stylehint, const QStyleOption *opt, const QWidget *widget, QStyleHintReturn *returnData) const override;
+
+    //重实现,使得父类的多个同名 函数 (不同参数) 任然可以在本类里面使用
+    using QCommonStyle::polish;
+    using QCommonStyle::unpolish;
+    using QCommonStyle::drawPrimitive;
+    using QCommonStyle::drawControl;
+    using QCommonStyle::subElementRect;
+    using QCommonStyle::drawComplexControl;
+    using QCommonStyle::subControlRect;
+    using QCommonStyle::pixelMetric;
+    using QCommonStyle::sizeFromContents;
+    using QCommonStyle::styleHint;
 
 };
 

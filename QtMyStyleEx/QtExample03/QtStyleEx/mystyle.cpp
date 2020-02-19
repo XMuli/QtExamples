@@ -30,6 +30,46 @@ MyStyle::MyStyle()
 
 }
 
+void MyStyle::drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w) const
+{
+    proxy()->drawPrimitive(static_cast<QStyle::PrimitiveElement>(pe), opt, p, w);
+}
+
+void MyStyle::drawControl(MyStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const
+{
+    proxy()->drawControl(static_cast<QStyle::ControlElement>(element), opt, p, w);
+}
+
+QRect MyStyle::subElementRect(MyStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget) const
+{
+    return proxy()->subElementRect(static_cast<QStyle::SubElement>(subElement), option, widget);
+}
+
+//void MyStyle::drawComplexControl(MyStyle::ComplexControl cc, const QStyleOptionComplex *opt, QPainter *p, const QWidget *widget) const
+//{
+
+//}
+
+//QRect MyStyle::subControlRect(MyStyle::ComplexControl cc, const QStyleOptionComplex *opt, SubControl sc, const QWidget *widget) const
+//{
+//    return QRect();
+//}
+
+int MyStyle::pixelMetric(MyStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget) const
+{
+    return proxy()->pixelMetric(static_cast<QStyle::PixelMetric>(metric), option, widget);
+}
+
+//QSize MyStyle::sizeFromContents(MyStyle::ContentsType ct, const QStyleOption *opt, const QSize &contentsSize, const QWidget *w) const
+//{
+//    return QSize();
+//}
+
+//int MyStyle::styleHint(MyStyle::StyleHint stylehint, const QStyleOption *opt, const QWidget *widget, QStyleHintReturn *returnData) const
+//{
+//    return 0;
+//}
+
 void MyStyle::polish(QWidget *widget)
 {
     QCommonStyle::polish(widget);
@@ -40,8 +80,24 @@ void MyStyle::unpolish(QWidget *widget)
     QCommonStyle::unpolish(widget);
 }
 
+
 void MyStyle::drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w) const
 {
+    switch (pe) {
+    case PE_SwitchButtonGroove: {
+        if (const QStyleOptionButton* swtchBtn = qstyleoption_cast<const QStyleOptionButton*>(opt)) {
+            p->setBrush(Qt::red);
+            p->drawRoundedRect(swtchBtn->rect, 8, 8);
+        }
+    }
+        break;
+    case PE_SwitchButtonHandle: {
+
+    }
+        break;
+    default:
+        break;
+    }
     QCommonStyle::drawPrimitive(pe, opt, p, w);
 }
 
@@ -70,6 +126,19 @@ void MyStyle::drawControl(QStyle::ControlElement element, const QStyleOption *op
         p->fillRect(opt->rect, QColor("#de6161"));
         return;
     }
+    case CE_SwitchButton: {
+        if (const QStyleOptionButton *switchBtn = qstyleoption_cast<const QStyleOptionButton *>(opt)) {
+            QStyleOptionButton option = *switchBtn;
+            option.palette = switchBtn->palette;
+
+            option.rect = subElementRect(SE_SwitchButtonGroove, opt, w);
+            drawPrimitive(PE_SwitchButtonGroove, &option, p, w);
+
+            option.rect = subElementRect(SE_SwitchButtonHandle, opt, w);
+            drawPrimitive(PE_SwitchButtonHandle, &option, p, w);
+        }
+        break;
+    }
     default:
         break;
     }
@@ -79,6 +148,37 @@ void MyStyle::drawControl(QStyle::ControlElement element, const QStyleOption *op
 
 QRect MyStyle::subElementRect(QStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget) const
 {
+    switch (subElement) {
+    case SE_SwitchButtonGroove: {
+        if (const QStyleOptionButton* switchBtn = qstyleoption_cast<const QStyleOptionButton*>(option))
+            return switchBtn->rect;
+    }
+        break;
+    case SE_SwitchButtonHandle: {
+        if (const QStyleOptionButton* switchBtn = qstyleoption_cast<const QStyleOptionButton*>(option)) {
+            int handleWidth = pixelMetric(PM_SwitchButtonHandleWidth, option, widget);
+                            //pixelMetric(PM_SwitchButtonHandleWidth, option, widget);
+            QRect rectHandle(0, 0, 0, 0);
+            rectHandle.setHeight(switchBtn->rect.height());
+
+            if (switchBtn->rect.width() / 2.0 <= handleWidth)
+                rectHandle.setWidth(switchBtn->rect.width() / 2.0);
+            else
+                rectHandle.setWidth(handleWidth);
+
+            if (switchBtn->state & QStyle::State_On)
+                rectHandle.moveRight(switchBtn->rect.right());
+            else
+                rectHandle.moveLeft(switchBtn->rect.left());
+
+            return rectHandle;
+        }
+    }
+        break;
+    default:
+        break;
+    }
+
     return QCommonStyle::subElementRect(subElement, option, widget);
 }
 
@@ -94,6 +194,15 @@ QRect MyStyle::subControlRect(QStyle::ComplexControl cc, const QStyleOptionCompl
 
 int MyStyle::pixelMetric(QStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget) const
 {
+    switch (metric) {
+    case PM_SwitchButtonHandleWidth:
+        return 30;
+    case PM_SwithcButtonHandleHeight:
+        return 12;
+    default:
+        break;
+    }
+
     return QCommonStyle::pixelMetric(metric, option, widget);
 }
 

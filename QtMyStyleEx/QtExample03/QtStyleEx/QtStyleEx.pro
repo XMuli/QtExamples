@@ -24,7 +24,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+#xxxPrivate 继承 Q-xxxx-Private的话，是需要的添加 core-private（有一些核心方法? 类 可能不开放）
+QT       += core gui core-private   # 若是需要继承 widgets相关，需要添加 widgets-private
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -47,11 +48,14 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         widget.cpp \
-    mystyle.cpp
+    mystyle.cpp \
+    myswitchbutton.cpp
 
 HEADERS += \
         widget.h \
-    mystyle.h
+    mystyle.h \
+    myswitchbutton.h \
+    myswitchbutton_p.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
