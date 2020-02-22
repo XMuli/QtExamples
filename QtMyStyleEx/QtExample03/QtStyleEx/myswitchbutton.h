@@ -2,6 +2,7 @@
 #define MYSWITCHBUTTON_H
 
 #include <QAbstractButton>
+#include <QStyleOption>
 class QStyleOptionButton;
 
 class MySwitchButtonPrivate;

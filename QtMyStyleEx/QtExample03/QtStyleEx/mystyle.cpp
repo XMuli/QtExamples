@@ -30,6 +30,28 @@ MyStyle::MyStyle()
 
 }
 
+//******************************************************************
+void MyStyle::drawPrimitive(const QStyle *style, MyStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w)
+{
+
+}
+
+void MyStyle::drawControl(const QStyle *style, MyStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w)
+{
+
+}
+
+QRect MyStyle::subElementRect(const QStyle *style, MyStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget)
+{
+    return QRect();
+}
+
+int MyStyle::pixelMetric(const QStyle *style, MyStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget)
+{
+    return 0;
+}
+
+//******************************************************************
 void MyStyle::drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w) const
 {
     proxy()->drawPrimitive(static_cast<QStyle::PrimitiveElement>(pe), opt, p, w);
@@ -98,7 +120,13 @@ void MyStyle::drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption *opt
     default:
         break;
     }
+
     QCommonStyle::drawPrimitive(pe, opt, p, w);
+
+    //后续分离开为模块的判断
+//    if (Q_UNLIKELY(pe < QStyle::PE_CustomBase))
+//    else
+//        drawPrimitive(this, static_cast<MyStyle::PrimitiveElement>(pe), opt, p, w);
 }
 
 void MyStyle::drawControl(QStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const
@@ -216,6 +244,70 @@ int MyStyle::styleHint(QStyle::StyleHint stylehint, const QStyleOption *opt, con
     return QCommonStyle::styleHint(stylehint, opt, widget, returnData);
 }
 
+//******************************************************************
+MyStyleHelp::MyStyleHelp(const QStyle* style)
+{
+    setStyle(style);
+}
 
+void MyStyleHelp::setStyle(const QStyle* style)
+{
+    m_qStyle = style;
+    m_myStyle = qobject_cast<const MyStyle *>(style);
+}
 
+const QStyle *MyStyleHelp::qStyle() const
+{
+    return m_qStyle;
+}
+
+const MyStyle *MyStyleHelp::myStyle() const
+{
+    return m_myStyle;
+}
+
+void MyStyleHelp::drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w) const
+{
+    m_myStyle ? m_myStyle->drawPrimitive(pe, opt, p, w)
+              : MyStyle::drawPrimitive(m_qStyle, pe, opt, p, w);
+}
+
+void MyStyleHelp::drawControl(MyStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const
+{
+    m_myStyle ? m_myStyle->drawControl(element, opt, p, w)
+              : MyStyle::drawControl(m_qStyle, element, opt, p, w);
+}
+
+QRect MyStyleHelp::subElementRect(MyStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget) const
+{
+    return m_myStyle ? m_myStyle->subElementRect(subElement, option, widget)
+                     : MyStyle::subElementRect(m_qStyle, subElement, option, widget);
+}
+
+int MyStyleHelp::pixelMetric(MyStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget) const
+{
+    return m_myStyle ? m_myStyle->pixelMetric(metric, option, widget)
+                     : MyStyle::pixelMetric(m_qStyle, metric, option, widget);
+}
+
+//******************************************************************
+void MyStylePainter::drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption *opt)
+{
+    m_qStyle->drawPrimitive(pe, opt, this, m_widget);
+}
+
+void MyStylePainter::drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt)
+{
+    m_myStyleHelp.drawPrimitive(pe, opt, this, m_widget);
+}
+
+void MyStylePainter::drawControl(QStyle::ControlElement element, const QStyleOption *opt)
+{
+    m_qStyle->drawControl(element, opt, this, m_widget);
+}
+
+void MyStylePainter::drawControl(MyStyle::ControlElement element, const QStyleOption *opt)
+{
+    m_myStyleHelp.drawControl(element, opt, this, m_widget);
+}
 

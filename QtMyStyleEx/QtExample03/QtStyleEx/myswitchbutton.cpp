@@ -3,7 +3,7 @@
 #include "mystyle.h"
 
 #include <QStylePainter>
-#include <QStyleOptionButton>
+#include <QStyleOption>
 
 MySwitchButton::MySwitchButton(QWidget *parent)
     : QAbstractButton(parent)
@@ -30,7 +30,10 @@ void MySwitchButton::paintEvent(QPaintEvent *event)
     QStyleOptionButton opt;
     initStyleOption(&opt);
 
-    QStylePainter pa(this);
+//    MyStylePainter painter(this);
+//    MyStylePainter painter;
+//    painter.drawControl(MyStyle::CE_SwitchButton, &opt);//static_cast<QStyleOption>(opt));
+
 //    pa.drawControl(MyStyle::CE_SwitchButton, opt);
 }
 

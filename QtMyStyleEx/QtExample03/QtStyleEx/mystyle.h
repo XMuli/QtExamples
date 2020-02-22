@@ -23,10 +23,11 @@
 #define MYSTYLE_H
 
 #include <QCommonStyle>
+#include <QPainter>
 
 class MyStyle : public QCommonStyle
 {
-//    Q_OBJECT
+    Q_OBJECT //connect qobject_cast
 
 public:
     //这里新增加的枚举，是属于 MyStyle:: , 而非 QStyle:: 范围
@@ -59,7 +60,18 @@ public:
     // QStyle interface
 public:
 
+    //static 函数，供 MyStylrHelp 调用 [用来绘画自增加的控件枚举]
+    static void drawPrimitive(const QStyle *style, MyStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w = nullptr);
+    static void drawControl(const QStyle *style, MyStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w);
+    static QRect subElementRect(const QStyle *style, MyStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget);
+//    static void drawComplexControl(const QStyle *style, MyStyle::ComplexControl cc, const QStyleOptionComplex *opt, QPainter *p, const QWidget *widget) const;
+//    static QRect subControlRect(const QStyle *style, MyStyle::ComplexControl cc, const QStyleOptionComplex *opt, SubControl sc, const QWidget *widget) const;
+    static int pixelMetric(const QStyle *style, MyStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget);
+//    static QSize sizeFromContents(const QStyle *style, MyStyle::ContentsType ct, const QStyleOption *opt, const QSize &contentsSize, const QWidget *w) const;
+//    static int styleHint(const QStyle *style, MyStyle::StyleHint stylehint, const QStyleOption *opt, const QWidget *widget, QStyleHintReturn *returnData) const;
+
     //新增加的枚举属 MyStyle:: , 之能够在此内敛函数里面调用
+    //[主要用来绘画 自定义新增 的控件枚举 --> 实际调用在 下面的 virtual 里面绘画]
     inline void drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w = nullptr) const;
     inline void drawControl(MyStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const;
     inline QRect subElementRect(MyStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget) const;
@@ -71,6 +83,7 @@ public:
 
     //这里的快捷方式创建的枚举,都是不带QStyle:: ; 但是快捷方式的定义是带是QStyle:: , 此处声明的地方必须加上 QStyle:: /*后面改写更复杂的得写上MyStyle:: 因添加自定义的枚举*/
     //这里 override 的虚函数，只能够调用旧有的  QStyle:: 的函数
+    //[主要用来绘画 Qt 、 自定义新增 的控件枚举]
     virtual void drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w) const override;
     virtual void drawControl(QStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const override;
     virtual QRect subElementRect(QStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget) const override;
@@ -96,4 +109,40 @@ public:
 
 };
 
+class MyStyleHelp
+{
+public:
+    inline MyStyleHelp (const QStyle* style = nullptr);
+
+    inline void setStyle(const QStyle* style);
+
+    inline const QStyle* qStyle() const;
+    inline const MyStyle* myStyle() const;
+
+    inline void drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w = nullptr) const;
+    inline void drawControl(MyStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const;
+    inline QRect subElementRect(MyStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget) const;
+    inline int pixelMetric(MyStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget) const;
+
+private:
+    const QStyle* m_qStyle;
+    const MyStyle* m_myStyle;
+};
+
+class MyStylePainter : public QPainter
+{
+public:
+    MyStylePainter() {}
+    ~MyStylePainter() {}
+
+    inline void drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt);
+    inline void drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption *opt);
+    inline void drawControl(MyStyle::ControlElement element, const QStyleOption *opt);
+    inline void drawControl(QStyle::ControlElement element, const QStyleOption *opt);
+
+private:
+    QWidget* m_widget;
+    QStyle* m_qStyle;
+    MyStyleHelp m_myStyleHelp;
+};
 #endif // MYSTYLE_H
