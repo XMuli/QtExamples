@@ -21,6 +21,7 @@
 
 #include "widget.h"
 #include "mystyle.h"
+#include "myswitchbutton.h"
 
 #include <QDebug>
 #include <QTableWidget>
@@ -75,6 +76,11 @@ void Widget::init()
     progreV->setValue(67);
     progreV->setOrientation(Qt::Vertical);
 
+    //自定义的控件
+    MySwitchButton* switchBtn = new MySwitchButton(this);
+    switchBtn->resize(80, 40);
+    switchBtn->move(200 ,300);
+
     int i = 0;
     QStringList listStyle = QStyleFactory::keys();
 
@@ -95,4 +101,5 @@ void Widget::init()
         qApp->setStyle(new MyStyle());
     });
 
+    qApp->setStyle(new MyStyle());
 }

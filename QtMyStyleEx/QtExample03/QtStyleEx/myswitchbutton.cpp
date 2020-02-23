@@ -4,6 +4,9 @@
 
 #include <QStylePainter>
 #include <QStyleOption>
+#include <QDebug>
+
+class MyStylePainter;
 
 MySwitchButton::MySwitchButton(QWidget *parent)
     : QAbstractButton(parent)
@@ -20,7 +23,7 @@ MySwitchButton::~MySwitchButton()
 
 QSize MySwitchButton::sizeHint() const
 {
-    return QSize(100, 40);
+    return QSize(60, 40);
 }
 
 void MySwitchButton::paintEvent(QPaintEvent *event)
@@ -30,11 +33,9 @@ void MySwitchButton::paintEvent(QPaintEvent *event)
     QStyleOptionButton opt;
     initStyleOption(&opt);
 
-//    MyStylePainter painter(this);
-//    MyStylePainter painter;
-//    painter.drawControl(MyStyle::CE_SwitchButton, &opt);//static_cast<QStyleOption>(opt));
-
-//    pa.drawControl(MyStyle::CE_SwitchButton, opt);
+    MyStylePainter painter(this);
+    painter.setRenderHint(QPainter::Antialiasing);
+    painter.drawControl(MyStyle::CE_SwitchButton, &opt);
 }
 
 void MySwitchButton::initStyleOption(QStyleOptionButton *opt) const
@@ -57,16 +58,20 @@ MySwitchButtonPrivate::MySwitchButtonPrivate()
 
 MySwitchButtonPrivate::~MySwitchButtonPrivate()
 {
-
 }
 
 void MySwitchButtonPrivate::init()
 {
     Q_Q(MySwitchButton);
 
-    checked = false;
-    animationStart = 0;
-    animationEnd = 1;
+    check = false;
     q->setObjectName("MySwitchButton");
-//    q->connect(q, &MySwitchButton::toggled, q, &MySwitchButton::checkedChanged);
+    q->setChecked(true);
+    q->setCheckable(true); //clicked  toggled douxuyaokauqi
+    q->connect(q, SIGNAL(clicked(bool)), q, SLOT(setChecked(bool)));
+}
+
+bool MySwitchButtonPrivate::switchCheck()
+{
+    return check;
 }

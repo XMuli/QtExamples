@@ -106,7 +106,6 @@ public:
     using QCommonStyle::pixelMetric;
     using QCommonStyle::sizeFromContents;
     using QCommonStyle::styleHint;
-
 };
 
 class MyStyleHelp
@@ -132,13 +131,14 @@ private:
 class MyStylePainter : public QPainter
 {
 public:
-    MyStylePainter() {}
+    MyStylePainter();
+    MyStylePainter(QWidget* w);
     ~MyStylePainter() {}
 
-    inline void drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt);
-    inline void drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption *opt);
-    inline void drawControl(MyStyle::ControlElement element, const QStyleOption *opt);
-    inline void drawControl(QStyle::ControlElement element, const QStyleOption *opt);
+    /*inline*/ void drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt);
+    /*inline*/ void drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption *opt);
+    /*inline*/ void drawControl(MyStyle::ControlElement element, const QStyleOption *opt);
+    /*inline*/ void drawControl(QStyle::ControlElement element, const QStyleOption *opt);
 
 private:
     QWidget* m_widget;

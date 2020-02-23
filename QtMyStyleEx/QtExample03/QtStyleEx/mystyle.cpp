@@ -21,7 +21,6 @@
 
 #include "mystyle.h"
 
-#include <QDebug>
 #include <QPainter>
 #include <QStyleOption>
 
@@ -38,7 +37,6 @@ void MyStyle::drawPrimitive(const QStyle *style, MyStyle::PrimitiveElement pe, c
 
 void MyStyle::drawControl(const QStyle *style, MyStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w)
 {
-
 }
 
 QRect MyStyle::subElementRect(const QStyle *style, MyStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget)
@@ -102,19 +100,37 @@ void MyStyle::unpolish(QWidget *widget)
     QCommonStyle::unpolish(widget);
 }
 
-
 void MyStyle::drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w) const
 {
     switch (pe) {
     case PE_SwitchButtonGroove: {
-        if (const QStyleOptionButton* swtchBtn = qstyleoption_cast<const QStyleOptionButton*>(opt)) {
-            p->setBrush(Qt::red);
-            p->drawRoundedRect(swtchBtn->rect, 8, 8);
+        if (const QStyleOptionButton* switchBtn = qstyleoption_cast<const QStyleOptionButton*>(opt)) {
+            p->setPen(Qt::NoPen);
+            if (switchBtn->state & State_On)
+                p->setBrush(QColor("#77d472"));
+
+            if (switchBtn->state & State_Off) {
+                p->setPen(QPen(QColor("#e5e5e5"), 2));
+                p->setBrush(QColor("#fdfefd"));
+            }
+
+            p->drawRoundedRect(switchBtn->rect.adjusted(1, 1, -1, -1), switchBtn->rect.height() / 2.0, switchBtn->rect.height() / 2.0);
         }
     }
         break;
     case PE_SwitchButtonHandle: {
+        if (const QStyleOptionButton* switchBtn = qstyleoption_cast<const QStyleOptionButton*>(opt)) {
+            p->setPen(Qt::NoPen);
+            if (switchBtn->state & State_On)
+                p->setBrush(QColor("#fefffe"));
 
+            if (switchBtn->state & State_Off)
+                p->setPen(QPen(QColor("#e5e5e5"), 2));
+
+            QRect rectHandle = switchBtn->rect.adjusted(1, 1, -1, -1);
+            int r = qMin(rectHandle.width() / 2.0, rectHandle.height() / 2.0);
+            p->drawEllipse(rectHandle.center(), r, r);
+        }
     }
         break;
     default:
@@ -185,7 +201,6 @@ QRect MyStyle::subElementRect(QStyle::SubElement subElement, const QStyleOption 
     case SE_SwitchButtonHandle: {
         if (const QStyleOptionButton* switchBtn = qstyleoption_cast<const QStyleOptionButton*>(option)) {
             int handleWidth = pixelMetric(PM_SwitchButtonHandleWidth, option, widget);
-                            //pixelMetric(PM_SwitchButtonHandleWidth, option, widget);
             QRect rectHandle(0, 0, 0, 0);
             rectHandle.setHeight(switchBtn->rect.height());
 
@@ -194,10 +209,10 @@ QRect MyStyle::subElementRect(QStyle::SubElement subElement, const QStyleOption 
             else
                 rectHandle.setWidth(handleWidth);
 
+            if (switchBtn->state & QStyle::State_Off)
+                rectHandle.moveLeft(switchBtn->rect.left() + 5);
             if (switchBtn->state & QStyle::State_On)
-                rectHandle.moveRight(switchBtn->rect.right());
-            else
-                rectHandle.moveLeft(switchBtn->rect.left());
+                rectHandle.moveRight(switchBtn->rect.right() - 5);
 
             return rectHandle;
         }
@@ -296,6 +311,21 @@ void MyStylePainter::drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOpti
     m_qStyle->drawPrimitive(pe, opt, this, m_widget);
 }
 
+MyStylePainter::MyStylePainter()
+    : QPainter()
+{
+    m_widget = nullptr;
+    m_myStyleHelp = nullptr;
+}
+
+MyStylePainter::MyStylePainter(QWidget* w)
+{
+    m_widget = w;
+    m_qStyle = w->style();
+    m_myStyleHelp.setStyle(m_qStyle);
+    QPainter::begin(w); //是调用父类的 begin(), 调试半天才发现
+}
+
 void MyStylePainter::drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt)
 {
     m_myStyleHelp.drawPrimitive(pe, opt, this, m_widget);
@@ -310,4 +340,3 @@ void MyStylePainter::drawControl(MyStyle::ControlElement element, const QStyleOp
 {
     m_myStyleHelp.drawControl(element, opt, this, m_widget);
 }
-

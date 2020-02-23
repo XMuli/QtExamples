@@ -9,7 +9,15 @@
 
 ## 项目介绍：
 
-　　`Qt5` 各个控件使用的一个例子、以及一些底层原理或者技巧性的理解，即是自己所学记录，亦可以互相交流共享学习，<font color=#D0087E size=4 face="幼圆">**有朋自远方互联网而来，不亦悦乎？**</font>
+　　✅ `Qt` 的 `GUI` 基础控件用法，网络；
+
+　　✅ `dtk` 重绘控件方式的框架架构解析；
+
+　　✅ `QtCrator` 使用和一些小技巧；
+
+　　✅ `Qt` 原理/运行机制理解
+
+　　自己所学记录，亦可以互相交流共享学习，<font color=#D0087E size=4 face="幼圆">**有朋自远方互联网而来，不亦悦乎？**</font>
 
 <br>
 
@@ -48,7 +56,7 @@
 
 <font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14.6 (18G103)`  |  `win10 x64 专业版 1803`  |  `UOS 20 x64 专业版 `
 
-<font color=#70AD47 size=4 face="幼圆">**编码软件：** </font> `Qt 5.9.8`  | `Qt Creator 4.8.2 (Enterprise)` 
+<font color=#70AD47 size=4 face="幼圆">**编码软件：** </font> `Qt 5.9.8+`  | `Qt Creator 4.8.2 (Enterprise)` 
 
 <font color=#70AD47 size=4 face="幼圆">**编码语言：**</font>![](https://img.shields.io/badge/language-c++-orange.svg)
 
@@ -59,24 +67,22 @@
 ## 第一部分：预备知识
 
 - **windows 系统：**
-
   - [`windows10`环境下安装`Qt Creator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**  (最佳推荐)](https://blog.csdn.net/qq_33154343/article/details/103674579)
-
   - [Qt Creator 安装SDK，在MSVC编译模式下使用CDB调试器](https://blog.csdn.net/qq_33154343/article/details/98779698) 
   - [`windows`环境下安装`Qt Creator` + `Visual Studio 2015`作为`c++`的`IDE`开发工具，学习和使用**qt**  (备选)](https://blog.csdn.net/qq_33154343/article/details/103755569)
   - [`windows`环境下安装`Qt Creator 5.9` + `Visual Studio 2017专业版  `  参考此文 （备选）](https://blog.csdn.net/qq_33154343/article/details/78587699)  
 
-- **MacOS 系统：**
 
+
+- **MacOS 系统：**
   - [`MacOS10.14.6`环境下安装`QtCreator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**(推荐)](https://blog.csdn.net/qq_33154343/article/details/103231202)
 
-- **Linux 系统：**
 
-  **此处 Linux 以 uos20 为例（即: deepin ）**
 
-  - [在win10里面的VMware安装UOS20，在uos20里面安装QtCreator，配置dtk开发环境](https://blog.csdn.net/qq_33154343/article/details/103733327)
+- **Linux（uos20/deepin) 系统:**
+- [在win10里面的VMware安装UOS20，在uos20里面安装QtCreator，配置dtk开发环境](https://blog.csdn.net/qq_33154343/article/details/103733327)
   - [MacOS10.14安装虚拟机Parallels_Desktop，安装UOS20和 QtCreaor，搭建dtk开发环境](https://blog.csdn.net/qq_33154343/article/details/104180794)
-  - [在macOS 10.14的虚拟机VMware Fusionlimian里面安装deepin15.11（Linux）](https://blog.csdn.net/qq_33154343/article/details/102789047)
+- [在macOS 10.14的虚拟机VMware Fusionlimian里面安装deepin15.11（Linux）](https://blog.csdn.net/qq_33154343/article/details/102789047)
 
 
 
@@ -88,10 +94,11 @@
 ## 第二部分：qt生成原理/运行机制
 
 - [`make` `makefile` `cmake` `qmake`都是什么，有什么区别？](https://blog.csdn.net/qq_33154343/article/details/98170236) 
+- [Qt 编程中 namespace Ui { class Widget; } 解析](https://blog.csdn.net/qq_33154343/article/details/98122981) 
 
 <br>
 
-## 第三部分：常用控件
+## 第三部分：常用 GUI 控件
 
 - 一个默认的`Qt Widget`项目 【空】
 - 元对象系统`moc`(**Meat-Object System**)的对象`MetaObject`和(含动态)属性`Propert`的用法【QtMeatObjectEx】
@@ -137,11 +144,28 @@
 
 <br>
 
-## 扩展部分：自定义风格样式QStyle
+## 第五部分：dtk 重绘控件原理解析（自定义样式 QStyle ）
+
+- **预备知识：**
+  - QStyle 与系统界面外观的关系
+- `QStyle`、`QCommonStyle`、`QPainter`等讲解 
+  - [QStyle设置界面的外观和QCommonStyle继承关系图讲解和使用](https://blog.csdn.net/qq_33154343/article/details/104367878) 【👩‍💻👩‍💻👩‍💻】
+  - [qt之proxy()代理探究](https://blog.csdn.net/qq_33154343/article/details/101571843)
+  
+- **QStyle 感性理解👀：**
+  - [应用软件在「ous20和 MaOS10.14下」显示应用不同的QStyle「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/104305154) 【QtMyStyleEx/QtExample01】
+  - [应用软件在「windows10 和 deepin10.15下」显示应用不同的`QStyle`「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/100148552) 【QtMyStyleEx/QtExample01】
+
+
+
+- **QStyle 重绘 GUI 控件，DTK 的源码解析架构🤔：**
+  - QStyle/DTK 重绘 GUI 已有的控件 QScrollBar
+    - 【QtMyStyleEx/QtExample02】
+  - QStyle/DTK 重绘自定义控件 MySwitchButton
+    - 【QtMyStyleEx/QtExample03】
 
 - 自定义`QStyle`界面所有控件的风格，换肤效果的教程，自定义继承`QCommonStyle`的风格类【QtCustomStyleEx】
-- 前期预备知识：`QStyle`、`QCommonStyle`等讲解  
-- [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://mp.csdn.net/mdeditor/100148539#) 
+- [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://blog.csdn.net/qq_33154343/article/details/100148552) 
 - [`QStyle`自定义重绘滑动条`QSlider`控件](https://blog.csdn.net/qq_33154343/article/details/100545769) 
 - [`QStyle`自定义重绘`QRubberBand`控件](https://blog.csdn.net/qq_33154343/article/details/100588428) 
 - [重绘的`QStyle`中`sizeFromContents`()没有被调用](https://blog.csdn.net/qq_33154343/article/details/100941134) 
@@ -151,7 +175,7 @@
 
 <br>
 
-## 补充部分：补充较杂的知识点
+## 补充部分：较杂的知识点
 
 ### 使用Qt Creator的小技巧：
 
@@ -220,3 +244,4 @@
 <img src='https://raw.githubusercontent.com/touwoyimuli/FigureBed/blog-imange/img/20190709052153.jpg' width='127' height='127'/>
 
 <font color=#70AD47  size=4 face="幼圆">**touwoyimuli：** </font> 所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
+
