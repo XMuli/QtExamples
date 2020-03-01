@@ -154,13 +154,13 @@
   - [qt之proxy()代理探究](https://blog.csdn.net/qq_33154343/article/details/101571843)
   
 - **QStyle 感性理解👀：**
-  - [应用软件在「ous20和 MaOS10.14下」显示应用不同的QStyle「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/104305154) 
-  - [应用软件在「windows10 和 deepin10.15下」显示应用不同的`QStyle`「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/100148552) 
+  - [应用软件在「ous20和 MaOS10.14下」显示应用不同的QStyle「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/104305154)
+  - [应用软件在「windows10 和 deepin10.15下」显示应用不同的`QStyle`「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/100148552)
 
 
 
 - **QStyle 重绘 GUI 控件，DTK 的源码解析架构🤔：**
-  - [QStyle/DTK重绘Qt-GUI已有控件,举例QScrollBar](QStyle/DTK 重绘 GUI 已有的控件 QScrollBar ) 【QtMyStyleEx/QtExample02】
+  - [QStyle/DTK重绘Qt-GUI已有控件,举例QScrollBar](QStyle/DTK重绘Qt-GUI已有控件,举例QScrollBar) 【QtMyStyleEx/QtExample02】
   - QStyle/DTK 重绘自定义控件 MySwitchButton 【QtMyStyleEx/QtExample03】
 
 - 自定义`QStyle`界面所有控件的风格，换肤效果的教程，自定义继承`QCommonStyle`的风格类【QtCustomStyleEx】
