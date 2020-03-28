@@ -67,7 +67,7 @@ void MySwitchButtonPrivate::init()
     check = false;
     q->setObjectName("MySwitchButton");
     q->setChecked(true);
-    q->setCheckable(true); //clicked  toggled douxuyaokauqi
+    q->setCheckable(true); //clicked  toggled 都需要开启
     q->connect(q, SIGNAL(clicked(bool)), q, SLOT(setChecked(bool)));
 }
 

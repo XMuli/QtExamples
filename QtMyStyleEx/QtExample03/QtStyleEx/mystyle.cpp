@@ -65,30 +65,10 @@ QRect MyStyle::subElementRect(MyStyle::SubElement subElement, const QStyleOption
     return proxy()->subElementRect(static_cast<QStyle::SubElement>(subElement), option, widget);
 }
 
-//void MyStyle::drawComplexControl(MyStyle::ComplexControl cc, const QStyleOptionComplex *opt, QPainter *p, const QWidget *widget) const
-//{
-
-//}
-
-//QRect MyStyle::subControlRect(MyStyle::ComplexControl cc, const QStyleOptionComplex *opt, SubControl sc, const QWidget *widget) const
-//{
-//    return QRect();
-//}
-
 int MyStyle::pixelMetric(MyStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget) const
 {
     return proxy()->pixelMetric(static_cast<QStyle::PixelMetric>(metric), option, widget);
 }
-
-//QSize MyStyle::sizeFromContents(MyStyle::ContentsType ct, const QStyleOption *opt, const QSize &contentsSize, const QWidget *w) const
-//{
-//    return QSize();
-//}
-
-//int MyStyle::styleHint(MyStyle::StyleHint stylehint, const QStyleOption *opt, const QWidget *widget, QStyleHintReturn *returnData) const
-//{
-//    return 0;
-//}
 
 void MyStyle::polish(QWidget *widget)
 {

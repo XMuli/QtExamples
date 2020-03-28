@@ -64,22 +64,14 @@ public:
     static void drawPrimitive(const QStyle *style, MyStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w = nullptr);
     static void drawControl(const QStyle *style, MyStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w);
     static QRect subElementRect(const QStyle *style, MyStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget);
-//    static void drawComplexControl(const QStyle *style, MyStyle::ComplexControl cc, const QStyleOptionComplex *opt, QPainter *p, const QWidget *widget) const;
-//    static QRect subControlRect(const QStyle *style, MyStyle::ComplexControl cc, const QStyleOptionComplex *opt, SubControl sc, const QWidget *widget) const;
     static int pixelMetric(const QStyle *style, MyStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget);
-//    static QSize sizeFromContents(const QStyle *style, MyStyle::ContentsType ct, const QStyleOption *opt, const QSize &contentsSize, const QWidget *w) const;
-//    static int styleHint(const QStyle *style, MyStyle::StyleHint stylehint, const QStyleOption *opt, const QWidget *widget, QStyleHintReturn *returnData) const;
 
     //新增加的枚举属 MyStyle:: , 之能够在此内敛函数里面调用
     //[主要用来绘画 自定义新增 的控件枚举 --> 实际调用在 下面的 virtual 里面绘画]
     inline void drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w = nullptr) const;
     inline void drawControl(MyStyle::ControlElement element, const QStyleOption *opt, QPainter *p, const QWidget *w) const;
     inline QRect subElementRect(MyStyle::SubElement subElement, const QStyleOption *option, const QWidget *widget) const;
-//    inline void drawComplexControl(MyStyle::ComplexControl cc, const QStyleOptionComplex *opt, QPainter *p, const QWidget *widget) const;
-//    inline QRect subControlRect(MyStyle::ComplexControl cc, const QStyleOptionComplex *opt, SubControl sc, const QWidget *widget) const;
     inline int pixelMetric(MyStyle::PixelMetric metric, const QStyleOption *option, const QWidget *widget) const;
-//    inline QSize sizeFromContents(MyStyle::ContentsType ct, const QStyleOption *opt, const QSize &contentsSize, const QWidget *w) const;
-//    inline int styleHint(MyStyle::StyleHint stylehint, const QStyleOption *opt, const QWidget *widget, QStyleHintReturn *returnData) const;
 
     //这里的快捷方式创建的枚举,都是不带QStyle:: ; 但是快捷方式的定义是带是QStyle:: , 此处声明的地方必须加上 QStyle:: /*后面改写更复杂的得写上MyStyle:: 因添加自定义的枚举*/
     //这里 override 的虚函数，只能够调用旧有的  QStyle:: 的函数
@@ -135,10 +127,10 @@ public:
     MyStylePainter(QWidget* w);
     ~MyStylePainter() {}
 
-    /*inline*/ void drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt);
-    /*inline*/ void drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption *opt);
-    /*inline*/ void drawControl(MyStyle::ControlElement element, const QStyleOption *opt);
-    /*inline*/ void drawControl(QStyle::ControlElement element, const QStyleOption *opt);
+    void drawPrimitive(MyStyle::PrimitiveElement pe, const QStyleOption *opt);
+    void drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption *opt);
+    void drawControl(MyStyle::ControlElement element, const QStyleOption *opt);
+    void drawControl(QStyle::ControlElement element, const QStyleOption *opt);
 
 private:
     QWidget* m_widget;
