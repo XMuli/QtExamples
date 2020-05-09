@@ -75,7 +75,7 @@
 ## 第三部分：常用 GUI 控件
 
 - 一个默认的`Qt Widget`项目 【空】
-- 元对象系统`moc`(**Meat-Object System**)的对象`MetaObject`和(含动态)属性`Propert`的用法【QtMeatObjectEx】
+- [元对象系统moc(Meat-Object System)的对象MetaObject和(含动态)属性Propert的用法](https://xmuli.blog.csdn.net/article/details/105925608) 【QtMeatObjectEx】
 - [`QString`在2 ／8／10／16进制之间转换](https://blog.csdn.net/qq_33154343/article/details/100860030) 【QtQStringEx】
 - [`QString`常用的功能函数的介绍和用法](https://blog.csdn.net/qq_33154343/article/details/100860270) 【QtQStringFunEx】
 - [`QSlider`和`QAbstractSlider`的介绍和用法](https://blog.csdn.net/qq_33154343/article/details/100944831)【QtQSliderEx】
