@@ -74,7 +74,7 @@
 
 ## 第三部分：常用 GUI 控件
 
-- 一个默认的`Qt Widget`项目 【空】
+- 一个默认的`Qt Widget`项目 【空】. 
 - [元对象系统moc(Meat-Object System)的对象MetaObject和(含动态)属性Propert的用法](https://xmuli.blog.csdn.net/article/details/105925608) 【QtMeatObjectEx】
 - [`QString`在2 ／8／10／16进制之间转换](https://blog.csdn.net/qq_33154343/article/details/100860030) 【QtQStringEx】
 - [`QString`常用的功能函数的介绍和用法](https://blog.csdn.net/qq_33154343/article/details/100860270) 【QtQStringFunEx】
@@ -122,7 +122,7 @@
 
 - **预备知识：**
   
-  - QStyle与QPen、QPush、QPalette、QPainter之间的区别
+  - QStyle与QPen、QPush、QPalette、QPainter之间的区别 
   
   - [QStyle设置界面的外观和QCommonStyle继承关系图讲解和使用](https://blog.csdn.net/qq_33154343/article/details/104367878) 【👩‍💻👩‍💻👩‍💻】
   - [qt之proxy()代理探究](https://blog.csdn.net/qq_33154343/article/details/101571843)
