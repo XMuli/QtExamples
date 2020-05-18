@@ -74,7 +74,7 @@
 
 ## 第三部分：常用 GUI 控件
 
-- 一个默认的`Qt Widget`项目 【空】. 
+- 一个默认的`Qt Widget`项目 【空】
 - [元对象系统moc(Meat-Object System)的对象MetaObject和(含动态)属性Propert的用法](https://xmuli.blog.csdn.net/article/details/105925608) 【QtMeatObjectEx】
 - [`QString`在2 ／8／10／16进制之间转换](https://blog.csdn.net/qq_33154343/article/details/100860030) 【QtQStringEx】
 - [`QString`常用的功能函数的介绍和用法](https://blog.csdn.net/qq_33154343/article/details/100860270) 【QtQStringFunEx】
@@ -120,22 +120,20 @@
 
 ## 第五部分：DTK 重绘控件原理解析（自定义样式 QStyle ）
 
+- **dtk 历史发展：**
+  - [DTK的历史起源、发展，和简单入门](https://xmuli.blog.csdn.net/article/details/106189533) 『🥳🥳』
+  - [deepin、dde的历史起源与发展(附deepin所有版本的dde截图)](https://xmuli.blog.csdn.net/article/details/106195055) 『🥳🥳』
 - **预备知识：**
-  
   - QStyle与QPen、QPush、QPalette、QPainter之间的区别 
-  
-  - [QStyle设置界面的外观和QCommonStyle继承关系图讲解和使用](https://blog.csdn.net/qq_33154343/article/details/104367878) 【👩‍💻👩‍💻👩‍💻】
+  - [QStyle设置界面的外观和QCommonStyle继承关系图讲解和使用](https://blog.csdn.net/qq_33154343/article/details/104367878) 『👩‍💻👩‍💻👩‍💻』
+  - [DTK常用和测试代码片 ](https://xmuli.blog.csdn.net/article/details/106187959) 
   - [qt之proxy()代理探究](https://blog.csdn.net/qq_33154343/article/details/101571843)
 - **感性理解👀：**
-  
   - [应用软件在「ous20和 MaOS10.14下」显示应用不同的QStyle「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/104305154)
-- [应用软件在「windows10 和 deepin10.15下」显示应用不同的`QStyle`「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/100148552)
-  
-- **QStyle 重绘控件，DTK 的源码解析架构🤔：**
-  
-  - [QStyle/DTK重绘Qt-GUI已有控件,举例QScrollBar](https://blog.csdn.net/qq_33154343/article/details/104537944) 【QtMyStyleEx/QtExample02】【👩‍💻👩‍💻👩‍💻】
-  - [QStyle/DTK重绘自定义需求控件,举例MySwitchButton](https://blog.csdn.net/qq_33154343/article/details/104987446) 【QtMyStyleEx/QtExample03】【👩‍💻👩‍💻👩‍💻】
-
+  - [应用软件在「windows10 和 deepin10.15下」显示应用不同的`QStyle`「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/100148552) 
+- **DTK 源码解析架构🤔：**
+  - [QStyle/DTK重绘Qt-GUI已有控件,举例QScrollBar](https://blog.csdn.net/qq_33154343/article/details/104537944) 『👩‍💻👩‍💻👩‍💻』
+  - [QStyle/DTK重绘自定义需求控件,举例MySwitchButton](https://blog.csdn.net/qq_33154343/article/details/104987446) 『👩‍💻👩‍💻👩‍💻』
 - **项目实战：**
   - [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://blog.csdn.net/qq_33154343/article/details/100148552) 
   - [`QStyle`自定义重绘滑动条`QSlider`控件](https://blog.csdn.net/qq_33154343/article/details/100545769) 
