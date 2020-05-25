@@ -173,9 +173,12 @@
 
 <br>
 
-## 第八部分：约定式提交（规范）：
+## 第八部分：提交规范和发布 Qt 程序：
 
-[约定式提交规范](https://www.conventionalcommits.org/zh-hans/v1.0.0-beta.4/)
+- [约定式提交规范](https://www.conventionalcommits.org/zh-hans/v1.0.0-beta.4/)
+- [qt项目在Windows平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448388) 
+- [qt项目在MacOS平台上面发布成可执行程序](https://xmuli.blog.csdn.net/article/details/96448938#comments) 
+- [qt项目在Linux平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448621) 
 
 <br>
 
