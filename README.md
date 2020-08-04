@@ -57,6 +57,8 @@
   - [在win10里面的VMware安装UOS20，在uos20里面安装QtCreator，配置dtk开发环境](https://blog.csdn.net/qq_33154343/article/details/103733327)
   - [MacOS10.14安装虚拟机Parallels_Desktop，安装UOS20和 QtCreaor，搭建dtk开发环境](https://blog.csdn.net/qq_33154343/article/details/104180794)
   - [在macOS 10.14的虚拟机VMware Fusionlimian里面安装deepin15.11（Linux）](https://blog.csdn.net/qq_33154343/article/details/102789047)
+  - [重装uos/deepin v20后必安装软件(个人习惯)](https://xmuli.blog.csdn.net/article/details/106510975)
+  - [ArchLinux + DDE 安装教程](https://xmuli.blog.csdn.net/article/details/107696563)
 
 
 
@@ -126,7 +128,6 @@
 - **预备知识：**
   - QStyle与QPen、QPush、QPalette、QPainter之间的区别 
   - [QStyle设置界面的外观和QCommonStyle继承关系图讲解和使用](https://blog.csdn.net/qq_33154343/article/details/104367878) 『👩‍💻👩‍💻👩‍💻』
-  - [DTK常用和测试代码片 ](https://xmuli.blog.csdn.net/article/details/106187959) 
   - [qt之proxy()代理探究](https://blog.csdn.net/qq_33154343/article/details/101571843)
 - **感性理解👀：**
   - [应用软件在「ous20和 MaOS10.14下」显示应用不同的QStyle「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/104305154)
@@ -134,6 +135,7 @@
 - **DTK 源码解析架构🤔：**
   - [QStyle/DTK重绘Qt-GUI已有控件,举例QScrollBar](https://blog.csdn.net/qq_33154343/article/details/104537944) 『👩‍💻👩‍💻👩‍💻』
   - [QStyle/DTK重绘自定义需求控件,举例MySwitchButton](https://blog.csdn.net/qq_33154343/article/details/104987446) 『👩‍💻👩‍💻👩‍💻』
+  - [DTK常用和测试代码片 ](https://xmuli.blog.csdn.net/article/details/106187959) 
 - **项目实战：**
   - [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://blog.csdn.net/qq_33154343/article/details/100148552) 
   - [`QStyle`自定义重绘滑动条`QSlider`控件](https://blog.csdn.net/qq_33154343/article/details/100545769) 
@@ -179,6 +181,7 @@
 - [qt项目在Windows平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448388) 
 - [qt项目在MacOS平台上面发布成可执行程序](https://xmuli.blog.csdn.net/article/details/96448938#comments) 
 - [qt项目在Linux平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448621) 
+- [如何给上游Qt提交Bug反馈和贡献代码PATH？](https://xmuli.blog.csdn.net/article/details/107220867) 
 
 <br>
 
