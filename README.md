@@ -28,7 +28,7 @@
 
 ## 关于 QT 系列文章说明：
 
-　会将该系列的源码，文章等系列，全部托管于这个仓库，该系列的主线任务是讲解**Qt**的相关文章。
+　会将该系列的源码，文章等系列，全部托管于这个仓库，该系列的主线任务是讲解 **Qt** 的相关文章。
 
 <font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14.6 (18G103)`  |  `win10 x64 专业版 1803`  |  `UOS 20 x64 专业版 `
 
@@ -43,21 +43,21 @@
 ## 第一部分：预备知识
 
 - **windows 系统：**
-  - [`windows10`环境下安装`Qt Creator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**  (最佳推荐)](https://blog.csdn.net/qq_33154343/article/details/103674579)
+  - [`windows10`环境下安装`Qt Creator5.9.8`作为`c++`的**IDE**开发工具，学习和使用 **Qt**  (最佳推荐)](https://blog.csdn.net/qq_33154343/article/details/103674579)
   - [Qt Creator 安装SDK，在MSVC编译模式下使用CDB调试器](https://blog.csdn.net/qq_33154343/article/details/98779698) 
-  - [`windows`环境下安装`Qt Creator` + `Visual Studio 2015`作为`c++`的`IDE`开发工具，学习和使用**qt**  (备选)](https://blog.csdn.net/qq_33154343/article/details/103755569)
-  - [`windows`环境下安装`Qt Creator 5.9` + `Visual Studio 2017专业版  `  参考此文 （备选）](https://blog.csdn.net/qq_33154343/article/details/78587699)  
+  - [`Windows` 环境下安装 `Qt Creator` + `Visual Studio 2015` 作为 `c++` 的 `IDE` 开发工具，学习和使用 **Qt**  (备选)](https://blog.csdn.net/qq_33154343/article/details/103755569)
+  - [`Windows` 环境下安装`Qt Creator 5.9` + `Visual Studio 2017专业版  `  参考此文 （备选）](https://blog.csdn.net/qq_33154343/article/details/78587699)  
 
 - **MacOS 系统：**
-  - [`MacOS10.14.6`环境下安装`QtCreator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**(推荐)](https://blog.csdn.net/qq_33154343/article/details/103231202)
+  - [`MacOS10.14.6` 环境下安装 `QtCreator5.9.8` 作为 `c++` 的 **IDE** 开发工具，学习和使用 **Qt**(推荐)](https://blog.csdn.net/qq_33154343/article/details/103231202)
 
 
 
 - **Linux 系统:**
-  - [在win10里面的VMware安装UOS20，在uos20里面安装QtCreator，配置dtk开发环境](https://blog.csdn.net/qq_33154343/article/details/103733327)
-  - [MacOS10.14安装虚拟机Parallels_Desktop，安装UOS20和 QtCreaor，搭建dtk开发环境](https://blog.csdn.net/qq_33154343/article/details/104180794)
-  - [在macOS 10.14的虚拟机VMware Fusionlimian里面安装deepin15.11（Linux）](https://blog.csdn.net/qq_33154343/article/details/102789047)
-  - [重装uos/deepin v20后必安装软件(个人习惯)](https://xmuli.blog.csdn.net/article/details/106510975)
+  - [在 win10 里面的 VMware 安装 UOS20，在 uos20 里面安装 QtCreator，配置 dtk 开发环境](https://blog.csdn.net/qq_33154343/article/details/103733327)
+  - [MacOS10.14 安装虚拟机 Parallels_Desktop，安装 UOS20 和 QtCreator，搭建 dtk 开发环境](https://blog.csdn.net/qq_33154343/article/details/104180794)
+  - [在 macOS 10.14 的虚拟机 VMware Fusionlimian 里面安装 deepin15.11（Linux）](https://blog.csdn.net/qq_33154343/article/details/102789047)
+  - [重装 uos/deepin v20 后必安装软件(个人习惯)](https://xmuli.blog.csdn.net/article/details/106510975)
   - [ArchLinux + DDE 安装教程](https://xmuli.blog.csdn.net/article/details/107696563)
 
 
@@ -67,16 +67,16 @@
 
 <br>
 
-## 第二部分：qt生成原理/运行机制
+## 第二部分：Qt 生成原理/运行机制
 
-- [`make` `makefile` `cmake` `qmake`都是什么，有什么区别？](https://blog.csdn.net/qq_33154343/article/details/98170236) 
+- [`make` `makefile` `cmake` `qmake` 都是什么，有什么区别？](https://blog.csdn.net/qq_33154343/article/details/98170236) 
 - [Qt 编程中 namespace Ui { class Widget; } 解析](https://blog.csdn.net/qq_33154343/article/details/98122981) 
 
 <br>
 
 ## 第三部分：常用 GUI 控件
 
-- 一个默认的`Qt Widget`项目 【空】
+- 一个默认的 `Qt Widget` 项目 【空】
 - [元对象系统moc(Meat-Object System)的对象MetaObject和(含动态)属性Propert的用法](https://xmuli.blog.csdn.net/article/details/105925608) 【QtMeatObjectEx】
 - [`QString`在2 ／8／10／16进制之间转换](https://blog.csdn.net/qq_33154343/article/details/100860030) 【QtQStringEx】
 - [`QString`常用的功能函数的介绍和用法](https://blog.csdn.net/qq_33154343/article/details/100860270) 【QtQStringFunEx】
@@ -130,7 +130,7 @@
   - [QStyle设置界面的外观和QCommonStyle继承关系图讲解和使用](https://blog.csdn.net/qq_33154343/article/details/104367878) 『👩‍💻👩‍💻👩‍💻』
   - [qt之proxy()代理探究](https://blog.csdn.net/qq_33154343/article/details/101571843)
 - **感性理解👀：**
-  - [应用软件在「ous20和 MaOS10.14下」显示应用不同的QStyle「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/104305154)
+  - [应用软件在「uos20和 MaOS10.14下」显示应用不同的QStyle「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/104305154)
   - [应用软件在「windows10 和 deepin10.15下」显示应用不同的`QStyle`「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/100148552) 
 - **DTK 源码解析架构🤔：**
   - [QStyle/DTK重绘Qt-GUI已有控件,举例QScrollBar](https://blog.csdn.net/qq_33154343/article/details/104537944) 『👩‍💻👩‍💻👩‍💻』
@@ -158,30 +158,30 @@
 
 <br>
 
-- [Qt5与Qt4的信号接收差异](https://blog.csdn.net/qq_33154343/article/details/79130732) 
-- `qt`的信号和槽关系
-- `qt`中Lam表达式
+- [Qt5 与 Qt4 的信号接收差异](https://blog.csdn.net/qq_33154343/article/details/79130732) 
+- `qt` 的信号和槽关系
+- `qt` 中 lambda 表达式
 
 <br>
 
 ## 第七部分：QtCreator 的使用小技巧：
 
-- [QtCreator设置代码美化astyle之Artistic](https://blog.csdn.net/qq_33154343/article/details/101397429)
-- [Qt Creator 关闭.cpp文件右侧的黄色警告](https://blog.csdn.net/qq_33154343/article/details/102943623)
+- [QtCreator 设置代码美化 astyle 之 Artistic](https://blog.csdn.net/qq_33154343/article/details/101397429)
+- [Qt Creator 关闭 .cpp 文件右侧的黄色警告](https://blog.csdn.net/qq_33154343/article/details/102943623)
 
-- [小技巧：Design设计师里，无法拖拽action到toolbar里](https://blog.csdn.net/qq_33154343/article/details/100168170) 
-- [小技巧：设置`QToolBox`的每一页page的使用单独的布局（`QTabWidget`同理）](https://mp.csdn.net/mdeditor/100185025#) 
-- [小技巧：QtCreator用快捷键秒实现，声明在基类中重写的派生类(纯)虚函数](https://blog.csdn.net/qq_33154343/article/details/104457739) 
+- [小技巧：Design 设计师里，无法拖拽 action 到 toolbar 里](https://blog.csdn.net/qq_33154343/article/details/100168170) 
+- [小技巧：设置 `QToolBox` 的每一页 page 的使用单独的布局（`QTabWidget` 同理）](https://mp.csdn.net/mdeditor/100185025#) 
+- [小技巧：QtCreator 用快捷键秒实现，声明在基类中重写的派生类(纯)虚函数](https://blog.csdn.net/qq_33154343/article/details/104457739) 
 
 <br>
 
 ## 第八部分：提交规范和发布 Qt 程序：
 
 - [约定式提交规范](https://www.conventionalcommits.org/zh-hans/v1.0.0-beta.4/)
-- [qt项目在Windows平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448388) 
-- [qt项目在MacOS平台上面发布成可执行程序](https://xmuli.blog.csdn.net/article/details/96448938#comments) 
-- [qt项目在Linux平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448621) 
-- [如何给上游Qt提交Bug反馈和贡献代码PATH？](https://xmuli.blog.csdn.net/article/details/107220867) 
+- [Qt 项目在 Windows 平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448388) 
+- [Qt 项目在 MacOS 平台上面发布成可执行程序](https://xmuli.blog.csdn.net/article/details/96448938#comments) 
+- [Qt 项目在 Linux 平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448621) 
+- [如何给上游 Qt 提交 Bug 反馈和贡献代码 PATCH？](https://xmuli.blog.csdn.net/article/details/107220867) 
 
 <br>
 
