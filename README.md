@@ -132,7 +132,7 @@
     - [QStyle设置界面的外观和QCommonStyle继承关系图讲解和使用](https://blog.csdn.net/qq_33154343/article/details/104367878) 『👩‍💻👩‍💻👩‍💻』
     - [qt之proxy()代理探究](https://blog.csdn.net/qq_33154343/article/details/101571843)
 - **感性理解👀：**
-    - [应用软件在「ous20和 MaOS10.14下」显示应用不同的QStyle「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/104305154)
+    - [应用软件在「UOS20和 MaOS10.14下」显示应用不同的QStyle「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/104305154)
     - [应用软件在「windows10 和 deepin10.15下」显示应用不同的`QStyle`「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/100148552) 
 - **DTK 源码解析架构🤔：**
     - [QStyle/DTK重绘Qt-GUI已有控件,举例QScrollBar](https://blog.csdn.net/qq_33154343/article/details/104537944) 『👩‍💻👩‍💻👩‍💻』
@@ -162,13 +162,13 @@
 
 - [Qt5与Qt4的信号接收差异](https://blog.csdn.net/qq_33154343/article/details/79130732) 
 - `qt`的信号和槽关系
-- `qt`中Lam表达式
+- `qt`中 Lambda 表达式
 
 <br>
 
 ## 第七部分：QtCreator 的使用小技巧：
 
-- [QtCreator设置代码美化astyle之Artistic](https://blog.csdn.net/qq_33154343/article/details/101397429)
+- [QtCreator设置代码美化 astyle 之 Artistic](https://blog.csdn.net/qq_33154343/article/details/101397429)
 - [Qt Creator 关闭.cpp文件右侧的黄色警告](https://blog.csdn.net/qq_33154343/article/details/102943623)
 
 - [小技巧：Design设计师里，无法拖拽action到toolbar里](https://blog.csdn.net/qq_33154343/article/details/100168170) 
@@ -180,10 +180,10 @@
 ## 第八部分：提交规范和发布 Qt 程序：
 
 - [约定式提交规范](https://www.conventionalcommits.org/zh-hans/v1.0.0-beta.4/)
-- [qt项目在Windows平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448388) 
-- [qt项目在MacOS平台上面发布成可执行程序](https://xmuli.blog.csdn.net/article/details/96448938#comments) 
-- [qt项目在Linux平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448621) 
-- [如何给上游Qt提交Bug反馈和贡献代码PATH？](https://xmuli.blog.csdn.net/article/details/107220867) 
+- [Qt 项目在 Windows 平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448388) 
+- [Qt 项目在 MacOS 平台上面发布成可执行程序](https://xmuli.blog.csdn.net/article/details/96448938#comments) 
+- [Qt 项目在 Linux 平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448621) 
+- [如何给上游 Qt 提交 Bug 反馈和贡献代码 PATCH？](https://xmuli.blog.csdn.net/article/details/107220867) 
 
 <br>
 
