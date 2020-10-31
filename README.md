@@ -1,7 +1,7 @@
 # QtExamples:
 
 <div align=center>
-<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/blog-imange/img02/IMG_GIRL.png"/>
+<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/blog-imange/img02/IMG_GIRL.png"  width="50%"/>
 </div>
 
 
