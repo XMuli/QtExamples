@@ -49,10 +49,13 @@
     - [`windows`环境下安装`Qt Creator` + `Visual Studio 2015`作为`c++`的`IDE`开发工具，学习和使用**qt**  (备选)](https://blog.csdn.net/qq_33154343/article/details/103755569)
     - [`windows`环境下安装`Qt Creator 5.9` + `Visual Studio 2017专业版  `  参考此文 （备选）](https://blog.csdn.net/qq_33154343/article/details/78587699)  
 
+    <br>
+    
 - **MacOS 系统：**
+    
     - [`MacOS10.14.6`环境下安装`QtCreator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**(推荐)](https://blog.csdn.net/qq_33154343/article/details/103231202)
 
-
+<br>
 
 - **Linux 系统:**
     - [在win10里面的VMware安装UOS20，在uos20里面安装QtCreator，配置dtk开发环境](https://blog.csdn.net/qq_33154343/article/details/103733327)
@@ -61,7 +64,7 @@
     - [重装uos/deepin v20后必安装软件(个人习惯)](https://xmuli.blog.csdn.net/article/details/106510975)
     - [ArchLinux + DDE 安装教程](https://xmuli.blog.csdn.net/article/details/107696563)
 
-
+<br>
 
 - **Qt Creator 作为 IDE 基础讲解：**
     - [Qt Creator` 此**IDE**的界面基本组成和入门使用讲解(Win,Linux,MacOS搭配不同版本 Qt)](https://blog.csdn.net/qq_33154343/article/details/103942733)
@@ -111,12 +114,10 @@
 - [QT5/C++项目：基于QT的跨平台网络对战象棋（一）（推荐★★★★）](https://blog.csdn.net/qq_33154343/article/details/89284983)
 - [QT5/C++项目：基于QT的跨平台网络对战象棋（二）（推荐★★★★）](https://blog.csdn.net/qq_33154343/article/details/89285968)
 - [QT5/C++项目：基于QT的跨平台网络对战象棋（三）（推荐★★★★）](https://blog.csdn.net/qq_33154343/article/details/89286553)
-
 - [项目实战：Qt5／C++：TCP的C/S的聊天小程序 （带界面 GUI）](https://blog.csdn.net/qq_33154343/article/details/79341062)
 - [项目实战：仿QQ的QQ简洁版2019群聊项目（带界面 GUI）](https://blog.csdn.net/qq_33154343/article/details/96437681)
 - [项目实战Small example：C:Socket之Tcp编程 [终端 Terminal]](https://blog.csdn.net/qq_33154343/article/details/81808722)
 - [项目实战Small example：C:Socket之UDP编程 [终端 Terminal]](https://blog.csdn.net/qq_33154343/article/details/81809168)
-
 - [项目实战：Qt5／Quick：模仿扣扣登录界面[小程序]](https://blog.csdn.net/qq_33154343/article/details/80448144)
 
 <br>
@@ -138,6 +139,8 @@
     - [QStyle/DTK重绘Qt-GUI已有控件,举例QScrollBar](https://blog.csdn.net/qq_33154343/article/details/104537944) 『👩‍💻👩‍💻👩‍💻』
     - [QStyle/DTK重绘自定义需求控件,举例MySwitchButton](https://blog.csdn.net/qq_33154343/article/details/104987446) 『👩‍💻👩‍💻👩‍💻』
     - [DTK常用和测试代码片 ](https://xmuli.blog.csdn.net/article/details/106187959) 
+    - [DTK 每日自动更新其 API 文档](https://xmuli.blog.csdn.net/article/details/108756933)
+    - [DTK 基础教程：自定义控件规范](https://xmuli.blog.csdn.net/article/details/108536588) [★★]
 - **项目实战：**
     - [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://blog.csdn.net/qq_33154343/article/details/100148552) 
     - [`QStyle`自定义重绘滑动条`QSlider`控件](https://blog.csdn.net/qq_33154343/article/details/100545769) 
@@ -146,10 +149,14 @@
     - [`QStyle`之`PenStyle`的`CustomDashLine`使用](https://blog.csdn.net/qq_33154343/article/details/100659576) 
     - [`QStyle`自定义重绘滑动条`QSlide`r控件二](https://blog.csdn.net/qq_33154343/article/details/100942637) 
     - [QStyle自定义重绘`QScrollBar`](https://blog.csdn.net/qq_33154343/article/details/100943187) 
+    - [Deepin 自定义修改窗口圆角大小](https://xmuli.blog.csdn.net/article/details/109232878)  [参与商业开源项目★★★]
+    - [Deepin Custom Modify Window Corner Rounding Size](https://xmuli.blog.csdn.net/article/details/109233116)
 
 <br>
 
 ## 第六部分：Qt / IDE 出现乱码原因和解决：
+
+- [乱码原因产生和解决方案](https://xmuli.blog.csdn.net/article/details/109567352) [★★]
 
 - [ 输出乱码原因：古文码、口字码、符号码、问号码、棍拷码](https://blog.csdn.net/qq_33154343/article/details/99617767) 
 - [qt5 中文乱码解决](https://blog.csdn.net/qq_33154343/article/details/95344312) 
@@ -172,7 +179,7 @@
 - [Qt Creator 关闭.cpp文件右侧的黄色警告](https://blog.csdn.net/qq_33154343/article/details/102943623)
 
 - [小技巧：Design设计师里，无法拖拽action到toolbar里](https://blog.csdn.net/qq_33154343/article/details/100168170) 
-- [小技巧：设置`QToolBox`的每一页page的使用单独的布局（`QTabWidget`同理）](https://mp.csdn.net/mdeditor/100185025#) 
+- [小技巧：设置`QToolBox`的每一页page的使用单独的布局（`QTabWidget`同理）](https://blog.csdn.net/qq_33154343/article/details/100185025) 
 - [小技巧：QtCreator用快捷键秒实现，声明在基类中重写的派生类(纯)虚函数](https://blog.csdn.net/qq_33154343/article/details/104457739) 
 
 <br>
@@ -224,7 +231,7 @@
 
 ## 作者：
 
-[偕藏 | xmuli ](https://xmuli.tech/)
+[偕藏 | xmuli ](https://xmuli.tech)
 
 <br>
 
