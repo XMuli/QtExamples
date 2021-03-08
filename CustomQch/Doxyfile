@@ -180,8 +180,9 @@ STRIP_FROM_INC_PATH    =
 # less readable) file names. This can be useful is your file systems doesn't
 # support long names like on DOS, Mac, or CD-ROM.
 # The default value is: NO.
+# 生成更短的文件名
 
-SHORT_NAMES            = NO
+SHORT_NAMES            = YES
 
 # If the JAVADOC_AUTOBRIEF tag is set to YES then doxygen will interpret the
 # first line (until the first dot) of a Javadoc-style comment as the brief
@@ -1380,23 +1381,25 @@ TOC_EXPAND             = NO
 # (.qch) of the generated HTML documentation.
 # The default value is: NO.
 # This tag requires that the tag GENERATE_HTML is set to YES.
+# 使用命名空间、生成 .qch ，此必须开启
 
-GENERATE_QHP           = NO
+GENERATE_QHP           = YES
 
 # If the QHG_LOCATION tag is specified, the QCH_FILE tag can be used to specify
 # the file name of the resulting .qch file. The path specified is relative to
 # the HTML output folder.
 # This tag requires that the tag GENERATE_QHP is set to YES.
-
-QCH_FILE               =
+# 通过 html 生成的 qch 路径，默认是生成 html 的文件夹路径
+QCH_FILE               = ../my_custom_qch.qch
 
 # The QHP_NAMESPACE tag specifies the namespace to use when generating Qt Help
 # Project output. For more information please see Qt Help Project / Namespace
 # (see: http://qt-project.org/doc/qt-4.8/qthelpproject.html#namespace).
 # The default value is: org.doxygen.Project.
 # This tag requires that the tag GENERATE_QHP is set to YES.
+# 命名空间要是唯一的，才能在 Qt 助手里面显示
 
-QHP_NAMESPACE          = org.doxygen.Project
+QHP_NAMESPACE          = "ifmet.cn"
 
 # The QHP_VIRTUAL_FOLDER tag specifies the namespace to use when generating Qt
 # Help Project output. For more information please see Qt Help Project / Virtual
@@ -1413,7 +1416,7 @@ QHP_VIRTUAL_FOLDER     = doc
 # filters).
 # This tag requires that the tag GENERATE_QHP is set to YES.
 
-QHP_CUST_FILTER_NAME   =
+QHP_CUST_FILTER_NAME   = YES
 
 # The QHP_CUST_FILTER_ATTRS tag specifies the list of the attributes of the
 # custom filter to add. For more information please see Qt Help Project / Custom
@@ -1435,7 +1438,7 @@ QHP_SECT_FILTER_ATTRS  =
 # generated .qhp file.
 # This tag requires that the tag GENERATE_QHP is set to YES.
 
-QHG_LOCATION           =
+QHG_LOCATION           = qhelpgenerator
 
 # If the GENERATE_ECLIPSEHELP tag is set to YES, additional index files will be
 # generated, together with the HTML files, they form an Eclipse help plugin. To
@@ -2398,8 +2401,9 @@ INTERACTIVE_SVG        = NO
 # The DOT_PATH tag can be used to specify the path where the dot tool can be
 # found. If left blank, it is assumed the dot tool can be found in the path.
 # This tag requires that the tag HAVE_DOT is set to YES.
+# 安装 graphviz， 然后输入此路径确保可以找到 dot 工具
 
-DOT_PATH               =
+DOT_PATH               = /usr/local/bin
 
 # The DOTFILE_DIRS tag can be used to specify one or more directories that
 # contain dot files that are included in the documentation (see the \dotfile
