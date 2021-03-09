@@ -1,0 +1,117 @@
+#nav-tree .children_ul {
+  margin:0;
+  padding:4px;
+}
+
+#nav-tree ul {
+  list-style:none outside none;
+  margin:0px;
+  padding:0px;
+}
+
+#nav-tree li {
+  white-space:nowrap;
+  margin:0px;
+  padding:0px;
+}
+
+#nav-tree .plus {
+  margin:0px;
+}
+
+#nav-tree .selected {
+  background-image: none;
+  background-color: #B0B0B0;
+  color: #fff;
+}
+
+#nav-tree img {
+  margin:0px;
+  padding:0px;
+  border:0px;
+  vertical-align: middle;
+}
+
+#nav-tree a {
+  text-decoration:none;
+  padding:0px;
+  margin:0px;
+  outline:none;
+}
+
+#nav-tree .label {
+  margin:0px;
+  padding:0px;
+}
+
+#nav-tree .label a {
+  padding:2px;
+}
+
+#nav-tree .selected a {
+  text-decoration:none;
+  padding:2px;
+  margin:0px;
+  color:#fff;
+}
+
+#nav-tree .children_ul {
+  margin:0px;
+  padding:0px;
+}
+
+#nav-tree .item {
+  margin:0px;
+  padding:0px;
+}
+
+#nav-tree {
+  padding: 0px 0px;
+  background-image:none;
+  background-color: #F6F6F6;
+  font-size:14px;
+  overflow:auto;
+}
+
+#doc-content {
+  overflow:auto;
+  display:block;
+  padding:0px;
+  margin:0px;
+}
+
+#side-nav {
+  padding:0 4px 0 0;
+  margin: 0px;
+  display:block;
+  position: absolute;
+  left: 0px;
+  width: 300px;
+}
+
+.ui-resizable .ui-resizable-handle {
+  display:block;
+}
+
+.ui-resizable-e {
+  background: none;
+  background-color: #EBEBEB;
+  cursor:e-resize;
+  height:100%;
+  right:0;
+  top:0;
+  width:4px;
+}
+
+.ui-resizable-handle {
+  display:none;
+  font-size:0.1px;
+  position:absolute;
+  z-index:1;
+}
+
+#nav-tree-contents {
+  margin: 6px 0px 0px 0px;
+}
+
+
