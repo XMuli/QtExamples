@@ -27,9 +27,9 @@
 
 <br>
 
-## 关于 QT 系列文章说明：
+## 关于 QT 系列文章：
 
-　会将该系列的源码，文章等系列，全部托管于这个仓库，该系列的主线任务是讲解**Qt**的相关文章。
+​		会将该系列的源码，文章等系列，全部托管于这个仓库，该系列的主线任务是讲解 **Qt** 的相关文章。
 
 <font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14.6 (18G103)`  |  `win10 x64 专业版 1803`  |  `UOS 20 x64 专业版 `
 
@@ -39,7 +39,7 @@
 
 <br>
 
-# 项目文章系列：
+# 文章系列：
 
 ## 第一部分：预备知识
 
@@ -66,12 +66,12 @@
 
 <br>
 
-- **Qt Creator 作为 IDE 基础讲解：**
+- **IDE 基础讲解：**
     - [Qt Creator` 此**IDE**的界面基本组成和入门使用讲解(Win,Linux,MacOS搭配不同版本 Qt)](https://blog.csdn.net/qq_33154343/article/details/103942733)
 
 <br>
 
-## 第二部分：qt生成原理/运行机制
+## 第二部分：Qt 生成原理/运行机制
 
 - [`make` `makefile` `cmake` `qmake`都是什么，有什么区别？](https://blog.csdn.net/qq_33154343/article/details/98170236) 
 - [Qt 编程中 namespace Ui { class Widget; } 解析](https://blog.csdn.net/qq_33154343/article/details/98122981) 
@@ -109,19 +109,6 @@
 
 <br>
 
-**网络的实际使用🌰：**
-
-- [QT5/C++项目：基于QT的跨平台网络对战象棋（一）（推荐★★★★）](https://blog.csdn.net/qq_33154343/article/details/89284983)
-- [QT5/C++项目：基于QT的跨平台网络对战象棋（二）（推荐★★★★）](https://blog.csdn.net/qq_33154343/article/details/89285968)
-- [QT5/C++项目：基于QT的跨平台网络对战象棋（三）（推荐★★★★）](https://blog.csdn.net/qq_33154343/article/details/89286553)
-- [项目实战：Qt5／C++：TCP的C/S的聊天小程序 （带界面 GUI）](https://blog.csdn.net/qq_33154343/article/details/79341062)
-- [项目实战：仿QQ的QQ简洁版2019群聊项目（带界面 GUI）](https://blog.csdn.net/qq_33154343/article/details/96437681)
-- [项目实战Small example：C:Socket之Tcp编程 [终端 Terminal]](https://blog.csdn.net/qq_33154343/article/details/81808722)
-- [项目实战Small example：C:Socket之UDP编程 [终端 Terminal]](https://blog.csdn.net/qq_33154343/article/details/81809168)
-- [项目实战：Qt5／Quick：模仿扣扣登录界面[小程序]](https://blog.csdn.net/qq_33154343/article/details/80448144)
-
-<br>
-
 ## 第五部分：DTK 重绘控件原理解析（自定义样式 QStyle ）
 
 - **dtk 历史发展：**
@@ -143,17 +130,6 @@
     - [DTK常用和测试代码片 ](https://xmuli.blog.csdn.net/article/details/106187959) 
     - [DTK 每日自动更新其 API 文档](https://xmuli.blog.csdn.net/article/details/108756933)
     - [DTK 基础教程：自定义控件规范](https://xmuli.blog.csdn.net/article/details/108536588) [★★]
-- **项目实战：**
-    - [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://blog.csdn.net/qq_33154343/article/details/100148552) 
-    - [`QStyle`自定义重绘滑动条`QSlider`控件](https://blog.csdn.net/qq_33154343/article/details/100545769) 
-    - [`QStyle`自定义重绘`QRubberBand`控件](https://blog.csdn.net/qq_33154343/article/details/100588428) 
-    - [重绘的`QStyle`中`sizeFromContents`()没有被调用](https://blog.csdn.net/qq_33154343/article/details/100941134) 
-    - [`QStyle`之`PenStyle`的`CustomDashLine`使用](https://blog.csdn.net/qq_33154343/article/details/100659576) 
-    - [`QStyle`自定义重绘滑动条`QSlide`r控件二](https://blog.csdn.net/qq_33154343/article/details/100942637) 
-    - [QStyle自定义重绘`QScrollBar`](https://blog.csdn.net/qq_33154343/article/details/100943187) 
-    - [Deepin 自定义修改窗口圆角大小](https://xmuli.blog.csdn.net/article/details/109232878)  [参与商业开源项目★★★]
-    - [Deepin 开发任务栏网速插件 lfxSpeed](https://xmuli.blog.csdn.net/article/details/110672252) [★★]
-    - [Deepin 愿望墙：社区插件等需求调研结果](https://xmuli.blog.csdn.net/article/details/112243878) [本意为提供社区用户练手方向]
 
 <br>
 
@@ -194,10 +170,52 @@
 - [Qt 项目在 MacOS 平台上面发布成可执行程序](https://xmuli.blog.csdn.net/article/details/96448938#comments) 
 - [Qt 项目在 Linux 平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448621) 
 - [如何给上游 Qt 提交 Bug 反馈和贡献代码 PATCH？](https://xmuli.blog.csdn.net/article/details/107220867) 
+- [Qt 项目用 doxygen 生成 .qch，嵌入文档到 Assistants](https://xmuli.blog.csdn.net/article/details/114580630) 
+- [修改 Doxygen 主题，生成 Qt 风格的文档](https://xmuli.blog.csdn.net/article/details/114591725) 
 
 <br>
 
-### 新手过来：
+## 第 九部分：高级
+
+- [高分屏、分辨率、DPI、PPI，及 Qt 处理高分屏](https://xmuli.blog.csdn.net/article/details/108905279) 
+- [Qt 项目(Cmake)设置国际化支持](https://xmuli.blog.csdn.net/article/details/114439385) 
+- [如何构建 QT5（5.15）](https://xmuli.blog.csdn.net/article/details/114259155) 
+- [在 Mac 编译成功运行 qt5.15 源码：debug 和 release 版本](https://xmuli.blog.csdn.net/article/details/114259186)
+
+<br>
+
+## 第十部分：项目
+
+### 网络
+
+- [QT5/C++项目：基于QT的跨平台网络对战象棋（一）（推荐★★★★）](https://blog.csdn.net/qq_33154343/article/details/89284983)
+- [QT5/C++项目：基于QT的跨平台网络对战象棋（二）（推荐★★★★）](https://blog.csdn.net/qq_33154343/article/details/89285968)
+- [QT5/C++项目：基于QT的跨平台网络对战象棋（三）（推荐★★★★）](https://blog.csdn.net/qq_33154343/article/details/89286553)
+- [项目实战：Qt5／C++：TCP的C/S的聊天小程序 （带界面 GUI）](https://blog.csdn.net/qq_33154343/article/details/79341062)
+- [项目实战：仿QQ的QQ简洁版2019群聊项目（带界面 GUI）](https://blog.csdn.net/qq_33154343/article/details/96437681)
+- [项目实战Small example：C:Socket之Tcp编程 [终端 Terminal]](https://blog.csdn.net/qq_33154343/article/details/81808722)
+- [项目实战Small example：C:Socket之UDP编程 [终端 Terminal]](https://blog.csdn.net/qq_33154343/article/details/81809168)
+- [项目实战：Qt5／Quick：模仿扣扣登录界面[小程序]](https://blog.csdn.net/qq_33154343/article/details/80448144)
+
+<br>
+
+### 其它
+
+- [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://blog.csdn.net/qq_33154343/article/details/100148552) 
+- [`QStyle`自定义重绘滑动条`QSlider`控件](https://blog.csdn.net/qq_33154343/article/details/100545769) 
+- [`QStyle`自定义重绘`QRubberBand`控件](https://blog.csdn.net/qq_33154343/article/details/100588428) 
+- [重绘的`QStyle`中`sizeFromContents`()没有被调用](https://blog.csdn.net/qq_33154343/article/details/100941134) 
+- [`QStyle`之`PenStyle`的`CustomDashLine`使用](https://blog.csdn.net/qq_33154343/article/details/100659576) 
+- [`QStyle`自定义重绘滑动条`QSlide`r控件二](https://blog.csdn.net/qq_33154343/article/details/100942637) 
+- [QStyle自定义重绘`QScrollBar`](https://blog.csdn.net/qq_33154343/article/details/100943187) 
+- [Deepin 自定义修改窗口圆角大小](https://xmuli.blog.csdn.net/article/details/109232878)  [参与商业开源项目★★★]
+- [Deepin 开发任务栏网速插件 lfxSpeed](https://xmuli.blog.csdn.net/article/details/110672252) [★★]
+- [Deepin 愿望墙：社区插件等需求调研结果](https://xmuli.blog.csdn.net/article/details/112243878) [提供社区练手参考]
+- [Deepin 任务栏网速插件推荐 lfxNet (重构 lfxSpeed)](https://xmuli.blog.csdn.net/article/details/113573870) [★★★★]
+
+<br>
+
+## 新手过来：
 
 　　<font color=#D0087E size=4 face="幼圆">**新手**</font> 在深思熟虑后踏入的编程，容易遭遇如下如下几点:
 
@@ -211,7 +229,7 @@
 
 <br>
 
-### 分享所想：
+## 分享所想：
 
 1. 自己想学一遍 GUI 控件
 2. 帮助真的新手实现0→1的入门，解决👆的1，2，3，4，6问题
@@ -220,7 +238,7 @@
 
 <br>
 
-### 我所想说：🙋‍♀️
+## 我所想说：🙋‍♀️
 
 <font color=#D0087E size=4 face="幼圆">虽然不盈利，会累，但因自由和开源软件而写的开心ya， 鸭鸭</font>
 
@@ -234,7 +252,7 @@
 
 ## 作者：
 
-[偕藏 | xmuli ](https://xmuli.tech)
+[偕藏 | xmuli ](https://ifmet.cn)
 
 <br>
 
