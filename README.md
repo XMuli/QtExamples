@@ -156,10 +156,10 @@
 
 - [QtCreator设置代码美化 astyle 之 Artistic](https://blog.csdn.net/qq_33154343/article/details/101397429)
 - [Qt Creator 关闭.cpp文件右侧的黄色警告](https://blog.csdn.net/qq_33154343/article/details/102943623)
-
 - [小技巧：Design设计师里，无法拖拽action到toolbar里](https://blog.csdn.net/qq_33154343/article/details/100168170) 
 - [小技巧：设置`QToolBox`的每一页page的使用单独的布局（`QTabWidget`同理）](https://blog.csdn.net/qq_33154343/article/details/100185025) 
 - [小技巧：QtCreator用快捷键秒实现，声明在基类中重写的派生类(纯)虚函数](https://blog.csdn.net/qq_33154343/article/details/104457739) 
+- [VS2019调试Qt5时QString显示为内存地址而非字符串](https://xmuli.blog.csdn.net/article/details/116244865) 
 
 <br>
 
@@ -172,6 +172,7 @@
 - [如何给上游 Qt 提交 Bug 反馈和贡献代码 PATCH？](https://xmuli.blog.csdn.net/article/details/107220867) 
 - [Qt 项目用 doxygen 生成 .qch，嵌入文档到 Assistants](https://xmuli.blog.csdn.net/article/details/114580630) 
 - [修改 Doxygen 主题，生成 Qt 风格的文档](https://xmuli.blog.csdn.net/article/details/114591725) 
+- [QtCreator 中自定义项目例子置于“欢迎-实例”中](https://xmuli.blog.csdn.net/article/details/115049715)
 
 <br>
 
@@ -181,6 +182,7 @@
 - [Qt 项目(Cmake)设置国际化支持](https://xmuli.blog.csdn.net/article/details/114439385) 
 - [如何构建 QT5（5.15）](https://xmuli.blog.csdn.net/article/details/114259155) 
 - [在 Mac 编译成功运行 qt5.15 源码：debug 和 release 版本](https://xmuli.blog.csdn.net/article/details/114259186)
+- [Qt 信号和槽原理分析](https://xmuli.blog.csdn.net/article/details/115305903)
 
 <br>
 
@@ -252,7 +254,7 @@
 
 ## 作者：
 
-[偕藏 | xmuli ](https://ifmet.cn)
+[偕臧 | xmuli ](https://ifmet.cn)
 
 <br>
 

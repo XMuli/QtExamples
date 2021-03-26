@@ -3,4 +3,4 @@ project(DbSigSlot)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(DbSigSlot main.cpp object.cpp object.h)
+add_executable(DbSigSlot main.cpp object.cpp object.h db_object.cpp)
