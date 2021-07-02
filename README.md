@@ -146,8 +146,7 @@
 
 <br>
 
-- [Qt5与Qt4的信号接收差异](https://blog.csdn.net/qq_33154343/article/details/79130732) 
-- `qt`的信号和槽关系
+- [Qt4和Qt5的信号和槽的使用差异](https://xmuli.blog.csdn.net/article/details/118346008)
 - `qt`中 Lambda 表达式
 
 <br>
