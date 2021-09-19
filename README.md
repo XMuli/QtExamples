@@ -49,6 +49,7 @@
     - [`windows`环境下安装`Qt Creator` + `Visual Studio 2015`作为`c++`的`IDE`开发工具，学习和使用**qt**  (备选)](https://blog.csdn.net/qq_33154343/article/details/103755569)
     - [`windows`环境下安装`Qt Creator 5.9` + `Visual Studio 2017专业版  `  参考此文 （备选）](https://blog.csdn.net/qq_33154343/article/details/78587699)  
     - [Win10上CLion、CMake、MSVC/MinGW配置Qt开发](https://blog.csdn.net/qq_33154343/article/details/120070828) 
+    - [VS2017调试Qt源码，安装PDB](https://blog.csdn.net/qq_33154343/article/details/120339797)
     
     <br>
     
