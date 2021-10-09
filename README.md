@@ -140,8 +140,8 @@
 
 ## 第六部分：Qt / IDE 出现乱码原因和解决：
 
+- [愿编程不再乱码(含Qt)-根因深究](https://blog.csdn.net/qq_33154343/article/details/120661967) [★★★★★]
 - [乱码原因产生和解决方案](https://xmuli.blog.csdn.net/article/details/109567352) [★★]
-
 - [ 输出乱码原因：古文码、口字码、符号码、问号码、棍拷码](https://blog.csdn.net/qq_33154343/article/details/99617767) 
 - [qt5 中文乱码解决](https://blog.csdn.net/qq_33154343/article/details/95344312) 
 - [Qt字符串有中文，编译不通过解决方法：](https://blog.csdn.net/qq_33154343/article/details/79130275) 
