@@ -1,11 +1,18 @@
-# QtExamples:
-
 <div align=center>
 <img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/blog-imange/img02/IMG_GIRL.png"  width="50%"/>
 </div>
 
+　　　　　　　　　　　　　　　　　　　　　　　　　我也不知道为什么，就是想放这么一张图在这里。
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　我也不知道为什么，就是想放这么一张图在这里。
+
+
+
+
+# QtExamples
+
+![](https://img.shields.io/badge/language-C%2B%2B%20%2F%20QT-orange) ![](https://img.shields.io/github/license/XMuli/QtExamples) ![](https://img.shields.io/badge/powered%20by-XMuli-ff69b4) 
+
+![](https://img.shields.io/github/languages/code-size/XMuli/QtExamples)   ![](https://img.shields.io/github/stars/XMuli/QtExamples?style=social) ![](https://img.shields.io/github/forks/XMuli/QtExamples?style=social&label=Fork)
 
 <br>
 
@@ -15,13 +22,13 @@
 
 ## 项目介绍：
 
-　　✅ `Qt` 的 `GUI` 基础控件用法，网络；
+- [x] `Qt` 的 `GUI` 基础控件用法，网络；
 
-　　✅ `DTK` 重绘控件方式的框架解析；
+- [x] `DTK` 重绘控件方式的框架解析；
 
-　　✅ `QtCrator` 使用和一些小技巧；
+- [x] `QtCrator` 使用和一些小技巧；
 
-　　✅ `Qt` 原理/运行机制理解
+- [x] `Qt` 原理/运行机制理解
 
 　　自己所学记录，亦可以互相交流共享学习，<font color=#D0087E size=4 face="幼圆">**有朋自远方互联网而来，不亦悦乎？**</font>
 
@@ -29,13 +36,11 @@
 
 ## 关于 QT 系列文章：
 
-​		会将该系列的源码，文章等系列，全部托管于这个仓库，该系列的主线任务是讲解 **Qt** 的相关文章。
+会将该系列的源码，文章等系列，全部托管于这个仓库，该系列的主线任务是讲解 **Qt** 的相关文章。
 
-<font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14.6 (18G103)`  |  `win10 x64 专业版 1803`  |  `UOS 20 x64 专业版 `
+<font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14-11.6`  |  `win10 x64 1803-21H2`  |  `UOS 20 x64 专业版 `
 
-<font color=#70AD47 size=4 face="幼圆">**编码软件：** </font> `Qt 5.9.8+`  | `Qt Creator 4.8.2 (Enterprise)` 
-
-<font color=#70AD47 size=4 face="幼圆">**编码语言：**</font>![](https://img.shields.io/badge/language-c++-orange.svg)
+<font color=#70AD47 size=4 face="幼圆">**编码软件：** </font> `Qt 5.9-5.15`  | `Visual Studio 2015-2019` 
 
 <br>
 
@@ -44,34 +49,29 @@
 ## 第一部分：预备知识
 
 - **windows 系统：**
-    - [`windows10`环境下安装`Qt Creator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**  (最佳推荐)](https://blog.csdn.net/qq_33154343/article/details/103674579)
-    - [Qt Creator 安装SDK，在MSVC编译模式下使用CDB调试器](https://blog.csdn.net/qq_33154343/article/details/98779698) 
-    - [`windows`环境下安装`Qt Creator` + `Visual Studio 2015`作为`c++`的`IDE`开发工具，学习和使用**qt**  (备选)](https://blog.csdn.net/qq_33154343/article/details/103755569)
-    - [`windows`环境下安装`Qt Creator 5.9` + `Visual Studio 2017专业版  `  参考此文 （备选）](https://blog.csdn.net/qq_33154343/article/details/78587699)  
-    - [Win10上CLion、CMake、MSVC/MinGW配置Qt开发](https://blog.csdn.net/qq_33154343/article/details/120070828) 
-    - [VS2017调试Qt源码，安装PDB](https://blog.csdn.net/qq_33154343/article/details/120339797)
-    
-    <br>
-    
+
+  - [`windows10`环境下安装`Qt Creator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**  (最佳推荐)](https://blog.csdn.net/qq_33154343/article/details/103674579)
+  - [Qt Creator 安装SDK，在MSVC编译模式下使用CDB调试器](https://blog.csdn.net/qq_33154343/article/details/98779698) 
+  - [`windows`环境下安装`Qt Creator` + `Visual Studio 2015`作为`c++`的`IDE`开发工具，学习和使用**qt**  (备选)](https://blog.csdn.net/qq_33154343/article/details/103755569)
+  - [`windows`环境下安装`Qt Creator 5.9` + `Visual Studio 2017专业版  `  参考此文 （备选）](https://blog.csdn.net/qq_33154343/article/details/78587699)  
+  - [Win10上CLion、CMake、MSVC/MinGW配置Qt开发](https://blog.csdn.net/qq_33154343/article/details/120070828) 
+
+  <br>
+
 - **MacOS 系统：**
-  
-    - [`MacOS10.14.6`环境下安装`QtCreator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**(推荐)](https://blog.csdn.net/qq_33154343/article/details/103231202)
+
+  - [`MacOS10.14.6`环境下安装`QtCreator5.9.8`作为`c++`的**IDE**开发工具，学习和使用**qt**(推荐)](https://blog.csdn.net/qq_33154343/article/details/103231202)
 
 <br>
 
 - **Linux 系统:**
-    - [在win10里面的VMware安装UOS20，在uos20里面安装QtCreator，配置dtk开发环境](https://blog.csdn.net/qq_33154343/article/details/103733327)
-    - [MacOS10.14安装虚拟机Parallels_Desktop，安装UOS20和 QtCreaor，搭建dtk开发环境](https://blog.csdn.net/qq_33154343/article/details/104180794)
-    - [在macOS 10.14的虚拟机VMware Fusionlimian里面安装deepin15.11（Linux）](https://blog.csdn.net/qq_33154343/article/details/102789047)
-    - [Deepin / UOS 中配置 DTK 开发环境](https://blog.csdn.net/qq_33154343/article/details/112239518)
-    - [重装uos/deepin v20后必安装软件(个人习惯)](https://xmuli.blog.csdn.net/article/details/106510975)
-    - [ArchLinux + DDE 安装教程](https://xmuli.blog.csdn.net/article/details/107696563)
-    - [对 GNU/Linux 介绍、ArchLinux社区氛围、DDE移植Arch流程](https://blog.csdn.net/qq_33154343/article/details/108378441)
-
-<br>
-
-- **IDE 基础讲解：**
-    - [Qt Creator` 此**IDE**的界面基本组成和入门使用讲解(Win,Linux,MacOS搭配不同版本 Qt)](https://blog.csdn.net/qq_33154343/article/details/103942733)
+  - [在win10里面的VMware安装UOS20，在uos20里面安装QtCreator，配置dtk开发环境](https://blog.csdn.net/qq_33154343/article/details/103733327)
+  - [MacOS10.14安装虚拟机Parallels_Desktop，安装UOS20和 QtCreaor，搭建dtk开发环境](https://blog.csdn.net/qq_33154343/article/details/104180794)
+  - [在macOS 10.14的虚拟机VMware Fusionlimian里面安装deepin15.11（Linux）](https://blog.csdn.net/qq_33154343/article/details/102789047)
+  - [Deepin / UOS 中配置 DTK 开发环境](https://blog.csdn.net/qq_33154343/article/details/112239518)
+  - [重装uos/deepin v20后必安装软件(个人习惯)](https://xmuli.blog.csdn.net/article/details/106510975)
+  - [ArchLinux + DDE 安装教程](https://xmuli.blog.csdn.net/article/details/107696563)
+  - [对 GNU/Linux 介绍、ArchLinux社区氛围、DDE移植Arch流程](https://blog.csdn.net/qq_33154343/article/details/108378441)
 
 <br>
 
@@ -116,25 +116,25 @@
 ## 第五部分：DTK 重绘控件原理解析（自定义样式 QStyle ）
 
 - **DTK 历史发展：**
-    - [DTK的历史起源、发展，和简单入门](https://xmuli.blog.csdn.net/article/details/106189533) 『🥳🥳』
-    - [deepin、dde的历史起源与发展(附deepin所有版本的dde截图)](https://xmuli.blog.csdn.net/article/details/106195055) 『🥳🥳』
-    - [UOS/Deepin 中配置 DTK 开发环境](https://xmuli.blog.csdn.net/article/details/112239518) 『🥳🥳』
-    - [Deepin / DTK 文档参考资料集合](https://xmuli.blog.csdn.net/article/details/112244150)  『🥳🥳🥳🥳🥳』
+  - [DTK的历史起源、发展，和简单入门](https://xmuli.blog.csdn.net/article/details/106189533) 『🥳🥳』
+  - [deepin、dde的历史起源与发展(附deepin所有版本的dde截图)](https://xmuli.blog.csdn.net/article/details/106195055) 『🥳🥳』
+  - [UOS/Deepin 中配置 DTK 开发环境](https://xmuli.blog.csdn.net/article/details/112239518) 『🥳🥳』
+  - [Deepin / DTK 文档参考资料集合](https://xmuli.blog.csdn.net/article/details/112244150)  『🥳🥳🥳🥳🥳』
 - **预备知识：**
-    - QStyle与QPen、QPush、QPalette、QPainter之间的区别 
-    - [DTK 基础教程：自定义控件规范](https://xmuli.blog.csdn.net/article/details/108536588) 『🥳🥳』
-    - [QStyle设置界面的外观和QCommonStyle继承关系图讲解和使用](https://blog.csdn.net/qq_33154343/article/details/104367878) 『👩‍💻👩‍💻👩‍💻』
-    - [qt之proxy()代理探究](https://blog.csdn.net/qq_33154343/article/details/101571843)
-    - [DTK常用和测试代码片](https://blog.csdn.net/qq_33154343/article/details/106187959)
+  - QStyle与QPen、QPush、QPalette、QPainter之间的区别 
+  - [DTK 基础教程：自定义控件规范](https://xmuli.blog.csdn.net/article/details/108536588) 『🥳🥳』
+  - [QStyle设置界面的外观和QCommonStyle继承关系图讲解和使用](https://blog.csdn.net/qq_33154343/article/details/104367878) 『👩‍💻👩‍💻👩‍💻』
+  - [qt之proxy()代理探究](https://blog.csdn.net/qq_33154343/article/details/101571843)
+  - [DTK常用和测试代码片](https://blog.csdn.net/qq_33154343/article/details/106187959)
 - **感性理解👀：**
-    - [应用软件在「UOS20和 MaOS10.14下」显示应用不同的QStyle「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/104305154)
-    - [应用软件在「windows10 和 deepin10.15下」显示应用不同的`QStyle`「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/100148552) 
+  - [应用软件在「UOS20和 MaOS10.14下」显示应用不同的QStyle「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/104305154)
+  - [应用软件在「windows10 和 deepin10.15下」显示应用不同的`QStyle`「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/100148552) 
 - **DTK 源码解析架构🤔：**
-    - [QStyle/DTK重绘Qt-GUI已有控件,举例QScrollBar](https://blog.csdn.net/qq_33154343/article/details/104537944) 『👩‍💻👩‍💻👩‍💻』
-    - [QStyle/DTK重绘自定义需求控件,举例MySwitchButton](https://blog.csdn.net/qq_33154343/article/details/104987446) 『👩‍💻👩‍💻👩‍💻』
-    - [DTK常用和测试代码片 ](https://xmuli.blog.csdn.net/article/details/106187959) 
-    - [DTK 每日自动更新其 API 文档](https://xmuli.blog.csdn.net/article/details/108756933)
-    - [DTK 基础教程：自定义控件规范](https://xmuli.blog.csdn.net/article/details/108536588) [★★]
+  - [QStyle/DTK重绘Qt-GUI已有控件,举例QScrollBar](https://blog.csdn.net/qq_33154343/article/details/104537944) 『👩‍💻👩‍💻👩‍💻』
+  - [QStyle/DTK重绘自定义需求控件,举例MySwitchButton](https://blog.csdn.net/qq_33154343/article/details/104987446) 『👩‍💻👩‍💻👩‍💻』
+  - [DTK常用和测试代码片 ](https://xmuli.blog.csdn.net/article/details/106187959) 
+  - [DTK 每日自动更新其 API 文档](https://xmuli.blog.csdn.net/article/details/108756933)
+  - [DTK 基础教程：自定义控件规范](https://xmuli.blog.csdn.net/article/details/108536588) [★★]
 
 <br>
 
@@ -156,18 +156,34 @@
 
 <br>
 
-## 第七部分：QtCreator 的使用小技巧：
+## 第七部分：IDE 技巧
+
+### Qt Creator
+
+- [Qt Creator` 此**IDE**的界面基本组成和入门使用讲解(Win,Linux,MacOS搭配不同版本 Qt)](https://blog.csdn.net/qq_33154343/article/details/103942733)
 
 - [QtCreator设置代码美化 astyle 之 Artistic](https://blog.csdn.net/qq_33154343/article/details/101397429)
 - [Qt Creator 关闭.cpp文件右侧的黄色警告](https://blog.csdn.net/qq_33154343/article/details/102943623)
 - [小技巧：Design设计师里，无法拖拽action到toolbar里](https://blog.csdn.net/qq_33154343/article/details/100168170) 
 - [小技巧：设置`QToolBox`的每一页page的使用单独的布局（`QTabWidget`同理）](https://blog.csdn.net/qq_33154343/article/details/100185025) 
 - [小技巧：QtCreator用快捷键秒实现，声明在基类中重写的派生类(纯)虚函数](https://blog.csdn.net/qq_33154343/article/details/104457739) 
-- [VS2019调试Qt5时QString显示为内存地址而非字符串](https://xmuli.blog.csdn.net/article/details/116244865) 
+- [QtCreator 中自定义项目例子置于“欢迎-实例”中](https://blog.csdn.net/qq_33154343/article/details/115049715)
+- [Qt 项目用 doxygen 生成 .qch，嵌入文档到 Assistants](https://blog.csdn.net/qq_33154343/article/details/114580630)
 
 <br>
 
-## 第八部分：提交规范和发布 Qt 程序：
+### Visual Studio
+
+- [VS2017调试Qt源码，安装PDB](https://blog.csdn.net/qq_33154343/article/details/120339797)
+
+- [VS2019调试Qt5时QString显示为内存地址而非字符串](https://xmuli.blog.csdn.net/article/details/116244865) 
+- [Visual Studio实际仅增删数行，却显示文件所有行均发生变更](https://blog.csdn.net/qq_33154343/article/details/123366419)
+- [Visual Studio生成.vs隐藏文件夹，导致Git命令错误](https://blog.csdn.net/qq_33154343/article/details/123366493)
+- [win10的20H2使用VS2019，拖曳窗口会崩溃](https://blog.csdn.net/qq_33154343/article/details/116244656)
+
+<br>
+
+## 第八部分：提交规范和发布 Qt 程序
 
 - [约定式提交规范](https://www.conventionalcommits.org/zh-hans/v1.0.0-beta.4/)
 - [Qt 项目在 Windows 平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448388) 
@@ -192,7 +208,9 @@
 
 ## 第十部分：项目
 
-### 网络
+### 项目
+
+- [QT5/C++项目：QT象棋【初版】（推荐★★★★）](https://xmuli.blog.csdn.net/article/details/80931400)
 
 - [QT5/C++项目：基于QT的跨平台网络对战象棋（一）（推荐★★★★）](https://blog.csdn.net/qq_33154343/article/details/89284983)
 - [QT5/C++项目：基于QT的跨平台网络对战象棋（二）（推荐★★★★）](https://blog.csdn.net/qq_33154343/article/details/89285968)
@@ -205,7 +223,7 @@
 
 <br>
 
-### 其它(Qt/DTK)
+### QT/DTK
 
 - [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://blog.csdn.net/qq_33154343/article/details/100148552) 
 - [`QStyle`自定义重绘滑动条`QSlider`控件](https://blog.csdn.net/qq_33154343/article/details/100545769) 
@@ -221,7 +239,7 @@
 
 <br>
 
-## 新手过来：
+## 新手过来
 
 　　<font color=#D0087E size=4 face="幼圆">**新手**</font> 在深思熟虑后踏入的编程，容易遭遇如下如下几点:
 
@@ -244,30 +262,30 @@
 
 <br>
 
-## 我所想说：🙋‍♀️
+## 我所想说🙋‍♀️
 
 <font color=#D0087E size=4 face="幼圆">虽然不盈利，会累，但因自由和开源软件而写的开心ya， 鸭鸭</font>
 
 <br>
 
-## 贡献：
+## 贡献
 
 若是帮助到了你，或者觉得有用，可以点击该项目的的<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709023321.png" height="18" width="18"/><font color=#D0087E size=4 face="幼圆">**Star**</font> 和<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709023317.png" height="18" width="18"/><font color=#D0087E size=4 face="幼圆">**Fork**</font> 的两个图标，方便抬手之间，表示点个赞，手有余香
 
 <br>
 
-## 作者：
+## 作者
 
-[偕臧 | xmuli ](https://ifmet.cn)
+[![alt text](https://img.shields.io/badge/QQ-%E5%81%95%E8%87%A7-brightgreen)](https://sighttp.qq.com/authd?IDKEY=31f3ef7312b39e2c8dc822ae2f4c3b3118e1a6f31cc83373) [![alt text](https://img.shields.io/badge/GitHub-XMuli-brightgreen)](https://github.com/XMuli) [![alt text](https://img.shields.io/badge/Blog-%E5%81%95%E8%87%A7%E7%9A%84%E5%B0%8F%E7%AB%99-ff69b4)](https://ifmet.cn/) 
 
 <br>
 
-## 协议：
+## 协议
 
 <img src='https://raw.githubusercontent.com/touwoyimuli/FigureBed/blog-imange/img/20190709052148.jpg' width='240' height='127'/>
 
-<font color=#70AD47 size=4 face="幼圆">**偕藏：** </font> 博客代码基于Apache License 2.0 协议进行分发和使用，更多信息参见[协议文件](/LICENSE)。
+<font color=#70AD47 size=4 face="幼圆">**[偕臧](https://ifmet.cn/about/site.html)：** </font> 博客代码基于Apache License 2.0 协议进行分发和使用，更多信息参见[协议文件](/LICENSE)。
 
 <img src='https://raw.githubusercontent.com/touwoyimuli/FigureBed/blog-imange/img/20190709052153.jpg' width='127' height='127'/>
 
-<font color=#70AD47  size=4 face="幼圆">**偕藏：** </font> 所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
+<font color=#70AD47  size=4 face="幼圆">**[偕臧](https://ifmet.cn/about/site.html)：** </font> 所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
