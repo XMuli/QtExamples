@@ -1,0 +1,3 @@
+[submodule "ExPicShot/3rdparty/spdlog"]
+	path = ExPicShot/3rdparty/spdlog
+	url = https://github.com/gabime/spdlog.git

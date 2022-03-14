@@ -14,6 +14,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
+include_directories(3rdparty/spdlog/include)  # spdlog 路径，不必再添加链接库
+
 set(PROJECT_SOURCES
         main.cpp
         widget.cpp
