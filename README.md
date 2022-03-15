@@ -148,10 +148,11 @@
 - [乱码原因（Qt版本）_附上语文的pdf版本](https://blog.csdn.net/qq_33154343/article/details/79039644) 
 - [qt中文乱码问题](https://blog.csdn.net/qq_33154343/article/details/78686103)  
 - [借Qt中文乱码谈谈Coding中的编码问题](https://blog.csdn.net/qq_33154343/article/details/78686075) 
+- [一个微软自带的 notepad 所导致的问题](https://xmuli.blog.csdn.net/article/details/123508220) [★]
 
 <br>
 
-- [Qt4和Qt5的信号和槽的使用差异](https://xmuli.blog.csdn.net/article/details/118346008)
+- [Qt4和Qt5的信号和槽的使用差异](https://xmuli.blog.csdn.net/article/details/118346008) 
 - `qt`中 Lambda 表达式
 
 <br>
