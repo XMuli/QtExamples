@@ -38,7 +38,7 @@
 
 会将该系列的源码，文章等系列，全部托管于这个仓库，该系列的主线任务是讲解 **Qt** 的相关文章。
 
-<font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14-11.6`  |  `win10 x64 1803-21H2`  |  `UOS 20 x64 专业版 `
+<font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14-11.6`  |  `win10 x64 1803-21H2`  |  `UOS/Deepin 20.x`
 
 <font color=#70AD47 size=4 face="幼圆">**编码软件：** </font> `Qt 5.9-5.15`  | `Visual Studio 2015-2019` 
 
@@ -113,28 +113,52 @@
 
 <br>
 
-## 第五部分：DTK 重绘控件原理解析（自定义样式 QStyle ）
+## 第五部分：DTK 重绘控件原理解析『自定义 QStyle 』
 
 - **DTK 历史发展：**
-  - [DTK的历史起源、发展，和简单入门](https://xmuli.blog.csdn.net/article/details/106189533) 『🥳🥳』
-  - [deepin、dde的历史起源与发展(附deepin所有版本的dde截图)](https://xmuli.blog.csdn.net/article/details/106195055) 『🥳🥳』
-  - [UOS/Deepin 中配置 DTK 开发环境](https://xmuli.blog.csdn.net/article/details/112239518) 『🥳🥳』
-  - [Deepin / DTK 文档参考资料集合](https://xmuli.blog.csdn.net/article/details/112244150)  『🥳🥳🥳🥳🥳』
-- **预备知识：**
+  - [DTK的历史起源、发展，和简单入门](https://xmuli.blog.csdn.net/article/details/106189533) 『✨✨』
+  - [deepin、dde的历史起源与发展(附deepin所有版本的dde截图)](https://xmuli.blog.csdn.net/article/details/106195055) 『✨✨』
+  - [UOS/Deepin 中配置 DTK 开发环境](https://xmuli.blog.csdn.net/article/details/112239518) 『✨』
+  - [Deepin / DTK 文档参考资料集合](https://xmuli.blog.csdn.net/article/details/112244150)  『✨✨✨』
+- **背景知识：**
   - QStyle与QPen、QPush、QPalette、QPainter之间的区别 
-  - [DTK 基础教程：自定义控件规范](https://xmuli.blog.csdn.net/article/details/108536588) 『🥳🥳』
-  - [QStyle设置界面的外观和QCommonStyle继承关系图讲解和使用](https://blog.csdn.net/qq_33154343/article/details/104367878) 『👩‍💻👩‍💻👩‍💻』
+  - [DTK 基础教程：自定义控件规范](https://xmuli.blog.csdn.net/article/details/108536588) 『✨』
+  - [QStyle设置界面的外观和QCommonStyle继承关系图讲解和使用](https://blog.csdn.net/qq_33154343/article/details/104367878) 『✨』
   - [qt之proxy()代理探究](https://blog.csdn.net/qq_33154343/article/details/101571843)
   - [DTK常用和测试代码片](https://blog.csdn.net/qq_33154343/article/details/106187959)
 - **感性理解👀：**
   - [应用软件在「UOS20和 MaOS10.14下」显示应用不同的QStyle「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/104305154)
   - [应用软件在「windows10 和 deepin10.15下」显示应用不同的`QStyle`「即：所有控件的样式换肤」](https://blog.csdn.net/qq_33154343/article/details/100148552) 
 - **DTK 源码解析架构🤔：**
-  - [QStyle/DTK重绘Qt-GUI已有控件,举例QScrollBar](https://blog.csdn.net/qq_33154343/article/details/104537944) 『👩‍💻👩‍💻👩‍💻』
-  - [QStyle/DTK重绘自定义需求控件,举例MySwitchButton](https://blog.csdn.net/qq_33154343/article/details/104987446) 『👩‍💻👩‍💻👩‍💻』
+  - [QStyle/DTK重绘Qt-GUI已有控件,举例QScrollBar](https://blog.csdn.net/qq_33154343/article/details/104537944) 『✨✨』
+  - [QStyle/DTK重绘自定义需求控件,举例MySwitchButton](https://blog.csdn.net/qq_33154343/article/details/104987446) 『✨✨』
   - [DTK常用和测试代码片 ](https://xmuli.blog.csdn.net/article/details/106187959) 
   - [DTK 每日自动更新其 API 文档](https://xmuli.blog.csdn.net/article/details/108756933)
-  - [DTK 基础教程：自定义控件规范](https://xmuli.blog.csdn.net/article/details/108536588) [★★]
+  - [DTK 基础教程：自定义控件规范](https://xmuli.blog.csdn.net/article/details/108536588) [✨✨]
+
+- **DTK 项目实战**
+
+  - [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://blog.csdn.net/qq_33154343/article/details/100148552) 
+
+  - [`QStyle`自定义重绘滑动条`QSlider`控件](https://blog.csdn.net/qq_33154343/article/details/100545769) 
+
+  - [`QStyle`自定义重绘`QRubberBand`控件](https://blog.csdn.net/qq_33154343/article/details/100588428) 
+
+  - [重绘的`QStyle`中`sizeFromContents`()没有被调用](https://blog.csdn.net/qq_33154343/article/details/100941134) 
+
+  - [`QStyle`之`PenStyle`的`CustomDashLine`使用](https://blog.csdn.net/qq_33154343/article/details/100659576) 
+
+  - [`QStyle`自定义重绘滑动条`QSlide`r控件二](https://blog.csdn.net/qq_33154343/article/details/100942637) 
+
+  - [QStyle自定义重绘`QScrollBar`](https://blog.csdn.net/qq_33154343/article/details/100943187) 
+
+  - [Deepin 自定义修改窗口圆角大小](https://xmuli.blog.csdn.net/article/details/109232878)  [商业开源项目✨✨]
+
+  - [Deepin 开发任务栏网速插件 lfxSpeed](https://xmuli.blog.csdn.net/article/details/110672252) [✨]
+
+  - [Deepin 愿望墙：社区插件等需求调研结果](https://xmuli.blog.csdn.net/article/details/112243878) [社区练手参考]
+
+  - [Deepin 任务栏网速插件推荐 lfxNet (重构 lfxSpeed)](https://xmuli.blog.csdn.net/article/details/113573870) [✨✨]
 
 <br>
 
@@ -170,6 +194,7 @@
 - [小技巧：QtCreator用快捷键秒实现，声明在基类中重写的派生类(纯)虚函数](https://blog.csdn.net/qq_33154343/article/details/104457739) 
 - [QtCreator 中自定义项目例子置于“欢迎-实例”中](https://blog.csdn.net/qq_33154343/article/details/115049715)
 - [Qt 项目用 doxygen 生成 .qch，嵌入文档到 Assistants](https://blog.csdn.net/qq_33154343/article/details/114580630)
+- [QtCreator 中自定义项目例子置于“欢迎-实例”中](https://xmuli.blog.csdn.net/article/details/115049715)
 
 <br>
 
@@ -181,19 +206,20 @@
 - [Visual Studio实际仅增删数行，却显示文件所有行均发生变更](https://blog.csdn.net/qq_33154343/article/details/123366419)
 - [Visual Studio生成.vs隐藏文件夹，导致Git命令错误](https://blog.csdn.net/qq_33154343/article/details/123366493)
 - [win10的20H2使用VS2019，拖曳窗口会崩溃](https://blog.csdn.net/qq_33154343/article/details/116244656)
+- [Visual Studio实际仅增删数行，却显示文件所有行均发生变更](https://blog.csdn.net/qq_33154343/article/details/123366419)
+- [Visual Studio生成.vs隐藏文件夹，导致Git命令错误](https://blog.csdn.net/qq_33154343/article/details/123366493)
+- [Visual Studio 2019 进行远程调试](https://blog.csdn.net/qq_33154343/article/details/123855765)
 
 <br>
 
 ## 第八部分：提交规范和发布 Qt 程序
 
-- [约定式提交规范](https://www.conventionalcommits.org/zh-hans/v1.0.0-beta.4/)
+- [约定式提交规范](https://www.conventionalcommits.org/)
 - [Qt 项目在 Windows 平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448388) 
 - [Qt 项目在 MacOS 平台上面发布成可执行程序](https://xmuli.blog.csdn.net/article/details/96448938#comments) 
 - [Qt 项目在 Linux 平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448621) 
 - [如何给上游 Qt 提交 Bug 反馈和贡献代码 PATCH？](https://xmuli.blog.csdn.net/article/details/107220867) 
-- [Qt 项目用 Doxygen 生成 .qch，嵌入文档到 Assistants](https://xmuli.blog.csdn.net/article/details/114580630) 
 - [修改 Doxygen 主题，生成 Qt 风格的文档](https://xmuli.blog.csdn.net/article/details/114591725) 
-- [QtCreator 中自定义项目例子置于“欢迎-实例”中](https://xmuli.blog.csdn.net/article/details/115049715)
 
 <br>
 
@@ -209,8 +235,6 @@
 
 ## 第十部分：项目
 
-### 项目
-
 - [QT5/C++项目：QT象棋【初版】（推荐★★★★）](https://xmuli.blog.csdn.net/article/details/80931400)
 
 - [QT5/C++项目：基于QT的跨平台网络对战象棋（一）（推荐★★★★）](https://blog.csdn.net/qq_33154343/article/details/89284983)
@@ -224,19 +248,11 @@
 
 <br>
 
-### QT/DTK
+## 第十一部分：学以致用
 
-- [更换`Qt`应用程序的界面`UI`，实现换肤，改用自带其他默认`QStyle`风格样式](https://blog.csdn.net/qq_33154343/article/details/100148552) 
-- [`QStyle`自定义重绘滑动条`QSlider`控件](https://blog.csdn.net/qq_33154343/article/details/100545769) 
-- [`QStyle`自定义重绘`QRubberBand`控件](https://blog.csdn.net/qq_33154343/article/details/100588428) 
-- [重绘的`QStyle`中`sizeFromContents`()没有被调用](https://blog.csdn.net/qq_33154343/article/details/100941134) 
-- [`QStyle`之`PenStyle`的`CustomDashLine`使用](https://blog.csdn.net/qq_33154343/article/details/100659576) 
-- [`QStyle`自定义重绘滑动条`QSlide`r控件二](https://blog.csdn.net/qq_33154343/article/details/100942637) 
-- [QStyle自定义重绘`QScrollBar`](https://blog.csdn.net/qq_33154343/article/details/100943187) 
-- [Deepin 自定义修改窗口圆角大小](https://xmuli.blog.csdn.net/article/details/109232878)  [商业开源项目★★★]
-- [Deepin 开发任务栏网速插件 lfxSpeed](https://xmuli.blog.csdn.net/article/details/110672252) [★★★]
-- [Deepin 愿望墙：社区插件等需求调研结果](https://xmuli.blog.csdn.net/article/details/112243878) [社区练手参考]
-- [Deepin 任务栏网速插件推荐 lfxNet (重构 lfxSpeed)](https://xmuli.blog.csdn.net/article/details/113573870) [★★★★]
+上面这些基本有了对于 QT / C++ / CMake 的基本入门，将所学以致用，然后启动了我的新的项目，欢迎 star
+
+✨✨✨ 跨平台的项目：[PicShot](https://github.com/XMuli/PicShot) ✨✨✨
 
 <br>
 
@@ -271,7 +287,7 @@
 
 ## 贡献
 
-若是帮助到了你，或者觉得有用，可以点击该项目的的<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709023321.png" height="18" width="18"/><font color=#D0087E size=4 face="幼圆">**Star**</font> 和<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/master/project_log/20190709023317.png" height="18" width="18"/><font color=#D0087E size=4 face="幼圆">**Fork**</font> 的两个图标，方便抬手之间，表示点个赞，手有余香
+若是帮助到了你，或者觉得有用，可以点击该项目的的 <font color=#D0087E size=4 face="幼圆">**⭐Star** </font>和<font color=#D0087E size=4 face="幼圆">**🍴 Fork**</font> 的两个图标，方便抬手之间，表示点个赞，手有余香
 
 <br>
 
