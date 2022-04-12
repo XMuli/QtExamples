@@ -248,14 +248,6 @@
 
 <br>
 
-## 第十一部分：学以致用
-
-上面这些基本有了对于 QT / C++ / CMake 的基本入门，将所学以致用，然后启动了我的新的项目，欢迎 star
-
-✨✨✨ 跨平台的项目：[PicShot](https://github.com/XMuli/PicShot) ✨✨✨
-
-<br>
-
 ## 新手过来
 
 　　<font color=#D0087E size=4 face="幼圆">**新手**</font> 在深思熟虑后踏入的编程，容易遭遇如下如下几点:
