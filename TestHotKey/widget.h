@@ -4,7 +4,7 @@
  * Author:  XMuli  xmulitech@gmail.com
  *
  * GitHub:  https://github.com/XMuli
- * Blogs:   https://ifmet.cn
+ * Blog:    https://ifmet.cn
  * CSDN:    https://blog.csdn.net/qq_33154343
  */
 #ifndef WIDGET_H
