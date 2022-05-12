@@ -75,6 +75,12 @@
 
 <br>
 
+- **通用命令交互：**
+  - [shell、bash、cmd、PowerShell的区别](https://blog.csdn.net/qq_33154343/article/details/123366377)
+  - [Windows-Terminal 美化 PowerShell 7](https://blog.csdn.net/qq_33154343/article/details/124030501)
+
+<br>
+
 ## 第二部分：Qt 生成原理/运行机制
 
 - [`make` `makefile` `cmake` `qmake`都是什么，有什么区别？](https://blog.csdn.net/qq_33154343/article/details/98170236) 
@@ -209,6 +215,8 @@
 - [Visual Studio实际仅增删数行，却显示文件所有行均发生变更](https://blog.csdn.net/qq_33154343/article/details/123366419)
 - [Visual Studio生成.vs隐藏文件夹，导致Git命令错误](https://blog.csdn.net/qq_33154343/article/details/123366493)
 - [Visual Studio 2019 进行远程调试](https://blog.csdn.net/qq_33154343/article/details/123855765)
+- [Visual Studio 断点调试之箭头偏移进错函数，捉🐛记](https://blog.csdn.net/qq_33154343/article/details/124482152)
+- [微软 SDK 导致的项目编译失败哦~](https://blog.csdn.net/qq_33154343/article/details/124736720)
 
 <br>
 
@@ -218,6 +226,7 @@
 - [Qt 项目在 Windows 平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448388) 
 - [Qt 项目在 MacOS 平台上面发布成可执行程序](https://xmuli.blog.csdn.net/article/details/96448938#comments) 
 - [Qt 项目在 Linux 平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448621) 
+- [Linux 中用 dh_make 将 Qt + CMake 项目打包为 deb 文件](https://blog.csdn.net/qq_33154343/article/details/123778207)
 - [如何给上游 Qt 提交 Bug 反馈和贡献代码 PATCH？](https://xmuli.blog.csdn.net/article/details/107220867) 
 - [修改 Doxygen 主题，生成 Qt 风格的文档](https://xmuli.blog.csdn.net/article/details/114591725) 
 
