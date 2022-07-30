@@ -77,6 +77,7 @@
 
 - **通用命令交互：**
   - [shell、bash、cmd、PowerShell的区别](https://blog.csdn.net/qq_33154343/article/details/123366377)
+  - [Windows-Terminal配置OhMyPosh来美化GitBash](https://blog.csdn.net/qq_33154343/article/details/120661945)
   - [Windows-Terminal 美化 PowerShell 7](https://blog.csdn.net/qq_33154343/article/details/124030501)
 
 <br>
@@ -107,6 +108,7 @@
 - [`QTableView`和`QStandardItemModel`的用法](https://blog.csdn.net/qq_33154343/article/details/103572418)【QtQStandardItemModelEx】
 - [自定义和标准对话框的用法](https://blog.csdn.net/qq_33154343/article/details/103606981)【QtCustomDialogEx】
 - [多文档界面`MDI`(`Multi-document Interface`)的实现，`QMdiArea`使用](https://blog.csdn.net/qq_33154343/article/details/103625380)【QtMDIEx】
+- Qt 修改 `*.svg` 文件的颜色【ExChangeSVGColor】
 
 <br>
 
@@ -179,11 +181,12 @@
 - [qt中文乱码问题](https://blog.csdn.net/qq_33154343/article/details/78686103)  
 - [借Qt中文乱码谈谈Coding中的编码问题](https://blog.csdn.net/qq_33154343/article/details/78686075) 
 - [一个微软自带的 notepad 所导致的问题](https://xmuli.blog.csdn.net/article/details/123508220) [★]
+- [创建 QKeySequenceEdit() 后，显示方块■◆乱码](https://blog.csdn.net/qq_33154343/article/details/125775732)
 
 <br>
 
 - [Qt4和Qt5的信号和槽的使用差异](https://xmuli.blog.csdn.net/article/details/118346008) 
-- `qt`中 Lambda 表达式
+- [Lambda 表达式详解](https://blog.csdn.net/qq_33154343/article/details/125775706)
 
 <br>
 
@@ -239,6 +242,8 @@
 - [如何构建 QT5（5.15）](https://xmuli.blog.csdn.net/article/details/114259155) 
 - [在 Mac 编译成功运行 qt5.15 源码：debug 和 release 版本](https://xmuli.blog.csdn.net/article/details/114259186)
 - [Qt 信号和槽原理分析](https://xmuli.blog.csdn.net/article/details/115305903)
+
+- [一个完整的 Linux / Unix学习系列（基础 / 编译 / 进程间通信 / 信号 / 守护进程 / 多线程）](https://xmuli.blog.csdn.net/article/details/105847532)【[linuxExample](https://github.com/xmuli/linuxExample)】
 
 <br>
 
