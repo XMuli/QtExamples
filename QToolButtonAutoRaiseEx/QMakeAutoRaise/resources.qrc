@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/normal/arrow.svg</file>
+        <file>icons/normal/copy.svg</file>
+        <file>icons/normal/download.svg</file>
+        <file>icons/normal/ellipse.svg</file>
+        <file>icons/normal/exit.svg</file>
+        <file>icons/normal/fill-ellipse.svg</file>
+        <file>icons/normal/fill-rect.svg</file>
+        <file>icons/normal/gif.svg</file>
+        <file>icons/normal/line.svg</file>
+        <file>icons/normal/mosaic.svg</file>
+        <file>icons/normal/pen.svg</file>
+        <file>icons/normal/recover.svg</file>
+        <file>icons/normal/rectangle.svg</file>
+        <file>icons/normal/revoke.svg</file>
+        <file>icons/normal/right.svg</file>
+        <file>icons/normal/screenshot.svg</file>
+        <file>icons/normal/text.svg</file>
+        <file>icons/normal/update.svg</file>
+        <file>icons/tool/arrow.svg</file>
+        <file>icons/tool/cancel.svg</file>
+        <file>icons/tool/ellipse.svg</file>
+        <file>icons/tool/finish.svg</file>
+        <file>icons/tool/gif.svg</file>
+        <file>icons/tool/mosaic.svg</file>
+        <file>icons/tool/pen.svg</file>
+        <file>icons/tool/pin.svg</file>
+        <file>icons/tool/rectangle.svg</file>
+        <file>icons/tool/renewal.svg</file>
+        <file>icons/tool/revocation.svg</file>
+        <file>icons/tool/save.svg</file>
+        <file>icons/tool/serialnumber.svg</file>
+        <file>icons/tool/smooth.svg</file>
+        <file>icons/tool/text.svg</file>
+    </qresource>
+</RCC>

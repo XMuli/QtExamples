@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>保存</title>
+    <g id="保存" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+        <g id="编组-2" transform="translate(12.000000, 14.054998) rotate(-225.000000) translate(-12.000000, -14.054998) translate(4.260715, 6.315713)" stroke="#FFFFFF" stroke-linecap="round">
+            <line x1="8.25064835" y1="7.22792206" x2="7.0349259e-13" y2="15.4785704" id="直线" stroke-width="1.5"></line>
+            <polyline id="路径" stroke-width="1.5" stroke-linejoin="round" points="2.75064835 7.07106781 8.25064835 7.22792206 8.4075026 12.7279221"></polyline>
+            <polyline id="路径-5" stroke-width="1.2" stroke-linejoin="round" points="13.7108035 12.3743687 15.4785704 10.6066017 4.87196869 3.72648913e-13 3.10420174 1.76776695"></polyline>
+        </g>
+    </g>
+</svg>

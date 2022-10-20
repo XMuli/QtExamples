@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>恢复</title>
+    <g id="恢复" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="撤回" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) ">
+            <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+            <path d="M5.5,12 C5.5,8.41014913 8.41014913,5.5 12,5.5 C15.5898509,5.5 18.5,8.41014913 18.5,12 C18.5,15.5898509 15.5898509,18.5 12,18.5" id="路径" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"></path>
+            <polyline id="路径-3" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="3.01366785 9.35170917 5.27397858 12.8633205 8.6733206 10.5360334"></polyline>
+        </g>
+    </g>
+</svg>

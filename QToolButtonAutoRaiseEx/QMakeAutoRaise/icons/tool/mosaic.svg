@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>马赛克</title>
+    <g id="马赛克" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+        <path d="M7,19 C5.8954305,19 5,18.1045695 5,17 L5,7 C5,5.8954305 5.8954305,5 7,5 L17,5 C18.1045695,5 19,5.8954305 19,7 L19,17 C19,18.0543618 18.1841222,18.9181651 17.1492623,18.9945143 L17,19 L17,19 L7,19 Z M17,6 L12,6 L12,12 L6,12 L6,17 C6,17.5128358 6.38604019,17.9355072 6.88337887,17.9932723 L7,18 L12,18 L12,12 L18,12 L18,7 C18,6.48716416 17.6139598,6.06449284 17.1166211,6.00672773 L17,6 Z" id="形状结合" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>
