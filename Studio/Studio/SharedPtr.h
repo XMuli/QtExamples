@@ -92,26 +92,55 @@ private:                  // 需在构造函数中初始化
     mutex* _pMutex;       // 计数自增非原子操作，加锁解决多线程
 };
 
-int main()
-{
-    SharedPtr<int> sp1(new int(10));
-    SharedPtr<int> sp2(sp1);
-    *sp2 = 20;
-                                                                //sp1 与 sp2 在管理这部分资源，引用计数为 2
-    cout << sp1.useCount() << "  *ptr:" << *sp1 << endl;		//2	 20
-    cout << sp2.useCount() << "  *ptr:" << *sp2 << endl;		//2	 20
-                                                                  
-    SharedPtr<int> sp3(new int(30));                              
-    sp2 = sp3;		                                            //sp3 赋值给它，释放管理的旧资源，引用计数-1，   
-    cout << sp1.useCount() << "  *ptr:" << *sp1 << endl;        //1	 20
-    cout << sp2.useCount() << "  *ptr:" << *sp2 << endl;        //2	 30
-    cout << sp3.useCount() << "  *ptr:" << *sp3 << endl;        //2	 30
-                                                                  
-    sp1 = sp3;                                                    
-    cout << sp1.useCount() << "  *ptr:" << *sp1 << endl;        //3	 30
-    cout << sp2.useCount() << "  *ptr:" << *sp2 << endl;        //3	 30
-    cout << sp3.useCount() << "  *ptr:" << *sp3 << endl;        //3	 30
+//int main()
+//{
+//    SharedPtr<int> sp1(new int(10));
+//    SharedPtr<int> sp2(sp1);
+//    *sp2 = 20;
+//                                                                //sp1 与 sp2 在管理这部分资源，引用计数为 2
+//    cout << sp1.useCount() << "  *ptr:" << *sp1 << endl;		//2	 20
+//    cout << sp2.useCount() << "  *ptr:" << *sp2 << endl;		//2	 20
+//                                                                  
+//    SharedPtr<int> sp3(new int(30));                              
+//    sp2 = sp3;		                                            //sp3 赋值给它，释放管理的旧资源，引用计数-1，   
+//    cout << sp1.useCount() << "  *ptr:" << *sp1 << endl;        //1	 20
+//    cout << sp2.useCount() << "  *ptr:" << *sp2 << endl;        //2	 30
+//    cout << sp3.useCount() << "  *ptr:" << *sp3 << endl;        //2	 30
+//                                                                  
+//    sp1 = sp3;                                                    
+//    cout << sp1.useCount() << "  *ptr:" << *sp1 << endl;        //3	 30
+//    cout << sp2.useCount() << "  *ptr:" << *sp2 << endl;        //3	 30
+//    cout << sp3.useCount() << "  *ptr:" << *sp3 << endl;        //3	 30
+//
+//    std::cout << "Hello World!\n";
+//    return 0;
+//}
 
-    std::cout << "Hello World!\n";
-    return 0;
-}
+/*******************************************************************
+ * 打印结果:
+ * no default constructor
+ * copy constructor
+ * addRefCount
+ * 2  *ptr:20
+ * 2  *ptr:20
+ * no default constructor
+ * copy assignment constructor
+ * release
+ * addRefCount
+ * 1  *ptr:20
+ * 2  *ptr:30
+ * 2  *ptr:30
+ * copy assignment constructor
+ * release
+ * addRefCount
+ * 3  *ptr:30
+ * 3  *ptr:30
+ * 3  *ptr:30
+ * Hello World!
+ * destructor
+ * release
+ * destructor
+ * release
+ * destructor
+ * release
+ ******************************************************************/

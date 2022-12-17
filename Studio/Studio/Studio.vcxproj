@@ -141,11 +141,13 @@
   <ItemGroup>
     <ClCompile Include="SharedPtr.cpp" />
     <ClCompile Include="Studio.cpp" />
+    <ClCompile Include="UniquePtr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MemoryAlignment.h" />
     <ClInclude Include="SharedPtr.h" />
     <ClInclude Include="SpecialMembers.h" />
+    <ClInclude Include="UniquePtr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
