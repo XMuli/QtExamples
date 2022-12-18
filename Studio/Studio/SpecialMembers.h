@@ -1,8 +1,8 @@
-/*******************************************************************
+ï»¿/*******************************************************************
  * Copyright (c) 2022~2023 XMuli  All rights reserved.
  * GitHub: https://github.com/XMuli
- * Description: C++ ÀàµÄÌØÊâÎå¸öº¯Êı
- * Ref£ºhttps://en.cppreference.com/w/cpp/language/rule_of_three  https://en.wikipedia.org/wiki/Special_member_functions
+ * Description: C++ ç±»çš„ç‰¹æ®Šäº”ä¸ªå‡½æ•°
+ * Refï¼šhttps://en.cppreference.com/w/cpp/language/rule_of_three  https://en.wikipedia.org/wiki/Special_member_functions
  ******************************************************************/
 
 #pragma once
@@ -51,7 +51,7 @@ public:
         return *this;
     }
 
-    A(A&& other) noexcept    // ĞĞ²ÎÎŞ const
+    A(A&& other) noexcept    // è¡Œå‚æ—  const
         : m_ptr(nullptr) {
         std::cout << "move constructor" << endl;
         if (other.m_ptr)
@@ -60,7 +60,7 @@ public:
         other.m_ptr = nullptr;
     }
 
-    A& operator=(A&& other) noexcept {  // ĞĞ²ÎÎŞ const
+    A& operator=(A&& other) noexcept {  // è¡Œå‚æ—  const
         std::cout << "move assignment constructor" << endl;
         if (this != &other) {
             delete[] m_ptr;  // Free the existing resource.
@@ -89,20 +89,37 @@ A fn() {
     return t;
 }
 
-//int main()
-//{
-//    A a1("a1");                // default constructor
-//    A a2(a1);                  // copy constructor
-//    A a3 = a1;                 // copy constructor
-//    a1 = a3;                   // copy assignment constructor
-//
-//    std::cout << "----------------------------\n\n";
-//
-//    //fn();                    // function returning a A object
-//    A a5 = std::move(a1);      // move constructor
-//    A a6;                      // default constructor
-//    a6 = std::move(a1);        // move assignment constructor
-//    std::cout << "Hello World!\n";
-//
-//    return 0;
-//}
+int main()
+{
+    A a1("a1");                // default constructor
+    A a2(a1);                  // copy constructor
+    A a3 = a1;                 // copy constructor
+    a1 = a3;                   // copy assignment constructor
+    std::cout << "----------------------------\n\n";
+
+    //fn();                    // function returning a A object
+    A a5 = std::move(a1);      // move constructor
+    A a6;                      // default constructor
+    a6 = std::move(a1);        // move assignment constructor
+    std::cout << "Hello World!\n";
+
+    return 0;
+}
+
+/*************************** è¿è¡Œç»“æœ *******************************
+* no-default-val constructor
+copy constructor
+copy constructor
+copy assignment constructor
+----------------------------
+
+move constructor
+default constructor
+move assignment constructor
+Hello World!
+destructor
+destructor
+destructor
+destructor
+destructor
+ ******************************************************************/

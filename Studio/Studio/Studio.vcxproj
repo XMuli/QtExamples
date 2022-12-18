@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="SharedPtr.cpp" />
+    <ClCompile Include="SpecialMembers.cpp" />
     <ClCompile Include="Studio.cpp" />
     <ClCompile Include="UniquePtr.cpp" />
   </ItemGroup>

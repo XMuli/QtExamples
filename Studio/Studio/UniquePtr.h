@@ -1,7 +1,7 @@
-/*******************************************************************
+ï»¿/*******************************************************************
  * Copyright (c) 2022~2023 XMuli  All rights reserved.
  * GitHub: https://github.com/XMuli
- * Description: C++ ÊµÏÖÒ»¸öºËĞÄµÄ unique_ptr ÖÇÄÜÖ¸ÕëÄ£°åÀà£»
+ * Description: C++ å®ç°ä¸€ä¸ªæ ¸å¿ƒçš„ unique_ptr æ™ºèƒ½æŒ‡é’ˆæ¨¡æ¿ç±»ï¼›
  * Ref: https://www.jianshu.com/p/77c2988be336
  *		https://juejin.cn/post/7122641980315680782
  *		https://juejin.cn/post/7099967913594978341
@@ -37,7 +37,7 @@ public:
 		return *this;
 	}
 
-	UniquePtr(const UniquePtr<T>& obj) = delete;		// C++11 delete ½ûÖ¹·½Ê½£¬C++98 ÓÃ private À´Òş²Ø
+	UniquePtr(const UniquePtr<T>& obj) = delete;		// C++11 delete ç¦æ­¢æ–¹å¼ï¼ŒC++98 ç”¨ private æ¥éšè—
     UniquePtr<T>& operator=(const UniquePtr<T>& obj) = delete;
 
 	~UniquePtr()
@@ -78,15 +78,15 @@ private:
 //{
 //	UniquePtr<int> up1(new int(10));
 //	cout << "up1:" << up1.get() << "  *ptr:" << *up1 << endl;
-//	UniquePtr<int> up2(std::move(up1));                 // ¿ØÖÆÈ¨±ä¸ü
-//	cout << "up1:" << up1.get() << endl;		        // nullptr, ´ËÊ± up1 ÒÑÎŞ¿ØÖÆÈ¨
+//	UniquePtr<int> up2(std::move(up1));                 // æ§åˆ¶æƒå˜æ›´
+//	cout << "up1:" << up1.get() << endl;		        // nullptr, æ­¤æ—¶ up1 å·²æ— æ§åˆ¶æƒ
 //	cout << "up2:" << up2.get() << "  *ptr:" << *up2 << endl;
 //	
 //	UniquePtr<int> up3(new int(30));
 //	UniquePtr<int> up4(new int(40));
 //	cout << "up3:" << up3.get() << "  *ptr:" << *up3 << endl;
 //	cout << "up4:" << up4.get() << "  *ptr:" << *up4 << endl;
-//	up3 = std::move(up2);                               // ¿ØÖÆÈ¨±ä¸ü
+//	up3 = std::move(up2);                               // æ§åˆ¶æƒå˜æ›´
 //	cout << "up3:" << up3.get() << "  *ptr:" << *up3 << endl;
 //	cout << "up4:" << up4.get() << "  *ptr:" << *up4 << endl;
 //	up3.swap(up4);
@@ -101,7 +101,7 @@ private:
 //}
 
 /*******************************************************************
- * ´òÓ¡½á¹û:
+ * æ‰“å°ç»“æœ:
  * no default constructor
  * up1:01355E78  *ptr:10
  * move constructor

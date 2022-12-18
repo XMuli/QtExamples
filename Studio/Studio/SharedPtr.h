@@ -1,8 +1,8 @@
-/*******************************************************************
+ï»¿/*******************************************************************
  * Copyright (c) 2022~2023 XMuli  All rights reserved.
  * GitHub: https://github.com/XMuli
- * Description: C++ ÊµÏÖÒ»¸öºËĞÄµÄ shared_ptr ÖÇÄÜÖ¸ÕëÄ£°åÀà£»ÊµÏÖÁËÒıÓÃ¼ÆÊıÊÇÏß³Ì°²È«µÄ£¬µ«·ÃÎÊ¹ÜÀíµÄ×ÊÔ´²»ÊÇÏß³Ì°²È«µÄ¡£
- * Note: ÊéĞ´²âÊÔÊ±£¬ÈôÊ¹ÓÃÄ¬ÈÏ¹¹Ôìº¯Êı, ³ÉÔ±±äÁ¿ _ptr¡¢_refCount¡¢_pMutex ÔÚ release() ÖĞÈİÒ×±ÀÀ££»ÍÆ¼ö´ø²ÎµÄ¹¹Ôìº¯Êı£¬ÎŞ´í
+ * Description: C++ å®ç°ä¸€ä¸ªæ ¸å¿ƒçš„ shared_ptr æ™ºèƒ½æŒ‡é’ˆæ¨¡æ¿ç±»ï¼›å®ç°äº†å¼•ç”¨è®¡æ•°æ˜¯çº¿ç¨‹å®‰å…¨çš„ï¼Œä½†è®¿é—®ç®¡ç†çš„èµ„æºä¸æ˜¯çº¿ç¨‹å®‰å…¨çš„ã€‚
+ * Note: ä¹¦å†™æµ‹è¯•æ—¶ï¼Œè‹¥ä½¿ç”¨é»˜è®¤æ„é€ å‡½æ•°, æˆå‘˜å˜é‡ _ptrã€_refCountã€_pMutex åœ¨ release() ä¸­å®¹æ˜“å´©æºƒï¼›æ¨èå¸¦å‚çš„æ„é€ å‡½æ•°ï¼Œæ— é”™
  * Ref: https://juejin.cn/post/7111726931301072910#heading-8
  *      https://cloud.tencent.com/developer/article/1688444
  *      https://blog.csdn.net/Z_Stand/article/details/98512756
@@ -20,7 +20,7 @@ public:
     SharedPtr() : _ptr(nullptr), _refCount(nullptr), _pMutex(nullptr) { cout << "default constructor" << endl; };
     SharedPtr(T* obj) : _ptr(obj), _refCount(new int(1)), _pMutex(new mutex) { cout << "no default constructor" << endl; };
 
-    SharedPtr(const SharedPtr<T>& obj)  // Æä _refCount ¿ÉÒÔÍ¨¹ıÁíÍâÒ»¸öÖ¸ÕëÀ´ĞŞ¸Ä£¬Ö¸ÏòµÄÊÇÍ¬Ò»¸öµØÖ·
+    SharedPtr(const SharedPtr<T>& obj)  // å…¶ _refCount å¯ä»¥é€šè¿‡å¦å¤–ä¸€ä¸ªæŒ‡é’ˆæ¥ä¿®æ”¹ï¼ŒæŒ‡å‘çš„æ˜¯åŒä¸€ä¸ªåœ°å€
         : _ptr(obj._ptr)
         , _refCount(obj._refCount)
         , _pMutex(obj._pMutex)
@@ -34,13 +34,13 @@ public:
         cout << "copy assignment constructor" << endl;
         if (&obj != this) {
             if (_ptr != obj._ptr) {
-                release();            // ÏÈÊÍ·Å¾ÉµÄ×ÊÔ´
+                release();            // å…ˆé‡Šæ”¾æ—§çš„èµ„æº
 
                 _ptr = obj._ptr;
                 _refCount = obj._refCount;
                 _pMutex = obj._pMutex;
 
-                addRefCount();        // ÔÙ¼¼¼ÆÊı +1
+                addRefCount();        // å†æŠ€è®¡æ•° +1
             }
         }
 
@@ -72,7 +72,7 @@ private:
         bool bDelMutex = false;
         _pMutex->lock();
 
-        if (_ptr && --*_refCount == 0) {  // ÏÈĞ£ÑéÊÇ·ñ´æÔÚ£¬¼°¼ÆÊıÎª 0 ²ÅÊÍ·Å
+        if (_ptr && --*_refCount == 0) {  // å…ˆæ ¡éªŒæ˜¯å¦å­˜åœ¨ï¼ŒåŠè®¡æ•°ä¸º 0 æ‰é‡Šæ”¾
             delete _ptr;
             delete _refCount;
             _ptr = nullptr;
@@ -86,10 +86,10 @@ private:
             delete _pMutex;
     }
 
-private:                  // ĞèÔÚ¹¹Ôìº¯ÊıÖĞ³õÊ¼»¯
-    T* _ptr;
-    int* _refCount;
-    mutex* _pMutex;       // ¼ÆÊı×ÔÔö·ÇÔ­×Ó²Ù×÷£¬¼ÓËø½â¾ö¶àÏß³Ì
+private:                  // éœ€åœ¨æ„é€ å‡½æ•°ä¸­åˆå§‹åŒ–
+    T* _ptr;              // æŒ‡å‘ç®¡ç†èµ„æºçš„æŒ‡é’ˆ
+    int* _refCount;       // å¼•ç”¨è®¡æ•°
+    mutex* _pMutex;       // è®¡æ•°è‡ªå¢éåŸå­æ“ä½œï¼ŒåŠ é”è§£å†³å¤šçº¿ç¨‹
 };
 
 //int main()
@@ -97,12 +97,12 @@ private:                  // ĞèÔÚ¹¹Ôìº¯ÊıÖĞ³õÊ¼»¯
 //    SharedPtr<int> sp1(new int(10));
 //    SharedPtr<int> sp2(sp1);
 //    *sp2 = 20;
-//                                                                //sp1 Óë sp2 ÔÚ¹ÜÀíÕâ²¿·Ö×ÊÔ´£¬ÒıÓÃ¼ÆÊıÎª 2
+//                                                                //sp1 ä¸ sp2 åœ¨ç®¡ç†è¿™éƒ¨åˆ†èµ„æºï¼Œå¼•ç”¨è®¡æ•°ä¸º 2
 //    cout << sp1.useCount() << "  *ptr:" << *sp1 << endl;		//2	 20
 //    cout << sp2.useCount() << "  *ptr:" << *sp2 << endl;		//2	 20
 //                                                                  
 //    SharedPtr<int> sp3(new int(30));                              
-//    sp2 = sp3;		                                            //sp3 ¸³Öµ¸øËü£¬ÊÍ·Å¹ÜÀíµÄ¾É×ÊÔ´£¬ÒıÓÃ¼ÆÊı-1£¬   
+//    sp2 = sp3;		                                            //sp3 èµ‹å€¼ç»™å®ƒï¼Œé‡Šæ”¾ç®¡ç†çš„æ—§èµ„æºï¼Œå¼•ç”¨è®¡æ•°-1ï¼Œ   
 //    cout << sp1.useCount() << "  *ptr:" << *sp1 << endl;        //1	 20
 //    cout << sp2.useCount() << "  *ptr:" << *sp2 << endl;        //2	 30
 //    cout << sp3.useCount() << "  *ptr:" << *sp3 << endl;        //2	 30
@@ -116,31 +116,30 @@ private:                  // ĞèÔÚ¹¹Ôìº¯ÊıÖĞ³õÊ¼»¯
 //    return 0;
 //}
 
-/*******************************************************************
- * ´òÓ¡½á¹û:
- * no default constructor
- * copy constructor
- * addRefCount
- * 2  *ptr:20
- * 2  *ptr:20
- * no default constructor
- * copy assignment constructor
- * release
- * addRefCount
- * 1  *ptr:20
- * 2  *ptr:30
- * 2  *ptr:30
- * copy assignment constructor
- * release
- * addRefCount
- * 3  *ptr:30
- * 3  *ptr:30
- * 3  *ptr:30
- * Hello World!
- * destructor
- * release
- * destructor
- * release
- * destructor
- * release
+/*****************************æ‰“å°ç»“æœ*******************************
+no default constructor
+copy constructor
+addRefCount
+2  *ptr:20
+2  *ptr:20
+no default constructor
+copy assignment constructor
+release
+addRefCount
+1  *ptr:20
+2  *ptr:30
+2  *ptr:30
+copy assignment constructor
+release
+addRefCount
+3  *ptr:30
+3  *ptr:30
+3  *ptr:30
+Hello World!
+destructor
+release
+destructor
+release
+destructor
+release
  ******************************************************************/
