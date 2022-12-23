@@ -6,7 +6,7 @@
  ******************************************************************/
 #pragma once
 
-// 《Effective C++》提出了一种更优雅的单例模式实现，称为 Meyers' Singleton
+// 推荐使用 →《Effective C++》提出了一种更优雅的单例模式实现，称为 Meyers' Singleton
 class Singleton
 {
 public:
@@ -21,4 +21,25 @@ private:
     Singleton(const Singleton& obj) = delete;
     Singleton& operator=(const Singleton& obj) = delete;
 };
+
+//---------------------------------------------------------
+// 不推荐使用 → Eager Singleton 是线程安全的，但存在潜在问题 no-local static 对象在不同编译单元中的初始化顺序是未定义的
+class Singleton2
+{
+public:
+    static Singleton2& instance() {
+        return instan;
+    }
+
+private:
+    Singleton2() {};
+    ~Singleton2() {};
+    Singleton2(const Singleton2&) = delete;
+    Singleton2& operator=(const Singleton2&) = delete;
+
+private:
+    static Singleton2 instan;
+};
+
+Singleton2 Singleton2::instan;
 
