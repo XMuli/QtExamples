@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{11117c51-beaf-4f63-b386-cdb0760bcde8}</ProjectGuid>
-    <RootNamespace>Studio</RootNamespace>
+    <ProjectGuid>{57f3c035-9c90-4e9f-934a-032804827444}</ProjectGuid>
+    <RootNamespace>DesignPatterns</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,18 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BinarySearch.cpp" />
-    <ClCompile Include="SharedPtr.cpp" />
-    <ClCompile Include="SpecialMembers.cpp" />
-    <ClCompile Include="Studio.cpp" />
-    <ClCompile Include="UniquePtr.cpp" />
+    <ClCompile Include="DesignPatterns.cpp" />
+    <ClCompile Include="Observer.cpp" />
+    <ClCompile Include="Singleton.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BinarySearch.h" />
-    <ClInclude Include="MemoryAlignment.h" />
-    <ClInclude Include="SharedPtr.h" />
-    <ClInclude Include="SpecialMembers.h" />
-    <ClInclude Include="UniquePtr.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="Singleton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

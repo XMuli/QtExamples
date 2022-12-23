@@ -15,36 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Studio.cpp">
+    <ClCompile Include="DesignPatterns.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SharedPtr.cpp">
+    <ClCompile Include="Singleton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="UniquePtr.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SpecialMembers.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BinarySearch.cpp">
+    <ClCompile Include="Observer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MemoryAlignment.h">
+    <ClInclude Include="Singleton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SharedPtr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UniquePtr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SpecialMembers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BinarySearch.h">
+    <ClInclude Include="Observer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

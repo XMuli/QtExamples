@@ -89,22 +89,22 @@ A fn() {
     return t;
 }
 
-int main()
-{
-    A a1("a1");                // default constructor
-    A a2(a1);                  // copy constructor
-    A a3 = a1;                 // copy constructor
-    a1 = a3;                   // copy assignment constructor
-    std::cout << "----------------------------\n\n";
-
-    //fn();                    // function returning a A object
-    A a5 = std::move(a1);      // move constructor
-    A a6;                      // default constructor
-    a6 = std::move(a1);        // move assignment constructor
-    std::cout << "Hello World!\n";
-
-    return 0;
-}
+//int main()
+//{
+//    A a1("a1");                // default constructor
+//    A a2(a1);                  // copy constructor
+//    A a3 = a1;                 // copy constructor
+//    a1 = a3;                   // copy assignment constructor
+//    std::cout << "----------------------------\n\n";
+//
+//    //fn();                    // function returning a A object
+//    A a5 = std::move(a1);      // move constructor
+//    A a6;                      // default constructor
+//    a6 = std::move(a1);        // move assignment constructor
+//    std::cout << "Hello World!\n";
+//
+//    return 0;
+//}
 
 /*************************** 运行结果 *******************************
 * no-default-val constructor
