@@ -1,9 +1,9 @@
 ﻿/*******************************************************************
  * Copyright (c) 2022~2023 XMuli  All rights reserved.
  * GitHub: https://github.com/XMuli
- * Description: 观察者模式 Observer Pattern
- * Reference: 情景 → Subject 发送一个消息，然后所有的 Observer A、B、C 
- *            都有收到，并且对相同的消息，做出各自不同的操作响应
+ * Description: 观察者模式(Observer Pattern)
+ *              情景 → Subject 发送一个消息，然后所有的 Observer A、B、C 
+ *              都有收到，并且对相同的消息，做出各自不同的操作响应
  * See: https://www.cnblogs.com/suzhou/p/dp16obsvr.html
  ******************************************************************/
 
@@ -74,26 +74,26 @@ public:
     virtual void doSomeThing() override { cout << "CObserver: 对 " << m_msg << " 进行 C 的操作" << endl; }
 };
 
-int main() 
-{
-    AObserver* a = new AObserver();
-    BObserver* b = new BObserver();
-    CObserver* c = new CObserver();
-    ConcreteSubject* concreSubject = new ConcreteSubject();
-
-    concreSubject->addObsvr(a);
-    concreSubject->addObsvr(b);
-    concreSubject->addObsvr(c);
-    concreSubject->notify("messagebox 1");
-
-    concreSubject->removeObsvr(c);
-    concreSubject->notify("messagebox 2");
-
-    //a->doSomeThing();
-    //b->doSomeThing();
-    //c->doSomeThing();
-    return 0;
-}
+//int main() 
+//{
+//    AObserver* a = new AObserver();
+//    BObserver* b = new BObserver();
+//    CObserver* c = new CObserver();
+//    ConcreteSubject* concreSubject = new ConcreteSubject();
+//
+//    concreSubject->addObsvr(a);
+//    concreSubject->addObsvr(b);
+//    concreSubject->addObsvr(c);
+//    concreSubject->notify("messagebox 1");
+//
+//    concreSubject->removeObsvr(c);
+//    concreSubject->notify("messagebox 2");
+//
+//    //a->doSomeThing();
+//    //b->doSomeThing();
+//    //c->doSomeThing();
+//    return 0;
+//}
 
 
 /*****************************打印结果*******************************
