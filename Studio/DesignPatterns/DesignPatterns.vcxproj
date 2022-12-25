@@ -139,11 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AbstractFactory.cpp" />
     <ClCompile Include="DesignPatterns.cpp" />
+    <ClCompile Include="FactoryMethod.cpp" />
     <ClCompile Include="Observer.cpp" />
     <ClCompile Include="Singleton.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractFactory.h" />
+    <ClInclude Include="FactoryMethod.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="Singleton.h" />
   </ItemGroup>
