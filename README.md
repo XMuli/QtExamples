@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/blog-imange/img02/IMG_GIRL.png"  width="50%"/>
 </div>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　我也不知道为什么，就是想放这么一张图在这里。
+　　　　　　　　　　　　　　　　　　　　　　　　　我也不知道为什么，当初就是想放这么一张图在这里~
 
 
 
@@ -101,6 +101,7 @@
 - [自定义和标准对话框的用法](https://blog.csdn.net/qq_33154343/article/details/103606981)【QtCustomDialogEx】
 - [MDI(Multi-document Interface) 多文档界面的实现 + QMdiArea 的用法](https://blog.csdn.net/qq_33154343/article/details/103625380)【QtMDIEx】
 - Qt 修改 `*.svg` 文件的颜色【ExChangeSVGColor】
+- [创建 QKeySequenceEdit() 后，显示方块■◆乱码](https://blog.csdn.net/qq_33154343/article/details/125775732)
 
 <br>
 
@@ -135,17 +136,18 @@
   - [DTK常用和测试代码片 ](https://xmuli.blog.csdn.net/article/details/106187959) 
   - [DTK 每日自动更新其 API 文档](https://xmuli.blog.csdn.net/article/details/108756933)
 - **DTK 项目实战**
-- [更换 QT 应用程序的界面 UI，实现换肤，展示自带其它 QStyle 样式](https://blog.csdn.net/qq_33154343/article/details/100148552) 
+  - [更换 QT 应用程序的界面 UI，实现换肤，展示自带其它 QStyle 样式](https://blog.csdn.net/qq_33154343/article/details/100148552) 
   - [QStyle 自定义重绘 QScrollBar](https://blog.csdn.net/qq_33154343/article/details/100943187) 
-- [QStyle 自定义重绘 QRubberBand 控件](https://blog.csdn.net/qq_33154343/article/details/100588428) 
+  - [QStyle 自定义重绘 QRubberBand 控件](https://blog.csdn.net/qq_33154343/article/details/100588428) 
   - [QStyle 自定义重绘滑动条 QSlider 控件](https://blog.csdn.net/qq_33154343/article/details/100545769) 
-- [ QStyle 自定义重绘滑动条 QSlider 控件二](https://blog.csdn.net/qq_33154343/article/details/100942637) 
+  - [ QStyle 自定义重绘滑动条 QSlider 控件二](https://blog.csdn.net/qq_33154343/article/details/100942637) 
   - [QStyle 重绘时 sizeFromContents() 未被调用的分析](https://blog.csdn.net/qq_33154343/article/details/100941134) 
-- [QStyle 之 PenStyle 的 CustomDashLine 使用](https://blog.csdn.net/qq_33154343/article/details/100659576) 
+  - [QStyle 之 PenStyle 的 CustomDashLine 使用](https://blog.csdn.net/qq_33154343/article/details/100659576) 
   - [Deepin 开发任务栏网速插件 lfxSpeed](https://xmuli.blog.csdn.net/article/details/110672252) [★]
-- [Deepin 任务栏网速插件推荐  NetSpeed  (重构 lfxSpeed)](https://xmuli.blog.csdn.net/article/details/113573870) [★★]
+  - [Deepin 任务栏网速插件推荐  NetSpeed  (重构 lfxSpeed)](https://xmuli.blog.csdn.net/article/details/113573870) [★★]
   - [Deepin 自定义修改窗口圆角大小](https://xmuli.blog.csdn.net/article/details/109232878)  [商业开源项目示例 ★★]
-- [Deepin 愿望墙：社区插件等需求调研结果](https://xmuli.blog.csdn.net/article/details/112243878) [社区练手参考]
+  - [Deepin 愿望墙：社区插件等需求调研结果](https://xmuli.blog.csdn.net/article/details/112243878) [社区练手参考]
+
 
 <br>
 
@@ -158,68 +160,85 @@
   - 极繁根因分析 -->  [愿编程不再乱码(含Qt)-根因深究](https://blog.csdn.net/qq_33154343/article/details/120661967) [★★★★★]
 
 
-- 产出 “极繁根因分析” 一文的途中的曲折认知
-
-  - [乱码原因产生和解决方案](https://xmuli.blog.csdn.net/article/details/109567352) 
-
-  - [QT 中文乱码问题](https://blog.csdn.net/qq_33154343/article/details/78686103)  [★★]
+- **产出 “极繁根因分析” 一文的途中的曲折认知**
+- [乱码原因产生和解决方案](https://xmuli.blog.csdn.net/article/details/109567352) 
+  
+- [QT 中文乱码问题](https://blog.csdn.net/qq_33154343/article/details/78686103)  [★★]
   - [QT5 中文乱码解决](https://blog.csdn.net/qq_33154343/article/details/95344312) 
-
-  - [借 QT 中文乱码谈谈 Coding 中的编码问题](https://blog.csdn.net/qq_33154343/article/details/78686075) 
+  
+- [借 QT 中文乱码谈谈 Coding 中的编码问题](https://blog.csdn.net/qq_33154343/article/details/78686075) 
 
 <br>
 
 ## 「第 7 章」  IDE 技巧
 
-### Qt Creator
+- **Qt Creator**
 
-- [QtCreator 界面的基本组成简介和入门使用讲解(Win + Linux + MacOS](https://blog.csdn.net/qq_33154343/article/details/103942733)
-- [QtCreator 设置代码美化 Astyle 之 Artistic](https://blog.csdn.net/qq_33154343/article/details/101397429)
-- [QtCreator 关闭 .cpp 文件右侧的黄色警告](https://blog.csdn.net/qq_33154343/article/details/102943623)
-- [QtCreator 中自定义项目例子置于“欢迎-实例”中](https://blog.csdn.net/qq_33154343/article/details/115049715)
-- [QtCreator 中自定义项目例子置于“欢迎-实例”中](https://xmuli.blog.csdn.net/article/details/115049715)
-- [Qt 项目用 Doxygen 生成 .qch，嵌入文档到 Assistants](https://blog.csdn.net/qq_33154343/article/details/114580630)
-- [小技巧：Design 设计师里，无法拖拽 action 到 toolbar 里](https://blog.csdn.net/qq_33154343/article/details/100168170) 
-- [小技巧：QtCreator 用快捷键秒实现，声明在基类中重写的派生类(纯)虚函数](https://blog.csdn.net/qq_33154343/article/details/104457739) 
-- [小技巧：设置 QToolBox 的每一页 page 的使用单独的布局（QTabWidget 同理）](https://blog.csdn.net/qq_33154343/article/details/100185025) 
+  - [QtCreator 界面的基本组成简介和入门使用讲解(Win + Linux + MacOS](https://blog.csdn.net/qq_33154343/article/details/103942733)
 
-<br>
+  - [QtCreator 设置代码美化 Astyle 之 Artistic](https://blog.csdn.net/qq_33154343/article/details/101397429)
 
-### Visual Studio
+  - [QtCreator 关闭 .cpp 文件右侧的黄色警告](https://blog.csdn.net/qq_33154343/article/details/102943623)
 
-- [VS2017 调试 Qt 源码，安装 PDB](https://blog.csdn.net/qq_33154343/article/details/120339797)
-- [VS2019 调试 Qt5 时 QString 显示为内存地址而非字符串](https://xmuli.blog.csdn.net/article/details/116244865) 
-- [Visual Studio 实际仅增删数行，却显示文件所有行均发生变更](https://blog.csdn.net/qq_33154343/article/details/123366419)
-- [Visual Studio 生成 .vs 隐藏文件夹，导致 Git 命令错误](https://blog.csdn.net/qq_33154343/article/details/123366493)
-- [Win10 的 20H2 使用 VS 2019，拖曳窗口会崩溃](https://blog.csdn.net/qq_33154343/article/details/116244656)
-- [Visual Studio 2019 进行远程调试](https://blog.csdn.net/qq_33154343/article/details/123855765)
-- [Visual Studio 断点调试之箭头偏移进错函数，捉🐛记](https://blog.csdn.net/qq_33154343/article/details/124482152)
-- [微软 SDK 导致的项目编译失败哦~](https://blog.csdn.net/qq_33154343/article/details/124736720)
-- [一个微软自带的 Notepad 所导致的问题](https://blog.csdn.net/qq_33154343/article/details/123508220) 【ExCRLF】
+  - [QtCreator 中自定义项目例子置于“欢迎-实例”中](https://blog.csdn.net/qq_33154343/article/details/115049715)
+
+  - [QtCreator 中自定义项目例子置于“欢迎-实例”中](https://xmuli.blog.csdn.net/article/details/115049715)
+
+  - [Qt 项目用 Doxygen 生成 .qch，嵌入文档到 Assistants](https://blog.csdn.net/qq_33154343/article/details/114580630)
+
+  - [小技巧：Design 设计师里，无法拖拽 action 到 toolbar 里](https://blog.csdn.net/qq_33154343/article/details/100168170) 
+
+  - [小技巧：QtCreator 用快捷键秒实现，声明在基类中重写的派生类(纯)虚函数](https://blog.csdn.net/qq_33154343/article/details/104457739) 
+
+  - [小技巧：设置 QToolBox 的每一页 page 的使用单独的布局（QTabWidget 同理）](https://blog.csdn.net/qq_33154343/article/details/100185025) 
+
+
+- **Visual Studio**
+
+  - [VS2017 调试 Qt 源码，安装 PDB](https://blog.csdn.net/qq_33154343/article/details/120339797)
+
+  - [VS2019 调试 Qt5 时 QString 显示为内存地址而非字符串](https://xmuli.blog.csdn.net/article/details/116244865) 
+
+  - [Visual Studio 实际仅增删数行，却显示文件所有行均发生变更](https://blog.csdn.net/qq_33154343/article/details/123366419)
+
+  - [Visual Studio 生成 .vs 隐藏文件夹，导致 Git 命令错误](https://blog.csdn.net/qq_33154343/article/details/123366493)
+
+  - [Win10 的 20H2 使用 VS 2019，拖曳窗口会崩溃](https://blog.csdn.net/qq_33154343/article/details/116244656)
+
+  - [Visual Studio 2019 进行远程调试](https://blog.csdn.net/qq_33154343/article/details/123855765)
+
+  - [Visual Studio 断点调试之箭头偏移进错函数，捉🐛记](https://blog.csdn.net/qq_33154343/article/details/124482152)
+
+  - [微软 SDK 导致的项目编译失败哦~](https://blog.csdn.net/qq_33154343/article/details/124736720)
+
+  - [一个微软自带的 Notepad 所导致的问题](https://blog.csdn.net/qq_33154343/article/details/123508220) 【ExCRLF】
+
 
 <br>
 
 ## 「第 8 章」  提交规范和发布 QT 程序
 
 - [约定式提交规范](https://www.conventionalcommits.org/)
+- [修改 Doxygen 主题，生成 Qt 风格的文档](https://xmuli.blog.csdn.net/article/details/114591725) 
 - [QT 项目在 Windows 平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448388) 
 - [QT 项目在 MacOS 平台上面发布成可执行程序](https://xmuli.blog.csdn.net/article/details/96448938#comments) 
 - [QT 项目在 Linux 平台上面发布成可执行程序](https://blog.csdn.net/qq_33154343/article/details/96448621) 
 - [Linux 中用 dh_make 将 Qt + CMake 项目打包为 deb 文件](https://blog.csdn.net/qq_33154343/article/details/123778207)
-- [如何给上游 QT 提交 BUG 反馈和贡献代码 PATCH？](https://xmuli.blog.csdn.net/article/details/107220867) 
-- [修改 Doxygen 主题，生成 Qt 风格的文档](https://xmuli.blog.csdn.net/article/details/114591725) 
 
 <br>
 
 ## 「第 9 章」  高级
 
-- [Qt4 和 Qt5 的信号和槽的用法差异](https://xmuli.blog.csdn.net/article/details/118346008) 
-- [Qt 信号和槽原理分析](https://xmuli.blog.csdn.net/article/details/115305903)
 - [Lambda 表达式详解](https://blog.csdn.net/qq_33154343/article/details/125775706)
 
-- [高分屏、分辨率、DPI、PPI，及 Qt 处理高分屏](https://xmuli.blog.csdn.net/article/details/108905279) 
-- [创建 QKeySequenceEdit() 后，显示方块■◆乱码](https://blog.csdn.net/qq_33154343/article/details/125775732)
+- [Qt 信号和槽原理分析](https://xmuli.blog.csdn.net/article/details/115305903) [★★★]
 - [QT 项目 CMake 设置国际化支持](https://xmuli.blog.csdn.net/article/details/114439385) 
+- [Qt4 和 Qt5 的信号和槽的用法差异](https://xmuli.blog.csdn.net/article/details/118346008) 
+- [高分屏、分辨率、DPI、PPI，及 Qt 处理高分屏](https://xmuli.blog.csdn.net/article/details/108905279) [★★]
+- [如何给上游 QT 提交 BUG 反馈和贡献代码 PATCH？](https://xmuli.blog.csdn.net/article/details/107220867)  [★★★★]
+
+<br>
+
 - [如何构建 QT5（5.15）](https://xmuli.blog.csdn.net/article/details/114259155) 
 - [在 Mac 编译成功运行 QT 5.15 源码：Debug + Release 版本](https://xmuli.blog.csdn.net/article/details/114259186)
 - [一个完整的 Linux / Unix学习系列（基础 / 编译 / 进程间通信 / 信号 / 守护进程 / 多线程）](https://xmuli.blog.csdn.net/article/details/105847532)【[linuxExample](https://github.com/xmuli/linuxExample)】[★★★★★]
@@ -269,6 +288,12 @@
 
 <br>
 
+## Star 增长
+
+[![Star History Chart](https://api.star-history.com/svg?repos=XMuli/QtExamples&type=Date)](https://star-history.com/#XMuli/QtExamples&Date)
+
+<br>
+
 ## 贡献
 
 若是帮助到了你，或者觉得有用，可以点击该项目的的 <font color=#D0087E size=4 face="幼圆">**⭐Star** </font>和<font color=#D0087E size=4 face="幼圆">**🍴 Fork**</font> 的两个图标，方便抬手之间，表示点个赞，手有余香
@@ -278,7 +303,6 @@
   <p> - If you have something to learn from the project, you can also invite me to share a glass of Fat House Ice and Coke. - </p>
   <pre><img src="https://fastly.jsdelivr.net/gh/XMuli/xmuliPic@pic/2022/202302282339037.png" width="80%"/></pre>
 </details>
-
 <br>
 
 ## 作者
