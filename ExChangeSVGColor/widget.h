@@ -18,10 +18,13 @@ public:
 protected:
     virtual void paintEvent(QPaintEvent *event) override;
 
+public slots:
+    void onBtnChecked(bool checked);
 
 private:
     QToolButton* m_btn;
     QToolButton* m_btn2;
+    const int m_width = 100;
 };
 
 

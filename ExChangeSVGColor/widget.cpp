@@ -69,44 +69,34 @@ Widget::Widget(QWidget *parent)
 {
     setWindowTitle("change .svg color");
     resize(1600, 1000);
-    const int width = 80;
 
-    QIcon icon(ChangeSVGColor(":/mosaic.svg", QColor(Qt::green).name(), QSize(width, width)));
+    QIcon icon(ChangeSVGColor(":/mosaic.svg", QColor(Qt::green).name(), QSize(m_width, m_width)));
     m_btn = new QToolButton(this);
     m_btn->setCheckable(true);
     m_btn->setToolButtonStyle(Qt::ToolButtonIconOnly);
     m_btn->setAutoRaise(true);   // 自动浮动模式
     m_btn->setIcon(icon);
-    m_btn->setIconSize(QSize(width, width));
+    m_btn->setIconSize(QSize(m_width, m_width));
 //    m_btn->resize(200, 200);
     m_btn->move(0, 0);
 
 
-    QIcon icon2(":/mosaic.svg");
+//    QIcon icon2(":/mosaic.svg");
     m_btn2 = new QToolButton(this);
     m_btn2->setCheckable(true);
     m_btn2->setToolButtonStyle(Qt::ToolButtonIconOnly);
-    m_btn2->setAutoRaise(true);   // 自动浮动模式
+    m_btn2->setAutoRaise(false);   // 自动浮动模式
     m_btn2->setIcon(icon);
-    m_btn2->setIconSize(QSize(width, width));
+    m_btn2->setIconSize(QSize(m_width, m_width));
 //    m_btn->resize(200, 200);
-    m_btn2->move(100, 100);
-
+    m_btn2->move(200, 0);
 
     m_btn->show();
     m_btn2->show();
 
-    connect(m_btn, &QToolButton::clicked, this, [&](bool checked){
-        QString path(":/mosaic.svg");
 
-        QIcon ico;
-        if (checked)
-            ico.addFile(path);
-        else
-            ico = ChangeSVGColor(":/mosaic.svg", QColor(Qt::green).name(), QSize(width, width));
-
-        m_btn->setIcon(ico);
-    });
+    connect(m_btn, &QToolButton::clicked, this, &Widget::onBtnChecked);
+    connect(m_btn2, &QToolButton::clicked, this, &Widget::onBtnChecked);
 
 
 
@@ -136,6 +126,19 @@ void Widget::paintEvent(QPaintEvent *event)
                 .arg(rt.topLeft().x()).arg(rt.topLeft().y()).arg(rt.bottomRight().x()).arg(rt.bottomRight().y()));
 
     update();
+}
+
+void Widget::onBtnChecked(bool checked)
+{
+    QString path(":/mosaic.svg");
+    QIcon ico;
+    if (checked)
+        ico.addFile(path);
+    else
+        ico = ChangeSVGColor(path, QColor(Qt::green).name(), QSize(m_width, m_width));
+
+    auto bt = qobject_cast<QToolButton*>(sender());
+    bt->setIcon(ico);
 }
 
 
