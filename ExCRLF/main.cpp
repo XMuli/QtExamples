@@ -44,8 +44,5 @@ int main(int argc, char *argv[])
     file.write("(abcdefg1234hijk)\n\r[FOXES]");
     file.close();
 
-
-
-
     return a.exec();
 }
