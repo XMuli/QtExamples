@@ -186,43 +186,45 @@
 ## 「第 7 章」  IDE 技巧
 
 - **Qt Creator**
-- [QtCreator 界面的基本组成简介和入门使用讲解(Win + Linux + MacOS)](https://blog.csdn.net/qq_33154343/article/details/103942733)
-  
-- [QtCreator 设置代码美化 Astyle 之 Artistic](https://blog.csdn.net/qq_33154343/article/details/101397429)
-  
-- [QtCreator 关闭 .cpp 文件右侧的黄色警告](https://blog.csdn.net/qq_33154343/article/details/102943623)
-  
-- [QtCreator 中自定义项目例子置于“欢迎-实例”中](https://blog.csdn.net/qq_33154343/article/details/115049715)
-  
-- [QtCreator 中自定义项目例子置于“欢迎-实例”中](https://xmuli.blog.csdn.net/article/details/115049715)
-  
-- [Qt 项目用 Doxygen 生成 .qch，嵌入文档到 Assistants](https://blog.csdn.net/qq_33154343/article/details/114580630)
-  
-- [小技巧：Design 设计师里，无法拖拽 action 到 toolbar 里](https://blog.csdn.net/qq_33154343/article/details/100168170) 
-  
-- [小技巧：QtCreator 用快捷键秒实现，声明在基类中重写的派生类(纯)虚函数](https://blog.csdn.net/qq_33154343/article/details/104457739) 
-  
-- [小技巧：设置 QToolBox 的每一页 page 的使用单独的布局（QTabWidget 同理）](https://blog.csdn.net/qq_33154343/article/details/100185025) 
+  - [QtCreator 界面的基本组成简介和入门使用讲解(Win + Linux + MacOS)](https://blog.csdn.net/qq_33154343/article/details/103942733)
+
+  - [QtCreator 设置代码美化 Astyle 之 Artistic](https://blog.csdn.net/qq_33154343/article/details/101397429)
+
+  - [QtCreator 关闭 .cpp 文件右侧的黄色警告](https://blog.csdn.net/qq_33154343/article/details/102943623)
+
+  - [QtCreator 中自定义项目例子置于“欢迎-实例”中](https://blog.csdn.net/qq_33154343/article/details/115049715)
+
+  - [QtCreator 中自定义项目例子置于“欢迎-实例”中](https://xmuli.blog.csdn.net/article/details/115049715)
+
+  - [Qt 项目用 Doxygen 生成 .qch，嵌入文档到 Assistants](https://blog.csdn.net/qq_33154343/article/details/114580630)
+
+  - [小技巧：Design 设计师里，无法拖拽 action 到 toolbar 里](https://blog.csdn.net/qq_33154343/article/details/100168170) 
+
+  - [小技巧：QtCreator 用快捷键秒实现，声明在基类中重写的派生类(纯)虚函数](https://blog.csdn.net/qq_33154343/article/details/104457739) 
+
+  - [小技巧：设置 QToolBox 的每一页 page 的使用单独的布局（QTabWidget 同理）](https://blog.csdn.net/qq_33154343/article/details/100185025) 
+
 
 
 - **Visual Studio**
-- [VS2017 调试 Qt 源码，安装 PDB](https://blog.csdn.net/qq_33154343/article/details/120339797)
-  
-- [VS2019 调试 Qt5 时 QString 显示为内存地址而非字符串](https://xmuli.blog.csdn.net/article/details/116244865) 
-  
-- [Visual Studio 实际仅增删数行，却显示文件所有行均发生变更](https://blog.csdn.net/qq_33154343/article/details/123366419)
-  
-- [Visual Studio 生成 .vs 隐藏文件夹，导致 Git 命令错误](https://blog.csdn.net/qq_33154343/article/details/123366493)
-  
-- [Win10 的 20H2 使用 VS 2019，拖曳窗口会崩溃](https://blog.csdn.net/qq_33154343/article/details/116244656)
-  
-- [Visual Studio 2019 进行远程调试](https://blog.csdn.net/qq_33154343/article/details/123855765)
-  
-- [Visual Studio 断点调试之箭头偏移进错函数，捉🐛记](https://blog.csdn.net/qq_33154343/article/details/124482152)
-  
-- [微软 SDK 导致的项目编译失败哦~](https://blog.csdn.net/qq_33154343/article/details/124736720)
-  
-- [一个微软自带的 Notepad 所导致的问题](https://blog.csdn.net/qq_33154343/article/details/123508220) 【ExCRLF】
+
+  - [VS2017 调试 Qt 源码，安装 PDB](https://blog.csdn.net/qq_33154343/article/details/120339797)
+
+  - [VS2019 调试 Qt5 时 QString 显示为内存地址而非字符串](https://xmuli.blog.csdn.net/article/details/116244865) 
+
+  - [Visual Studio 实际仅增删数行，却显示文件所有行均发生变更](https://blog.csdn.net/qq_33154343/article/details/123366419)
+
+  - [Visual Studio 生成 .vs 隐藏文件夹，导致 Git 命令错误](https://blog.csdn.net/qq_33154343/article/details/123366493)
+
+  - [Win10 的 20H2 使用 VS 2019，拖曳窗口会崩溃](https://blog.csdn.net/qq_33154343/article/details/116244656)
+
+  - [Visual Studio 2019 进行远程调试](https://blog.csdn.net/qq_33154343/article/details/123855765)
+
+  - [Visual Studio 断点调试之箭头偏移进错函数，捉🐛记](https://blog.csdn.net/qq_33154343/article/details/124482152)
+
+  - [微软 SDK 导致的项目编译失败哦~](https://blog.csdn.net/qq_33154343/article/details/124736720)
+  - [一个微软自带的 Notepad 所导致的问题](https://blog.csdn.net/qq_33154343/article/details/123508220) 【ExCRLF】
+
 
 
 <br>
@@ -252,7 +254,7 @@
 
 - [如何构建 QT5（5.15）](https://xmuli.blog.csdn.net/article/details/114259155) 
 - [在 Mac 编译成功运行 QT 5.15 源码：Debug + Release 版本](https://xmuli.blog.csdn.net/article/details/114259186)
-- [一个完整的 Linux / Unix学习系列（基础 / 编译 / 进程间通信 / 信号 / 守护进程 / 多线程）](https://xmuli.blog.csdn.net/article/details/105847532)【[linuxExample](https://github.com/xmuli/linuxExample)】[★★★★★]
+- [Linux / Unix 学习完整系列（基础 / 编译 / 进程间通信 / 信号 / 守护进程 / 多线程等）](https://xmuli.blog.csdn.net/article/details/105847532)【[linuxExample](https://github.com/xmuli/linuxExample)】[★★★★★]
 
 <br>
 
