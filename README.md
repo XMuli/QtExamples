@@ -264,6 +264,7 @@
 - [QT5/C++项目：基于QT的跨平台网络对战象棋（一）](https://blog.csdn.net/qq_33154343/article/details/89284983) [★★★★★]
 - [QT5/C++项目：基于QT的跨平台网络对战象棋（二）](https://blog.csdn.net/qq_33154343/article/details/89285968) [★★★★★]
 - [QT5/C++项目：基于QT的跨平台网络对战象棋（三）](https://blog.csdn.net/qq_33154343/article/details/89286553) [★★★★★]
+- [FLIPPED 一款简易且漂亮的跨平台截图软件](https://xmuli.blog.csdn.net/article/details/129719267) [★★★★★★★★★ 2023.03.22]
 - [项目实战：仿 QQ 的单聊，属 GUI 界面 ](https://blog.csdn.net/qq_33154343/article/details/79341062)
 - [项目实战：仿 QQ 的群聊，属 GUI 界面](https://blog.csdn.net/qq_33154343/article/details/96437681)
 - [项目实战：C 语言写 Socket 的 TCP 聊天，属 CUI 控制台](https://blog.csdn.net/qq_33154343/article/details/81808722)
