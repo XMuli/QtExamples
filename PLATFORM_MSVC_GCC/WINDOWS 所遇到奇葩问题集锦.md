@@ -1,3 +1,11 @@
+---
+title: WINDOWS/MSVC 所遇到奇葩问题集锦
+date: 2023-05-01 12:22:28
+updated: 2023-06-01 15:15:28
+---
+
+
+
 # WINDOWS 所遇到奇葩问题集锦
 
 
@@ -155,7 +163,7 @@
 
     
 
-
+<br>
 
 ## WINDOWS 问题
 
@@ -188,3 +196,27 @@
    </details>
 
 4. 
+
+
+
+<br>
+
+## GITHUB 问题
+
+1. GitHub 的 Action 的脚本，构建 CI/CD，使用的默认 shell 壳： pwd 默认是不使用 utf8 字符
+
+   <details>
+       <summary> [解] 使用的默认 shell 壳： pwd 默认是不使用 utf8 字符 </summary>
+     <p> 使用的命令参数  </p>
+     <pre>
+   ${{ env.xxxx }}
+   ${{env.xxxx}}
+   ${{env:xxxx}}
+   ${env.xxxx}
+   $xxxx
+   然后参数要注意；使用 ""  或者 ''
+   学会去看一些公共的库；直接去看最新的文档之类
+   </pre>
+   </details>
+
+2. xxx

@@ -224,7 +224,13 @@
 
   - [微软 SDK 导致的项目编译失败哦~](https://blog.csdn.net/qq_33154343/article/details/124736720)
   - [一个微软自带的 Notepad 所导致的问题](https://blog.csdn.net/qq_33154343/article/details/123508220) 【ExCRLF】
-  - [WINDOWS 所遇到奇葩问题集锦](./WINDOWS_OR_MSVC/WINDOWS%20%E6%89%80%E9%81%87%E5%88%B0%E5%A5%87%E8%91%A9%E9%97%AE%E9%A2%98%E9%9B%86%E9%94%A6.md) [🦄★★★★🎣🎁🎁🎁]
+
+  
+
+- **WINDOWS-MSVC OR LINUX-GCC**
+
+  - [WINDOWS 所遇到奇葩问题集锦](PLATFORM_MSVC_GCC/WINDOWS%20所遇到奇葩问题集锦.md) [🦄🎣🎁🎁🎁]
+  - [LINUX 所遇到编码奇怪的问题](PLATFORM_MSVC_GCC/LINUX%20所遇到编码奇怪的问题.md)  [🦄🎣🎁🎁🎁]
 
 
 
