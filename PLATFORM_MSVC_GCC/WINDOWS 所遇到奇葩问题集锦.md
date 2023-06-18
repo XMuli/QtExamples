@@ -195,7 +195,31 @@ updated: 2023-06-01 15:15:28
      </pre>
    </details>
 
-4. 
+
+
+## QtCreator 问题
+
+1. 使用 Qt Creator 提升控件自定义控件时，操作如下， MSVC 和 WinGW 都可编译通过，亲测出来的方案；通常报错如下
+
+   ```bash
+   通常报错 ”ui_mainui.h:22:10: fatal error: chatinputedit.h: No such file or directory
+    #include "chatinputedit.h"
+             ^~~~~~~~~~~~~~~~~“
+   ```
+
+   
+
+   1. `promoted to` 提升自定控件操作如图，然后在 CMakeLists.txt  中添加包含此头文件的路径，添加 `include_directories(${PROJECT_SOURCE_DIR}/widgets)`，用于修复 Qt Design 使用提升自定义控件后， MinGW 找不到而编译失败。
+
+      <img src="https://fastly.jsdelivr.net/gh/XMuli/xmuliPic@pic/2023/20230619010003.png" width="100%"/>
+
+   - 若是要降低会原本的 Q控件，使用 `Demote to`
+
+   - 若仅仅只用 MSVC 编译，上图片中的 `Promoted class name:` 添加自定义类名后，在 `Header file:` 后面自动生成文件后，补上其相对路径的部分，然后 不用写 include_directories 这一行，也可以直接编译通过
+
+
+
+
 
 
 

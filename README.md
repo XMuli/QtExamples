@@ -197,6 +197,8 @@
   - [小技巧：QtCreator 用快捷键秒实现，声明在基类中重写的派生类(纯)虚函数](https://blog.csdn.net/qq_33154343/article/details/104457739) 
 
   - [小技巧：设置 QToolBox 的每一页 page 的使用单独的布局（QTabWidget 同理）](https://blog.csdn.net/qq_33154343/article/details/100185025) 
+  
+  - [小技巧：使用 Qt Design 提升自定义控件，报错找不到头文件](https://github.com/XMuli/QtExamples/blob/master/PLATFORM_MSVC_GCC/WINDOWS%20%E6%89%80%E9%81%87%E5%88%B0%E5%A5%87%E8%91%A9%E9%97%AE%E9%A2%98%E9%9B%86%E9%94%A6.md)
 
 
 
