@@ -1,12 +1,6 @@
-<div align=center>
-<img src="https://raw.githubusercontent.com/touwoyimuli/FigureBed/blog-imange/img02/IMG_GIRL.png"  width="50%"/>
-</div>
+<img align=center src="https://fastly.jsdelivr.net/gh/XMuli/xmuliPic@pic/2023/20230618195256.png" width="80%"/>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　我也不知道为什么，当初就是想放这么一张图在这里~
-
-
-
-
+　　　　　　　　　　　　　　　　　　　　　　　　　 我也不知道为什么，当初就是想放这么一张图在这里~
 
 # QtExamples
 
@@ -267,16 +261,21 @@
 
 ## 「第 10 章」  项目
 
-- [QT5/C++项目：QT象棋【初版】](https://xmuli.blog.csdn.net/article/details/80931400) [★★★★★]
-- [QT5/C++项目：基于QT的跨平台网络对战象棋（一）](https://blog.csdn.net/qq_33154343/article/details/89284983) [★★★★★]
-- [QT5/C++项目：基于QT的跨平台网络对战象棋（二）](https://blog.csdn.net/qq_33154343/article/details/89285968) [★★★★★]
-- [QT5/C++项目：基于QT的跨平台网络对战象棋（三）](https://blog.csdn.net/qq_33154343/article/details/89286553) [★★★★★]
-- [FLIPPED 一款简易且漂亮的跨平台截图软件](https://xmuli.blog.csdn.net/article/details/129719267) [★★★★★★★★★ 2023.03.22]
 - [项目实战：仿 QQ 的单聊，属 GUI 界面 ](https://blog.csdn.net/qq_33154343/article/details/79341062)
 - [项目实战：仿 QQ 的群聊，属 GUI 界面](https://blog.csdn.net/qq_33154343/article/details/96437681)
 - [项目实战：C 语言写 Socket 的 TCP 聊天，属 CUI 控制台](https://blog.csdn.net/qq_33154343/article/details/81808722)
 - [项目实战：C 语言写 Socket 的 UDP 聊天，属 CUI 控制台](https://blog.csdn.net/qq_33154343/article/details/81809168)
 - [项目实战：QT5 的 Quick 仿写 QQ  2019 简洁版的登录界面，含 GUI 界面](https://blog.csdn.net/qq_33154343/article/details/80448144)
+- [QT5/C++项目：QT象棋【初版】](https://xmuli.blog.csdn.net/article/details/80931400) [★★★★★]
+- [QT5/C++项目：基于QT的跨平台网络对战象棋（一）](https://blog.csdn.net/qq_33154343/article/details/89284983) [★★★★★]
+- [QT5/C++项目：基于QT的跨平台网络对战象棋（二）](https://blog.csdn.net/qq_33154343/article/details/89285968) [★★★★★]
+- [QT5/C++项目：基于QT的跨平台网络对战象棋（三）](https://blog.csdn.net/qq_33154343/article/details/89286553) [★★★★★]
+- [FLIPPED 一款简易且漂亮的跨平台截图软件](https://xmuli.blog.csdn.net/article/details/129719267) [★★★★★★★★★ 2023.06]
+
+<br>
+
+- **自定义绘画控件**
+  - [使用 QListWidget 创建的一个 气泡聊天窗口消息的控件 BubbleMessage，且自适应大小](https://github.com/XMuli/BubbleMessage)  [★★★★]
 
 <br>
 
@@ -340,10 +339,8 @@
 
 ## 协议
 
-<img src='https://raw.githubusercontent.com/touwoyimuli/FigureBed/blog-imange/img/20190709052148.jpg' width='240' height='127'/>
+<img src="https://fastly.jsdelivr.net/gh/XMuli/xmuliPic@pic/2023/20230618194948.png" width="50%"/>
 
-<font color=#70AD47 size=4 face="幼圆">**[偕臧](https://ifmet.cn/about/site.html)：** </font> 博客代码基于Apache License 2.0 协议进行分发和使用，更多信息参见 [协议文件](/LICENSE)。
+博客代码基于Apache License 2.0 协议进行分发和使用，更多信息参见 [协议文件](/LICENSE)。
 
-<img src='https://raw.githubusercontent.com/touwoyimuli/FigureBed/blog-imange/img/20190709052153.jpg' width='127' height='127'/>
-
-<font color=#70AD47  size=4 face="幼圆">**[偕臧](https://ifmet.cn/about/site.html)：** </font> 所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
+所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
