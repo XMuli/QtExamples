@@ -219,6 +219,10 @@ updated: 2023-06-01 15:15:28
 
 
 
+MacOS & Clang64
+编译 Qt+CMake 报错：`:-1: error: ninja: build stopped: subcommand failed.`
+原因： 1.可能得 kit 没有设置好 2. CMake 没有安装好 3. CMakeList.txt 里面的语法存在错误，屏蔽排查
+
 
 
 
