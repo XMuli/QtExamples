@@ -1,18 +1,62 @@
 ---
-title: WINDOWS/MSVC 所遇到奇葩问题集锦
+title: WINDOWS_MSVC_MinGW & LINUX_GCC & MACOS_CLANG 所遇到奇葩问题集锦
 date: 2023-05-01 12:22:28
-updated: 2023-06-01 15:15:28
+updated: 2023-06-29 16:34:28
 ---
 
 
 
-# WINDOWS 所遇到奇葩问题集锦
 
 
+
+
+**目录**
 
 [toc]
 
-## NT/MSVC 编译开发问题
+最开始，都是在 Linux 上开发：UOS/Deepin， Ubuntu，ArchLinux；后来喜欢 MacOS 系统，间歇性偶尔续续折腾；当前，主要以 Windows 上折腾为主，天天重度使用。主要记录这几年中，开发过程中的问题，和一些办公软件、开发工具相关的问题；疑难杂症和经验之谈，涉及面：
+
+1. WINDOWS & MSVC & MinGW
+2. LINUX & GCC
+3.  MACOS & CLANG
+4. 办公 & 居家 & 生产力 的软件
+5. ~~后续：人生 & 职场 & 感悟 & 哲学 （以后有时间写）~~
+
+<br>
+
+## PUBLIC  所遇到奇葩问题集锦
+
+### QtCreator
+
+1. 使用 Qt Creator 提升控件自定义控件时，操作如下， MSVC 和 WinGW 都可编译通过，亲测出来的方案；通常报错如下
+
+   ```bash
+   通常报错 ”ui_mainui.h:22:10: fatal error: chatinputedit.h: No such file or directory
+    #include "chatinputedit.h"
+             ^~~~~~~~~~~~~~~~~“
+   ```
+
+   <details>
+       <summary> [解] 不添加 Global，且 CMake 添加 include_directories 说明此提升的头文件路径 </summary>
+     <p>  </p>
+     <pre>1. `promoted to` 提升自定控件操作如图，然后在 CMakeLists.txt  中添加包含此头文件的路径，添加 `include_directories(${PROJECT_SOURCE_DIR}/widgets)`，用于修复 Qt Design 使用提升自定义控件后， MinGW 找不到而编译失败。
+         <img src="https://fastly.jsdelivr.net/gh/XMuli/xmuliPic@pic/2023/20230619010003.png" width="100%"/>
+      - 若是要降低会原本的 Q控件，使用 `Demote to`
+      - 若仅仅只用 MSVC 编译，上图片中的 `Promoted class name:` 添加自定义类名后，在 `Header file:` 后面自动生成文件后，补上其相对路径的部分，然后 不用写 include_directories 这一行，也可以直接编译通过
+     </pre>
+   </details>
+
+2.  Mac 13 上用 Clang64 编译 Qt+CMake 报错：`:-1: error: ninja: build stopped: subcommand failed.`
+
+   [解] 1.可能得 kit 没有设置好 2. CMake 没有安装好 3. CMakeList.txt 里面的语法存在错误，屏蔽排查（通常是）
+
+3. xx
+
+<br>
+
+## WINDOWS 所遇到奇葩问题集锦
+
+### NT/MSVC 编译开发问题
 
 1. 如何设置安装 Visual Studio Install 使用英文语言运行？ 
 
@@ -165,7 +209,7 @@ updated: 2023-06-01 15:15:28
 
 <br>
 
-## WINDOWS 问题
+### WINDOWS 问题
 
 1. Teams 始终无法登录，提示如图：我们无法连接到你。 HTTP 404  login.micsoftonline.com
 
@@ -195,56 +239,107 @@ updated: 2023-06-01 15:15:28
      </pre>
    </details>
 
+<br>
+
+---
+
+## LINUX & GCC 所遇到奇葩问题集锦
+
+**简  述：**　当初记录一些使用和开发 `Deepin/UOS V20`   过程中的一些奇怪的 `Bug`、或者记录一些奇怪知识。
 
 
-## QtCreator 问题
 
-1. 使用 Qt Creator 提升控件自定义控件时，操作如下， MSVC 和 WinGW 都可编译通过，亲测出来的方案；通常报错如下
+1. `Debug` 编译运行成功、`Releas`编译成功、运行崩溃
 
-   ```bash
-   通常报错 ”ui_mainui.h:22:10: fatal error: chatinputedit.h: No such file or directory
-    #include "chatinputedit.h"
-             ^~~~~~~~~~~~~~~~~“
+   <details>
+       <summary> [解] 变量的值未初始化，在 Debug 模式会自动赋值，但是 Release  模式下会，不会自动赋初值； </summary>
+     <p>  </p>
+     <pre>在写 `dde-dock` 的时候，遇到编译的网速插件在 Debug 模式下会编译成功、运行成功；在 Release 下也可以编译成功，但运行会崩溃。环境如下:　💻：  uos20 amd64 📎 Qt 5.11.3 📎 gcc/g++ 9.0 📎 gdb8.0
+     **本次错误的三个原因：**
+   - 重写了虚函数，但是里面没有写具体的内容
+   - 函数有 bool 返回值，但是函数体内部没有写
+   - 很多虚函数只搭建了框架，里面都是空着的，运行一会后突然崩溃
+     </pre>
+   </details>
+
+2. UOS V20 控制中心编译成功、运行崩溃
+
+   <details>
+       <summary> [解] 然后将 `main.cpp`  的下面此处此行修改为`new` 的形式后，成功运行了 </summary>
+     <p>  </p>
+     <pre>控制中心  `dde-control-center`  从  `gerrit` 上面新下载的源码， 切换到 `maintain/5.2` 分支，编译成功，运行失败，一定崩溃，界面不会显示出来；后来切换到 `uos` 分支也是一样的结果。
+   报错如下：
+   <img src="https://cdn.jsdelivr.net/gh/xmuli/xmuliPic@pic/2020/image-20201120171014490.png" width="70%"/>
+   <img src="https://cdn.jsdelivr.net/gh/xmuli/xmuliPic@pic/2020/image-20201120170952187.png" width="70%"/>
+   #### 分析
+   - 重新在 gerrit 上拉取一份新的最新代码，旧的可能被未知污染了；同时再找一份电脑编译运行此项目，作为对比验证
+   - 控制中心运行显示， 后面要加参数 `-s`
+   - 怀疑可能 dtk 版本过低，`dtkcore、dtkgui、dtkwidget` 都升级到最新的版本，对应的 `-dev` 包也升级了一下；
+   - 然后重启系统；
+   - 重建构建生成依赖 `sudo apt build-dep dde-control-center`  或者  `dpkg-checkbuilddeps` ；
+   - 删除 `.user` 临时文件；然后重来一轮 **重新 清理、构建、运行** 再次尝试；
+   #### 解决一
+   然后将 `main.cpp`  的下面此处此行修改为`new` 的形式后，成功运行了：
+   ```cpp
+   int main(int argc, char *argv[])
+   {
+       DApplication *app = DApplication::globalApplication(argc, argv);
+   ...省略
+   int main(int argc, char *argv[])
+   {
+       DApplication *app = new DApplication(argc, argv);
    ```
+   #### 解决二
+   依旧怀疑是 `DTK` 的问题，安装了符号调试包准备调试 `DTK` 时候；运行之后 `sudo apt install libdtkwidget5-dbgsym` 之后，发现不用修改**解决一** ，此 Bug 没有再次复现，也可以成功运行。
+   #### 其它
+   如何使用 gdb 带参数调试，fpc 有一篇 markdown 文档；systemd-coredump 是干啥用的，学习一下。
+     </pre>
+   </details>
 
-   
+3. 显示器外接而苹果 3.5mm 耳机，显示没有声音，不能听歌；以为是 `dde-control-center` 的 bug ，升级到最新版本；依旧无效
 
-   1. `promoted to` 提升自定控件操作如图，然后在 CMakeLists.txt  中添加包含此头文件的路径，添加 `include_directories(${PROJECT_SOURCE_DIR}/widgets)`，用于修复 Qt Design 使用提升自定义控件后， MinGW 找不到而编译失败。
+   <details>
+       <summary> [解] 显示器使用 `VGA` 连接机箱，没有音频输出，所以耳机没有显示，改为插入 机箱的耳机接口，即回复正常。
+   PS： 若用 `HTMI` 连接，是自带音频，直接外接显示器 </summary>
+     <p>  </p>
+     <pre>
+   属于硬件的数据线不知，原报错图
+   <img src="https://cdn.jsdelivr.net/gh/xmuli/xmuliPic@pic/2020/image-20201120171014490.png" width="70%"/>
+     </pre>
+   </details>
 
-      <img src="https://fastly.jsdelivr.net/gh/XMuli/xmuliPic@pic/2023/20230619010003.png" width="100%"/>
+4. QtCreator 项目，过量的调试信息；发现控制台有很多调试信息刷屏，很烦。想屏蔽这个消息
 
-   - 若是要降低会原本的 Q控件，使用 `Demote to`
+   <img src="https://cdn.jsdelivr.net/gh/xmuli/xmuliPic@pic/2020/20210106172513.png" width="50%"/>
 
-   - 若仅仅只用 MSVC 编译，上图片中的 `Promoted class name:` 添加自定义类名后，在 `Header file:` 后面自动生成文件后，补上其相对路径的部分，然后 不用写 include_directories 这一行，也可以直接编译通过
+   [解] 在 `/etc/X11/Xsession.d/00deepin-dde-env ` 中注释掉 `QT_LOGGING_RULES="*.debug=true"` 即可，然后注销之后生效。可在 QtCreator 中，`项目-Build & Run-Run-Run Environment` 中，查看到该环境变量。
 
+   若为 false 就是啥都不打印， 包括你自己的 qDebug()<< ；为 true 所有的 qtdebug 日志都会打印。
 
-
-MacOS & Clang64
-编译 Qt+CMake 报错：`:-1: error: ninja: build stopped: subcommand failed.`
-原因： 1.可能得 kit 没有设置好 2. CMake 没有安装好 3. CMakeList.txt 里面的语法存在错误，屏蔽排查
-
-
-
-
+5. xxx
 
 <br>
 
-## GITHUB 问题
+---
 
-1. GitHub 的 Action 的脚本，构建 CI/CD，使用的默认 shell 壳： pwd 默认是不使用 utf8 字符
+## MACOS & CLANG 所遇到奇葩问题集锦
 
-   <details>
-       <summary> [解] 使用的默认 shell 壳： pwd 默认是不使用 utf8 字符 </summary>
-     <p> 使用的命令参数  </p>
-     <pre>
-   ${{ env.xxxx }}
-   ${{env.xxxx}}
-   ${{env:xxxx}}
-   ${env.xxxx}
-   $xxxx
-   然后参数要注意；使用 ""  或者 ''
-   学会去看一些公共的库；直接去看最新的文档之类
-   </pre>
-   </details>
+1. xxx
 
-2. xxx
+
+
+## Further Information
+
+另外发现几个甚是出彩的开发 Qt， CMake， Windows 相关的经验总结，可以多观摩和体会，很多问题，经过自己不懈的熬夜调试，发现都是前人已经遇到且总结出来的，去搜搜关键词，通常会有意外之喜；
+
+人生苦短，疼爱自己，多陪家人。
+
+
+
+- [飞扬青云，自己总结的这十多年来做Qt开发以来的经验](https://github.com/feiyangqingyun/qtkaifajingyan)
+- [偕臧， QtExamples，控件使用和原理，DTK 重绘控件框架解析；常见IDE技巧](https://github.com/XMuli/QtExamples)
+- [wangwenx190，学习编程过程中所记的笔记，CMAKE，Qt，MSVC 等](https://github.com/wangwenx190/notes)
+
+
+
+若有质量较佳的集合，欢迎提 PR 补充

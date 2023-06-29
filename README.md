@@ -1,4 +1,4 @@
-<img align=center src="https://fastly.jsdelivr.net/gh/XMuli/xmuliPic@pic/2023/20230618195256.png" width="80%"/>
+<img src="https://fastly.jsdelivr.net/gh/XMuli/xmuliPic@pic/2023/20230618195256.png" width="80%"/>
 
 　　　　　　　　　　　　　　　　　　　　　　　　　 我也不知道为什么，当初就是想放这么一张图在这里~
 
@@ -46,9 +46,9 @@
 
 该系列的源码，知识文章等均托管于此仓库；主线目标是讲解 QT5 的相关文章。
 
-<font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14-13.x`  |  `win10 x64 1803-22H2`  |  `UOS/Deepin 20.x`
+<font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14-13.x`  |  `win10 x64 1803-22H2, Win11+`  |  `UOS/Deepin 20-23.x`
 
-<font color=#70AD47 size=4 face="幼圆">**编码软件：** </font> `Qt 5.9-5.15`  | `Visual Studio 2015-2019` 
+<font color=#70AD47 size=4 face="幼圆">**编码软件：** </font> `Qt 5.9-5.15`  | `Visual Studio 2015-2022` 
 
 <br>
 
@@ -110,6 +110,12 @@
 - [MDI(Multi-document Interface) 多文档界面的实现 + QMdiArea 的用法](https://blog.csdn.net/qq_33154343/article/details/103625380)【QtMDIEx】
 - [创建 QKeySequenceEdit() 后，显示方块■◆乱码](https://blog.csdn.net/qq_33154343/article/details/125775732)
 - Qt 修改 `*.svg` 文件的颜色【ExChangeSVGColor】
+
+<br>
+
+**高级组合控件**
+
+- [使用 QListWidget 创建的一个 气泡聊天窗口消息的控件 BubbleMessage，且自适应大小](https://github.com/XMuli/BubbleMessage)  [★★★★]
 
 <br>
 
@@ -221,14 +227,6 @@
   - [微软 SDK 导致的项目编译失败哦~](https://blog.csdn.net/qq_33154343/article/details/124736720)
   - [一个微软自带的 Notepad 所导致的问题](https://blog.csdn.net/qq_33154343/article/details/123508220) 【ExCRLF】
 
-  
-
-- **WINDOWS-MSVC OR LINUX-GCC**
-
-  - [WINDOWS 所遇到奇葩问题集锦](PLATFORM_MSVC_GCC/WINDOWS%20所遇到奇葩问题集锦.md) [🦄🎣🎁🎁🎁]
-  - [LINUX 所遇到编码奇怪的问题](PLATFORM_MSVC_GCC/LINUX%20所遇到编码奇怪的问题.md)  [🦄🎣🎁🎁🎁]
-
-
 
 <br>
 
@@ -276,8 +274,9 @@
 
 <br>
 
-- **自定义绘画控件**
-  - [使用 QListWidget 创建的一个 气泡聊天窗口消息的控件 BubbleMessage，且自适应大小](https://github.com/XMuli/BubbleMessage)  [★★★★]
+## 「第 11 章」  经验总结
+
+[WINDOWS_MSVC_MinGW & LINUX_GCC & MACOS_CLANG 所遇到奇葩问题集锦](WINDOWS_MSVC_MinGW & LINUX_GCC & MACOS_CLANG 所遇到奇葩问题集锦.md) [🦄🎣🎁🎁🎁]
 
 <br>
 
@@ -346,3 +345,4 @@
 博客代码基于Apache License 2.0 协议进行分发和使用，更多信息参见 [协议文件](/LICENSE)。
 
 所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
+
