@@ -91,6 +91,8 @@
 
 ## 「第 3 章」  常规 GUI 控件
 
+**原生控件**
+
 - 一个默认的`Qt Widget`项目 【空】
 - [元对象系统 MOC (Meat-Object System) 的对象 MetaObject 和(含动态)属性 Propert 的用法](https://xmuli.blog.csdn.net/article/details/105925608) 【QtMeatObjectEx】
 - [QString 在2 ／8／10／16 进制之间转换](https://blog.csdn.net/qq_33154343/article/details/100860030) 【QtQStringEx】
@@ -111,11 +113,11 @@
 - [创建 QKeySequenceEdit() 后，显示方块■◆乱码](https://blog.csdn.net/qq_33154343/article/details/125775732)
 - Qt 修改 `*.svg` 文件的颜色【ExChangeSVGColor】
 
-<br>
+**高级自绘和组合控件**
 
-**高级组合控件**
+- [Qt 使用亚克力的透明磨砂效果的窗口思路和解决方案，三种实现思路，支持全平台](https://github.com/XMuli/AcrylicWindow) 【AcrylicWindow】
 
-- [使用 QListWidget 创建的一个 气泡聊天窗口消息的控件 BubbleMessage，且自适应大小](https://github.com/XMuli/BubbleMessage)  [★★★★]
+- [使用 QListWidget 创建的一个 气泡聊天窗口消息的控件 BubbleMessage，且自适应大小](https://github.com/XMuli/BubbleMessage) 【BubbleChat】 [★★★★]
 
 <br>
 
@@ -206,24 +208,21 @@
   
   - [小技巧：使用 Qt Design 提升自定义控件，报错找不到头文件](https://github.com/XMuli/QtExamples/blob/master/PLATFORM_MSVC_GCC/WINDOWS%20%E6%89%80%E9%81%87%E5%88%B0%E5%A5%87%E8%91%A9%E9%97%AE%E9%A2%98%E9%9B%86%E9%94%A6.md)
 
-
-
 - **Visual Studio**
-
   - [VS2017 调试 Qt 源码，安装 PDB](https://blog.csdn.net/qq_33154343/article/details/120339797)
-
+  
   - [VS2019 调试 Qt5 时 QString 显示为内存地址而非字符串](https://xmuli.blog.csdn.net/article/details/116244865) 
-
+  
   - [Visual Studio 实际仅增删数行，却显示文件所有行均发生变更](https://blog.csdn.net/qq_33154343/article/details/123366419)
-
+  
   - [Visual Studio 生成 .vs 隐藏文件夹，导致 Git 命令错误](https://blog.csdn.net/qq_33154343/article/details/123366493)
-
+  
   - [Win10 的 20H2 使用 VS 2019，拖曳窗口会崩溃](https://blog.csdn.net/qq_33154343/article/details/116244656)
-
+  
   - [Visual Studio 2019 进行远程调试](https://blog.csdn.net/qq_33154343/article/details/123855765)
-
+  
   - [Visual Studio 断点调试之箭头偏移进错函数，捉🐛记](https://blog.csdn.net/qq_33154343/article/details/124482152)
-
+  
   - [微软 SDK 导致的项目编译失败哦~](https://blog.csdn.net/qq_33154343/article/details/124736720)
   - [一个微软自带的 Notepad 所导致的问题](https://blog.csdn.net/qq_33154343/article/details/123508220) 【ExCRLF】
 
@@ -245,21 +244,20 @@
 
 - [Lambda 表达式详解](https://blog.csdn.net/qq_33154343/article/details/125775706)
 
-- [Qt 信号和槽原理分析](https://xmuli.blog.csdn.net/article/details/115305903) [★★★]
+- [Qt 信号和槽原理分析，手写实现信号和槽，模拟 moc 生成 mo_xxx.cpp 过程](https://xmuli.blog.csdn.net/article/details/115305903) [★★★]
 - [QT 项目 CMake 设置国际化支持](https://xmuli.blog.csdn.net/article/details/114439385) 
 - [Qt4 和 Qt5 的信号和槽的用法差异](https://xmuli.blog.csdn.net/article/details/118346008) 
 - [高分屏、分辨率、DPI、PPI，及 Qt 处理高分屏](https://xmuli.blog.csdn.net/article/details/108905279) [★★]
 - [如何给上游 QT 提交 BUG 反馈和贡献代码 PATCH？](https://xmuli.blog.csdn.net/article/details/107220867)  [★★★★]
 
-<br>
-
 - [如何构建 QT5（5.15）](https://xmuli.blog.csdn.net/article/details/114259155) 
 - [在 Mac 编译成功运行 QT 5.15 源码：Debug + Release 版本](https://xmuli.blog.csdn.net/article/details/114259186)
-- [Linux / Unix 学习完整系列（基础 / 编译 / 进程间通信 / 信号 / 守护进程 / 多线程等）](https://xmuli.blog.csdn.net/article/details/105847532)【[linuxExample](https://github.com/xmuli/linuxExample)】[★★★★★]
 
 <br>
 
 ## 「第 10 章」  项目
+
+**软件**
 
 - [项目实战：仿 QQ 的单聊，属 GUI 界面 ](https://blog.csdn.net/qq_33154343/article/details/79341062)
 - [项目实战：仿 QQ 的群聊，属 GUI 界面](https://blog.csdn.net/qq_33154343/article/details/96437681)
@@ -270,13 +268,23 @@
 - [QT5/C++项目：基于QT的跨平台网络对战象棋（一）](https://blog.csdn.net/qq_33154343/article/details/89284983) [★★★★★]
 - [QT5/C++项目：基于QT的跨平台网络对战象棋（二）](https://blog.csdn.net/qq_33154343/article/details/89285968) [★★★★★]
 - [QT5/C++项目：基于QT的跨平台网络对战象棋（三）](https://blog.csdn.net/qq_33154343/article/details/89286553) [★★★★★]
-- [FLIPPED 一款简易且漂亮的跨平台截图软件](https://xmuli.blog.csdn.net/article/details/129719267) [★★★★★★★★★ 2023.06]
+- [极简的电脑管家，一键关闭 Windows Defender (Anti-Virus).](https://github.com/XMuli/DWCtrl)  【DWCtrl】[★★★★]
+- [ShotX 一个轻量级的 跨平台截图](https://github.com/XMuli/ShotX)  [★★★]
+- [FLIPPED 一款简易且漂亮的跨平台截图和贴图的软件](https://blog.csdn.net/qq_33154343/article/details/130053230) [★★★★★★★★★ 2023.06]
+
+**硬件**
+
+- [小米AX6S刷OpenWrt和开启OpenClash，及刷回官网固件](https://blog.csdn.net/qq_33154343/article/details/128268719)
+
+- [小米路由器 R4A 刷原生 OpenWrt 后的风景](https://blog.csdn.net/qq_33154343/article/details/128523087)
 
 <br>
 
 ## 「第 11 章」  经验总结
 
-[WINDOWS_MSVC_MinGW & LINUX_GCC & MACOS_CLANG 所遇到奇葩问题集锦](WINDOWS_MSVC_MinGW & LINUX_GCC & MACOS_CLANG 所遇到奇葩问题集锦.md) [🦄🎣🎁🎁🎁]
+- [Linux / Unix 学习完整系列（基础 / 编译 / 进程间通信 / 信号 / 守护进程 / 多线程等）](https://xmuli.blog.csdn.net/article/details/105847532)【[linuxExample](https://github.com/xmuli/linuxExample)】[★★★★★]
+
+- [WINDOWS_MSVC_MinGW & LINUX_GCC & MACOS_CLANG 所遇到奇葩问题集锦](./WINDOWS_MSVC_MinGW%20%26%20LINUX_GCC%20%26%20MACOS_CLANG%20%E6%89%80%E9%81%87%E5%88%B0%E5%A5%87%E8%91%A9%E9%97%AE%E9%A2%98%E9%9B%86%E9%94%A6.md) [🦄🎣🎁🎁🎁]
 
 <br>
 
@@ -303,15 +311,15 @@
 
 <br>
 
-## 我所想说🙋‍♀️
+**Star 增长**
 
-<font color=#D0087E size=4 face="幼圆">虽然不盈利，会累，但因自由和开源软件而写的开心ya， 鸭鸭</font>
+[![Star History Chart](https://api.star-history.com/svg?repos=XMuli/QtExamples&type=Date)](https://star-history.com/#XMuli/QtExamples&Date)
 
 <br>
 
-## Star 增长
+## 我所想说🙋‍♀️
 
-[![Star History Chart](https://api.star-history.com/svg?repos=XMuli/QtExamples&type=Date)](https://star-history.com/#XMuli/QtExamples&Date)
+<font color=#D0087E size=4 face="幼圆">虽然不盈利，会累，但因自由和开源软件而写的开心ya， 鸭鸭</font>
 
 <br>
 
