@@ -211,7 +211,7 @@
 
   - [小技巧：设置 QToolBox 的每一页 page 的使用单独的布局（QTabWidget 同理）](https://blog.csdn.net/qq_33154343/article/details/100185025) 
   
-  - [小技巧：使用 Qt Design 提升自定义控件，报错找不到头文件](https://github.com/XMuli/QtExamples/blob/master/PLATFORM_MSVC_GCC/WINDOWS%20%E6%89%80%E9%81%87%E5%88%B0%E5%A5%87%E8%91%A9%E9%97%AE%E9%A2%98%E9%9B%86%E9%94%A6.md)
+  - [小技巧：使用 Qt Design 提升自定义控件，报错找不到头文件， <QtCreator - 经验1>](./WINDOWS_MSVC_MinGW%20%26%20LINUX_GCC%20%26%20MACOS_CLANG%20所遇到奇葩问题集锦.md)
 - **Visual Studio**
   - [VS2017 调试 Qt 源码，安装 PDB](https://blog.csdn.net/qq_33154343/article/details/120339797)
   - [VS2019 调试 Qt5 时 QString 显示为内存地址而非字符串](https://xmuli.blog.csdn.net/article/details/116244865) 
