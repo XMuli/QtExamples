@@ -83,7 +83,7 @@
 <br>
 
 - **IDE 对 Qt 源码函数进行单步调试**
-  - [VS2022 And QtCreator10 调试Qt源码教程](https://blog.csdn.net/qq_33154343/article/details/131491715) [★★★★★]
+  - [VS2022 And QtCreator 10 调试 Qt 源码教程](https://blog.csdn.net/qq_33154343/article/details/131491715) [★★★★★]
 
 <br>
 
@@ -210,7 +210,7 @@
   - [小技巧：QtCreator 用快捷键秒实现，声明在基类中重写的派生类(纯)虚函数](https://blog.csdn.net/qq_33154343/article/details/104457739) 
 
   - [小技巧：设置 QToolBox 的每一页 page 的使用单独的布局（QTabWidget 同理）](https://blog.csdn.net/qq_33154343/article/details/100185025) 
-  
+
   - [小技巧：使用 Qt Design 提升自定义控件，报错找不到头文件， <QtCreator - 经验1>](./WINDOWS_MSVC_MinGW%20%26%20LINUX_GCC%20%26%20MACOS_CLANG%20所遇到奇葩问题集锦.md)
 - **Visual Studio**
   - [VS2017 调试 Qt 源码，安装 PDB](https://blog.csdn.net/qq_33154343/article/details/120339797)
@@ -223,6 +223,9 @@
   - [Visual Studio 断点调试之箭头偏移进错函数，捉🐛记](https://blog.csdn.net/qq_33154343/article/details/124482152)
   - [微软 SDK 导致的项目编译失败哦~](https://blog.csdn.net/qq_33154343/article/details/124736720)
   - [一个微软自带的 Notepad 所导致的问题](https://blog.csdn.net/qq_33154343/article/details/123508220) 【ExCRLF】
+- **WinDbg 调试**
+  - [WinDbg：入门分析 dmp 文件『一』](https://xmuli.blog.csdn.net/article/details/123563647)
+  - [WinDbg：调试之附加进程生成 dmp『二』](https://xmuli.blog.csdn.net/article/details/123563753)
 
 
 <br>
