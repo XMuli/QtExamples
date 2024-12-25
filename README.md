@@ -34,7 +34,7 @@
 
 - [x] `DTK` 重绘控件方式的框架解析；
 
-- [x] `QtCrator` 使用和一些小技巧；
+- [x] `QtCreator` 使用和一些小技巧；
 
 - [x] `Qt` 原理/运行机制理解
 
@@ -117,7 +117,7 @@
 **原生控件**
 
 - 一个默认的`Qt Widget`项目 【空】
-- [元对象系统 MOC (Meat-Object System) 的对象 MetaObject 和(含动态)属性 Propert 的用法](https://xmuli.blog.csdn.net/article/details/105925608) 【QtMeatObjectEx】
+- [元对象系统 MOC (Meta-Object System) 的对象 MetaObject 和(含动态)属性 Propert 的用法](https://xmuli.blog.csdn.net/article/details/105925608) 【QtMeatObjectEx】
 - [QString 在2 ／8／10／16 进制之间转换](https://blog.csdn.net/qq_33154343/article/details/100860030) 【QtQStringEx】
 - [QString 常用的功能函数的介绍及用法](https://blog.csdn.net/qq_33154343/article/details/100860270) 【QtQStringFunEx】
 - [QSlider + QAbstractSlider 滑动条的介绍及用法](https://blog.csdn.net/qq_33154343/article/details/100944831)【QtQSliderEx】
@@ -166,7 +166,7 @@
   - [QStyle 设置界面的外观和 QCommonStyle 继承关系图讲解和使用](https://blog.csdn.net/qq_33154343/article/details/104367878) [★★]
   - [Qt 之 proxy() 代理函数探究](https://blog.csdn.net/qq_33154343/article/details/101571843)
 - **感性理解👀**
-  - [QT 控件在 UOS 20 + MaOS10.14 下的显示不同的 QStyle「即样式换肤效果」](https://blog.csdn.net/qq_33154343/article/details/104305154)
+  - [QT 控件在 UOS 20 + MacOS10.14 下的显示不同的 QStyle「即样式换肤效果」](https://blog.csdn.net/qq_33154343/article/details/104305154)
   - [QT 控件在 Win 10 + Deepin 10.15 下的显示不同的 QStyle「即样式换肤效果」](https://blog.csdn.net/qq_33154343/article/details/100148552) 
 - **DTK 源码解析架构🤔**
   - [QStyle / DTK 重绘 Qt-GUI 已有控件，举例 QScrollBar](https://blog.csdn.net/qq_33154343/article/details/104537944) [★★]
@@ -271,7 +271,7 @@
 
 - [Lambda 表达式详解](https://blog.csdn.net/qq_33154343/article/details/125775706)
 
-- [Qt 信号和槽原理分析，手写实现信号和槽，模拟 moc 生成 mo_xxx.cpp 过程](https://xmuli.blog.csdn.net/article/details/115305903) [★★★]
+- [Qt 信号和槽原理分析，手写实现信号和槽，模拟 moc 生成 moc_xxx.cpp 过程](https://xmuli.blog.csdn.net/article/details/115305903) [★★★]
 - [QT 项目 CMake 设置国际化支持](https://xmuli.blog.csdn.net/article/details/114439385) 
 - [Qt4 和 Qt5 的信号和槽的用法差异](https://xmuli.blog.csdn.net/article/details/118346008) 
 - [高分屏、分辨率、DPI、PPI，及 Qt 处理高分屏](https://xmuli.blog.csdn.net/article/details/108905279) [★★]
