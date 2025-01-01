@@ -46,7 +46,7 @@
 
 该系列的源码，知识文章等均托管于此仓库；主线目标是讲解 QT5 的相关文章。
 
-<font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14-13.x`  |  `win10 x64 1803-22H2, Win11+`  |  `UOS/Deepin 20-23.x`
+<font color=#70AD47 size=4 face="幼圆">**开发系统：**</font>   `MacOS 10.14-15.x`  |  `win 10-11`  |  `UOS/Deepin 20-23.x`
 
 <font color=#70AD47 size=4 face="幼圆">**编码软件：** </font> `Qt 5.9-5.15`  | `Visual Studio 2015-2022` 
 
@@ -58,10 +58,10 @@
 
 - [极简的电脑管家，一键关闭 Windows Defender (Anti-Virus).](https://github.com/XMuli/windows-defender-close)  【windows-defender-close】[★★]
 
-- 截图三部曲，由入门到商业级水准：易 → 难
-  1. [ShotX 一个轻量级的 跨平台截图](https://github.com/XMuli/ShotX)  [★]
+- 截图三部曲，入门至商业级水准作品：  难 → 易
+  1. [SunnyCapturer 跨平台的截图软件，支持离线OCR，图片翻译，贴图，钉图](https://blog.csdn.net/qq_33154343/article/details/136373241)  [★★★★★ 2023-2025] ：👉 [SunnyCapturer](https://sunnycapturer.xmuli.tech)
   2. [FLIPPED 一款简易且漂亮的跨平台截图和贴图的软件](https://blog.csdn.net/qq_33154343/article/details/130053230) [★★★]
-  3. [嘿嘿！开发了一款 Sunny 截图 & 钉图，亦支持“屏幕识图”和“OCR”的软件](https://blog.csdn.net/qq_33154343/article/details/136373241) [★★★★★ 2024]
+  3. [ShotX 一个轻量级的 跨平台截图](https://github.com/XMuli/ShotX)  [★]
 
 
   - [简洁且易用的ChatGPT&AI的桌面应用程序ThinkyMate → 不需登录](https://blog.csdn.net/qq_33154343/article/details/135488438)  [★★★★★ 2024]
@@ -284,7 +284,23 @@
 
 ## 「第 10 章」  项目 / 商业级别
 
-**软件**
+**较火 /  高规格的完整项目** 🔥🔥🔥
+
+- [极简的电脑管家，一键关闭 Windows Defender (Anti-Virus).](https://github.com/XMuli/windows-defender-close)  【windows-defender-close】[★★]
+
+- 截图三部曲，入门至商业级水准作品：  难 → 易
+  1. [SunnyCapturer 跨平台的截图软件，支持离线OCR，图片翻译，贴图，钉图](https://blog.csdn.net/qq_33154343/article/details/136373241)  [★★★★★ 2023-2025] ：👉 [SunnyCapturer 官网](https://sunnycapturer.xmuli.tech)
+  2. [FLIPPED 一款简易且漂亮的跨平台截图和贴图的软件](https://blog.csdn.net/qq_33154343/article/details/130053230) [★★★]
+  3. [ShotX 一个轻量级的 跨平台截图](https://github.com/XMuli/ShotX)  [★]
+
+
+  - [简洁且易用的ChatGPT&AI的桌面应用程序ThinkyMate → 不需登录](https://blog.csdn.net/qq_33154343/article/details/135488438)  [★★★★★ 2024]
+  - [Sunny 截图上架 Microsoft Store 及Linux等商店的指北](https://blog.csdn.net/qq_33154343/article/details/136334975)
+  - [分享如何拥有一份私人的『开源代码签名证书』](https://blog.csdn.net/qq_33154343/article/details/135487951)
+
+<br>
+
+**新人友好的项目**
 
 - [项目实战：仿 QQ 的单聊，属 GUI 界面 ](https://blog.csdn.net/qq_33154343/article/details/79341062)
 - [项目实战：仿 QQ 的群聊，属 GUI 界面](https://blog.csdn.net/qq_33154343/article/details/96437681)
@@ -297,20 +313,6 @@
 - [QT5/C++项目：基于QT的跨平台网络对战象棋（三）](https://blog.csdn.net/qq_33154343/article/details/89286553) [★★★★★]
 
 
-
-- **较火 /  高规格的完整项目** 🔥🔥🔥
-
-  - [极简的电脑管家，一键关闭 Windows Defender (Anti-Virus).](https://github.com/XMuli/windows-defender-close)  【windows-defender-close】[★★★★]
-
-  - 截图三部曲，由入门到商业级水准：易 → 难
-    1. [ShotX 一个轻量级的 跨平台截图](https://github.com/XMuli/ShotX)  [★★]
-    2. [FLIPPED 一款简易且漂亮的跨平台截图和贴图的软件](https://blog.csdn.net/qq_33154343/article/details/130053230) [★★★★★★]
-    3. [嘿嘿！开发了一款 Sunny 截图 & 钉图，亦支持“屏幕识图”和“OCR”的软件](https://blog.csdn.net/qq_33154343/article/details/136373241) [★★★★★★★★ 2024]
-
-
-  - [简洁且易用的ChatGPT&AI的桌面应用程序ThinkyMate → 不需登录](https://blog.csdn.net/qq_33154343/article/details/135488438)  [★★★★★★★★ 2024]
-
-    
 
 **硬件**
 
