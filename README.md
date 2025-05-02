@@ -16,15 +16,38 @@
 
 ## 目录
 
+**QtExamples**
+
+- [目录](#目录)
 - [项目介绍](#项目介绍)
 - [构建环境](#构建环境)
-- [正文](#正文)
+- [热门作品](#热门作品)
+
+**楔子**
+
 - [新手过来](#新手过来)
 - [分享所想](#分享所想)
-- [我所想说🙋‍♀️](#我所想说🙋‍♀️)
-- [贡献](#贡献)
-- [作者](#作者)
-- [协议](#协议)
+- [热爱开源](#热爱开源)
+- [贡献捐赠](#贡献捐赠)
+- [联系作者](#联系作者)
+
+**正文**
+
+- [1-预备知识](#1-预备知识)
+- [2-QT生成原理和运行机制](#2-QT生成原理和运行机制)
+- [3-常规GUI控件](#3-常规GUI控件)
+- [4-网络编程](#4-网络编程)
+- [5-DTK重绘控件原理解析-自定义QSTYLE](#5-DTK重绘控件原理解析-自定义QSTYLE)
+- [6-QT-IDE乱码根因和解决](#6-QT-IDE乱码根因和解决)
+- [7-IDE技巧](#7-IDE技巧)
+- [8-提交规范和发布QT程序](#8-提交规范和发布QT程序)
+- [9-高级](#9-高级)
+- [10-项目商业级项目](#10-项目商业级项目)
+- [11-服务器开发之Linux基础编程](#11-服务器开发之Linux基础编程)
+- [12-服务器开发之Linux系统编程](#12-服务器开发之Linux系统编程)
+- [13-服务器开发之Linux网络编程](#13-服务器开发之Linux网络编程)
+
+**许可协议**
 
 <br>
 
@@ -68,11 +91,69 @@
   - [Sunny 截图上架 Microsoft Store 及Linux等商店的指北](https://blog.csdn.net/qq_33154343/article/details/136334975)
   - [分享如何拥有一份私人的『开源代码签名证书』](https://blog.csdn.net/qq_33154343/article/details/135487951)
 
-<br><br>
+<br>
+
+# 楔子
+
+## 新手过来
+
+　　<font color=#D0087E size=4 face="幼圆">**新手**</font> 在深思熟虑后踏入的编程，容易遭遇如下如下几点:
+
+1. 语言语法不熟悉🤦‍♀️
+2. 相关 IDE 安装、配置不会；不懂如何创建自己所需的工程项目🤦‍♀️
+3. 基础控件不认识，不会用🤦‍♀️
+4. 难以🔍可阅读、成体系的低级博客，多为高热度Title文章🤦‍♀️
+5. ...开始步入正轨👣
+6. 也不知学编程到是底在学习什么❓👀
+7. ...修行靠个人👩‍💻
+
+<br>
+
+## 分享所想
+
+1. 自己想学一遍 GUI 控件
+2. 帮助真的新手实现0→1的入门，解决👆的1，2，3，4，6问题
+3. 学习于网络，回馈于网络
+4. 希望永久被🔍引擎检索到，以博客形式发表📝
+
+<br>
+
+**Star 增长**
+
+[![Star History Chart](https://api.star-history.com/svg?repos=XMuli/QtExamples&type=Date)](https://star-history.com/#XMuli/QtExamples&Date)
+
+<br>
+
+## 热爱开源
+
+<font color=#D0087E size=4 face="幼圆">虽然不盈利，会累，但因自由和开源软件而写的开心ya， 鸭鸭</font>
+
+<br>
+
+## 贡献捐赠
+
+若是帮助到了你，或者觉得有用，可以点击该项目的的 <font color=#D0087E size=4 face="幼圆">**⭐Star** </font>和<font color=#D0087E size=4 face="幼圆">**🍴 Fork**</font> 的两个图标，方便抬手之间，表示点个赞，手有余香
+
+<details>
+    <summary> <b>当然也可以赠与一杯冰阔落[捐赠/打赏  ← 点击展开二维码]</b></summary>
+  <p> - If you have something to learn from the project, you can also invite me to share a glass of Fat House Ice and Coke. - </p>
+  <pre><img src="https://fastly.jsdelivr.net/gh/XMuli/xmuliPic@pic/2022/202302282339037.png" width="80%"/></pre>
+</details>
+
+<br>
+
+## 联系作者
+
+| [![alt text](https://img.shields.io/badge/个人-项目展示-brightgreen)](https://product.xmuli.tech/) : 些许的项目展示 |                                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [![alt text](https://img.shields.io/badge/Blog-国内镜像-ff69b4)](https://blog.csdn.net/qq_33154343) ：浏览量 100W+ | [![alt text](https://img.shields.io/badge/Blog-%E5%81%95%E8%87%A7%E7%9A%84%E5%B0%8F%E7%AB%99-ff69b4)](https://xmuli.tech/) : 唯一博客 |
+| [![alt text](https://img.shields.io/badge/QQ-%E5%81%95%E8%87%A7-brightgreen)](https://sighttp.qq.com/authd?IDKEY=31f3ef7312b39e2c8dc822ae2f4c3b3118e1a6f31cc83373) : 简单沟通~ | [![alt text](https://img.shields.io/badge/GitHub-XMuli-brightgreen)](https://github.com/XMuli) : 托管的源码库 |
+
+<br>
 
 # 正文
 
-## 「第 1 章」  预备知识
+## 1-预备知识
 
 - **Windows 系统**
   - [在 Win10 环境下安装 QtCreator 5.9.8 作 C++ 的 IDE 开发工具](https://blog.csdn.net/qq_33154343/article/details/103674579)
@@ -105,14 +186,14 @@
 
 <br>
 
-## 「第 2 章」  QT 生成原理/运行机制
+## 2-QT生成原理和运行机制
 
 - [Make、Makefile、Cmake、QMake 的区别](https://blog.csdn.net/qq_33154343/article/details/98170236) 
 - [QT 编程中 namespace Ui { class Widget; } 解析](https://blog.csdn.net/qq_33154343/article/details/98122981) 
 
 <br>
 
-## 「第 3 章」  常规 GUI 控件
+## 3-常规GUI控件
 
 **原生控件**
 
@@ -144,7 +225,7 @@
 
 <br>
 
-## 「第 4 章」  网络编程
+## 4-网络编程
 
 - [QHostInfo 主机信息查询 + QNetworkInterface 查询 IP 等](https://blog.csdn.net/qq_33154343/article/details/103707035)【QtQHostInfoEx】
 - [TCP 通信之 QTcpServer + QTcpSocket，服务器和客户端通讯](https://blog.csdn.net/qq_33154343/article/details/103759735)【QtTcpEx】
@@ -153,7 +234,7 @@
 
 <br>
 
-## 「第 5 章」  DTK 重绘控件原理解析 / 自定义 QStyle
+## 5-DTK重绘控件原理解析-自定义QSTYLE
 
 - **DTK 历史发展**
   - [DTK 的历史起源、发展，和简单入门](https://xmuli.blog.csdn.net/article/details/106189533) [★★]
@@ -190,7 +271,7 @@
 
 <br>
 
-## 「第 6 章」  QT / IDE 乱码根因和解决
+## 6-QT-IDE乱码根因和解决
 
 - **此两篇足够**
 - 极简图表解释 -->  [古文码、口字码、符号码、问号码、棍拷码](https://blog.csdn.net/qq_33154343/article/details/99617767) [★★★★★]
@@ -208,7 +289,7 @@
 
 <br>
 
-## 「第 7 章」  IDE 技巧
+## 7-IDE技巧
 
 - **Qt Creator**
   - [QtCreator 界面的基本组成简介和入门使用讲解(Win + Linux + MacOS)](https://blog.csdn.net/qq_33154343/article/details/103942733)
@@ -248,7 +329,7 @@
 
 <br>
 
-## 「第 8 章」  提交规范和发布 QT 程序
+## 8-提交规范和发布QT程序
 
 - [约定式提交规范](https://www.conventionalcommits.org/)
 - [修改 Doxygen 主题，生成 Qt 风格的文档](https://xmuli.blog.csdn.net/article/details/114591725) 
@@ -267,7 +348,7 @@
 
 <br>
 
-## 「第 9 章」  高级
+## 9-高级
 
 - [Lambda 表达式详解](https://blog.csdn.net/qq_33154343/article/details/125775706)
 
@@ -282,7 +363,7 @@
 
 <br>
 
-## 「第 10 章」  项目 / 商业级别
+## 10-项目商业级项目
 
 **较火 /  高规格的完整项目** 🔥🔥🔥
 
@@ -322,7 +403,72 @@
 
 <br>
 
-## 「第 11 章」  经验总结
+## 11-服务器开发之Linux基础编程
+
+**GCC/G++**
+
+- [在MacOS上面通过brew命令安装gcc编译器集](https://blog.csdn.net/qq_33154343/article/details/104639656) 【unix_linux_01_test_gcc】
+- [gcc和g++的区别，编译.c和.cpp文件的区别](https://blog.csdn.net/qq_33154343/article/details/104645129) 【unix_linux_02_c_cpp】
+- [gcc工作流程：预处理，编译，汇编，链接](https://blog.csdn.net/qq_33154343/article/details/104693603) 【unix_linux_03_gcc_workflow】
+- [Linux下使用gcc生成静态库.a和调用（图文并茂，坑已踩完）](https://blog.csdn.net/qq_33154343/article/details/104692241) 【unix_linux_04_make_so_a】
+- [Linux下使用gcc生成动态库.so和调用（图文并茂，坑已踩完）](https://blog.csdn.net/qq_33154343/article/details/104692370) 【unix_linux_04_make_so_a】
+- [在Linux中，编写入门的makefile文件，然后逐渐迭代](https://blog.csdn.net/qq_33154343/article/details/104758512) 【unix_linux_05_makefile】
+
+<br>
+
+**GDB**
+
+- [ 在MacOS10.14.6安装最新gdb8.3的详细教程，含可能遇到的所有坑(网上最新教程)](https://blog.csdn.net/qq_33154343/article/details/104784641) 【unix_linux_06_gdb】
+- [gdb调试器的使用，初探全貌](https://blog.csdn.net/qq_33154343/article/details/104904798) 【unix_linux_06_gdb】
+
+<br>
+
+**程序运行原理，文件描述符，PCB**
+
+- [Linux中文件操作，软硬链接ln，用户权限chmod、chown，文件查找和检索find、grep，压缩gz，bz2](https://blog.csdn.net/qq_33154343/article/details/105010222) 
+- [Linux中虚拟地址空间、pcb、文件描述符、C库函数工作流程、标准库和系统库函数区别](https://blog.csdn.net/qq_33154343/article/details/105029261) 
+- [Linux中man手册，阻塞和非阻塞，stat，文件操作和遍历，文件描述符复制dup()](https://blog.csdn.net/qq_33154343/article/details/105031987) 【unix_linux_07_sysfun】
+
+<br>
+
+## 12-服务器开发之Linux系统编程
+
+**进程间通信**
+
+- [Linux中fork创建兄弟子进程，验证进程之间全局变量不共享，exec函数族](https://blog.csdn.net/qq_33154343/article/details/105157044) 【 unix_linux_08_fork / unix_linux_09_exec 】
+- [Linux中孤儿进程，僵尸进程，进程回收wait、waitpid函数](https://blog.csdn.net/qq_33154343/article/details/105164215) 【unix_linux_10_orphan_zombie_process】
+- [父子进程、兄弟子进程之间通信方式--匿名管道pipe(适用于有血缘关系的进程)](https://blog.csdn.net/qq_33154343/article/details/105254078) 【unix_linux_11_pipe】
+- [Linux中普通的进程间通信方式--有名管道fifo(适用于无血缘关系的进程)](https://xmuli.blog.csdn.net/article/details/105266919)  【unix_linux_12_fifo】
+- [Linux中进程间的通信方式--内存映射区mmap()](https://xmuli.blog.csdn.net/article/details/105322927)  【unix_linux_13_mmap】
+
+<br>
+
+**信号和守护进程**
+
+- [Linux中系统信号初识，和函数kill，raise，abort，alarm，setitimer](https://xmuli.blog.csdn.net/article/details/105357886) 【unix_linux_14_signal】
+- [Linux中未决信号集和阻塞信号集的状态关系sigaddset，以及捕捉信号函数](https://xmuli.blog.csdn.net/article/details/105448914) 【unix_linux_15_sys_usr_signal】
+- [Linux中创建守护进程setsid()](https://xmuli.blog.csdn.net/article/details/105453850) 【unix_linux_16_daemon】
+
+<br>
+
+**多线程**
+
+- [Linux中创建多线程实例pthread_create()](https://xmuli.blog.csdn.net/article/details/105546234) 【unix_linux_17_thread】
+- [Linux中多线程操作函数pthread_exit()、pthread_jion()、pthread_detach()、pthread_cancel()](https://xmuli.blog.csdn.net/article/details/105620043) 【unix_linux_17_thread】
+- [Linux中使用使用互斥量(锁)Mutex来操持多线程同步执行pthread_mutex_lock()](https://xmuli.blog.csdn.net/article/details/105779111) 【unix_linux_18_mutex】
+- [Linux中原子操作，死锁原因以及解决方法，读写锁的属性和函数使用pthread_rwlock_wrlock()](https://xmuli.blog.csdn.net/article/details/105800949) 【unix_linux_19_pthread_rwlock_wrlock】
+- [Linux中多线程使用条件变量阻塞线程，和pthread_cond_wait()函数使用](https://xmuli.blog.csdn.net/article/details/105885580) 【unix_linux_20_conditton】
+- [Linux中多线程使用信号量(信号灯)，和sem_wait()函数使用](https://xmuli.blog.csdn.net/article/details/105885816) 【unix_linux_21_semaphore】
+
+<br>
+
+## 13-服务器开发之Linux网络编程
+
+感觉基础的网络理论基础知识已会，写过一些实战项目的代码，可以参考第十章部分
+
+后面深入底层网络完成，有空再整理文章，
+
+
 
 - [Linux / Unix 学习完整系列（基础 / 编译 / 进程间通信 / 信号 / 守护进程 / 多线程等）](https://xmuli.blog.csdn.net/article/details/105847532)【[linuxExample](https://github.com/xmuli/linuxExample)】[★★★★★]
 
@@ -330,65 +476,7 @@
 
 <br>
 
-## 新手过来
-
-　　<font color=#D0087E size=4 face="幼圆">**新手**</font> 在深思熟虑后踏入的编程，容易遭遇如下如下几点:
-
-1. 语言语法不熟悉🤦‍♀️
-2. 相关 IDE 安装、配置不会；不懂如何创建自己所需的工程项目🤦‍♀️
-3. 基础控件不认识，不会用🤦‍♀️
-4. 难以🔍可阅读、成体系的低级博客，多为高热度Title文章🤦‍♀️
-5. ...开始步入正轨👣
-6. 也不知学编程到是底在学习什么❓👀
-7. ...修行靠个人👩‍💻
-
-<br>
-
-## 分享所想
-
-1. 自己想学一遍 GUI 控件
-2. 帮助真的新手实现0→1的入门，解决👆的1，2，3，4，6问题
-3. 学习于网络，回馈于网络
-4. 希望永久被🔍引擎检索到，以博客形式发表📝
-
-<br>
-
-**Star 增长**
-
-[![Star History Chart](https://api.star-history.com/svg?repos=XMuli/QtExamples&type=Date)](https://star-history.com/#XMuli/QtExamples&Date)
-
-<br>
-
-## 我所想说🙋‍♀️
-
-<font color=#D0087E size=4 face="幼圆">虽然不盈利，会累，但因自由和开源软件而写的开心ya， 鸭鸭</font>
-
-<br>
-
-## 贡献
-
-若是帮助到了你，或者觉得有用，可以点击该项目的的 <font color=#D0087E size=4 face="幼圆">**⭐Star** </font>和<font color=#D0087E size=4 face="幼圆">**🍴 Fork**</font> 的两个图标，方便抬手之间，表示点个赞，手有余香
-
-<details>
-    <summary> <b>当然也可以赠与一杯冰阔落[捐赠/打赏  ← 点击展开二维码]</b></summary>
-  <p> - If you have something to learn from the project, you can also invite me to share a glass of Fat House Ice and Coke. - </p>
-  <pre><img src="https://fastly.jsdelivr.net/gh/XMuli/xmuliPic@pic/2022/202302282339037.png" width="80%"/></pre>
-</details>
-<br>
-
-## 作者
-
-[![alt text](https://img.shields.io/badge/QQ-%E5%81%95%E8%87%A7-brightgreen)](https://sighttp.qq.com/authd?IDKEY=31f3ef7312b39e2c8dc822ae2f4c3b3118e1a6f31cc83373) : 直接和我聊天~
-
-[![alt text](https://img.shields.io/badge/GitHub-XMuli-brightgreen)](https://github.com/XMuli) : 查看我的主页
-
-[![alt text](https://img.shields.io/badge/Blog-%E5%81%95%E8%87%A7%E7%9A%84%E5%B0%8F%E7%AB%99-ff69b4)](https://ifmet.cn/) : 好奇我的小窝
-
-[![alt text](https://img.shields.io/badge/Blog-国内镜像-ff69b4)](https://blog.csdn.net/qq_33154343) ：浏览量 100W+
-
-<br>
-
-## 协议
+# 许可协议
 
 <img src="https://fastly.jsdelivr.net/gh/XMuli/xmuliPic@pic/2023/20230618194948.png" width="50%"/>
 
